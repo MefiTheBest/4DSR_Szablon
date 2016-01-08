@@ -1,1 +1,1 @@
-# 4DSR_Szablon 
+Moduly dla MM 4DSR
