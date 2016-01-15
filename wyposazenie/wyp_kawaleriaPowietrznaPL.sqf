@@ -37,7 +37,7 @@ switch (_typJednostki) do {
 	case "dow":{
 		_jednostka addVest "PSZ_V_UKO_H_WDL_CO_Headset";
 		_jednostka addItemToUniform _eotech;
-		_jednostka addmagazines [_granatZapalajacy,4];
+		_jednostka addmagazines [_flaraCzerwona,4];
 		_jednostka addmagazines [_granatBojowy,2];
 		_jednostka addmagazines [_swiatloChemiczneNiebieskie,4];
 		_jednostka addmagazines [_amunicjaDoMdms,10];
