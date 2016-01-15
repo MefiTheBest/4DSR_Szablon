@@ -1,7 +1,7 @@
-private ["_type", "_unit"]; 	//nie tykać
+private ["_type", "_unit"]; 			//nie tykać
 _typJednostki = _this select 0;			//nie tykać
 _jednostka = _this select 1;			//nie tykać
-if (!local _unit) exitWith {};	//nie tykać
+if (!local _unit) exitWith {};			//nie tykać
 
 // CZYSZCZENIE WYPOSAŻENIA
 clearWeaponCargoGlobal _jednostka;
@@ -9,7 +9,7 @@ clearMagazineCargoGlobal _jednostka;
 clearItemCargoGlobal _jednostka;
 clearBackpackCargo _jednostka;
 
-#include "wyp_definicje.sqf"
+#include "wyp_definicje.sqf" //NIE TYKAĆ
 
 switch (_typJednostki) do {
 	
