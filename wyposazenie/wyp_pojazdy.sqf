@@ -30,7 +30,7 @@ switch (_typJednostki) do {
 		_jednostka addItemCargoGlobal [_amunicjaDoIgly,3];
 		_jednostka addItemCargoGlobal [_malyLadunekWybuchowy,5];
 		_jednostka addItemCargoGlobal [_swiatloChemiczneCzerwone,5];
-		_jednostka addItemCargoGlobal [_granatZapalajacy,5];
+		_jednostka addItemCargoGlobal [_flaraCzerwona,5];
 		};
 		
 	// BLACK HOWK MEDEVAC 
@@ -45,7 +45,7 @@ switch (_typJednostki) do {
 		_jednostka addItemCargoGlobal [_osocze500ml,10];
 		_jednostka addItemCargoGlobal [_solFizjologiczna500ml,10];
 		_jednostka addItemCargoGlobal [_swiatloChemiczneCzerwone,5];
-		_jednostka addItemCargoGlobal [_granatZapalajacy,5];
+		_jednostka addItemCargoGlobal [_flaraCzerwona,5];
 		};
 		
 	// BLACK HOWK
@@ -62,7 +62,7 @@ switch (_typJednostki) do {
 		_jednostka addItemCargoGlobal [_atropina,10];
 		_jednostka addItemCargoGlobal [_amunicjaDoSPIKE,5];
 		_jednostka addItemCargoGlobal [_swiatloChemiczneCzerwone,5];
-		_jednostka addItemCargoGlobal [_granatZapalajacy,5];
+		_jednostka addItemCargoGlobal [_flaraCzerwona,5];
 
 	};	
 	
@@ -79,7 +79,7 @@ switch (_typJednostki) do {
 		_jednostka addItemCargoGlobal [_solFizjologiczna500ml,2];
 		_jednostka addItemCargoGlobal [_bialyDym,10];
 		_jednostka addItemCargoGlobal [_swiatloChemiczneCzerwone,10];
-		_jednostka addItemCargoGlobal [_granatZapalajacy,10];
+		_jednostka addItemCargoGlobal [_flaraCzerwona,10];
 	};	
 	
 	// POJAZD SAPERSKI
@@ -92,7 +92,7 @@ switch (_typJednostki) do {
 		_jednostka addItemCargoGlobal [_amunicjaDoSPIKE,2];
 		_jednostka addItemCargoGlobal [_amunicjaDoIgly,2];
 		_jednostka addItemCargoGlobal [_swiatloChemiczneCzerwone,5];
-		_jednostka addItemCargoGlobal [_granatZapalajacy,5];
+		_jednostka addItemCargoGlobal [_flaraCzerwona,5];
 		_jednostka addItemCargoGlobal [_bandaz,10];
 		_jednostka addItemCargoGlobal [_morfina,5];
 		_jednostka addItemCargoGlobal [_adrenalina,5];
@@ -109,7 +109,7 @@ switch (_typJednostki) do {
 		_jednostka addItemCargoGlobal [_bialyDym,30];
 		_jednostka addItemCargoGlobal [_granatBojowy,10];
 		_jednostka addItemCargoGlobal [_swiatloChemiczneCzerwone,5];
-		_jednostka addItemCargoGlobal [_granatZapalajacy,5];
+		_jednostka addItemCargoGlobal [_flaraCzerwona,5];
 		_jednostka addItemCargoGlobal [_bandaz,20];
 		_jednostka addItemCargoGlobal [_morfina,5];
 		_jednostka addItemCargoGlobal [_adrenalina,5];
