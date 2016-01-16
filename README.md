@@ -1,4 +1,3 @@
-Moduly dla MM 4DSR
+Moduly oraz skrypty dla MM 4DSR.
 
-
-Pytania -> Grippen or Mefi
+W razie pytań i problemow zglaszac sie do Mefiego
