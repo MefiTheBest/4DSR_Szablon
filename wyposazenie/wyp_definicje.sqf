@@ -76,6 +76,7 @@ _celownikDlaKm = "rhs_acc_pkas";
 _celownikDlaRpg = "rhs_acc_pgo7v";
 _celownikSOS = "optic_SOS";
 _dwojnog = "rhsusf_acc_harris_bipod";
+_bipodDlaBeryla = "bipod_01_F_blk";
 
 // ELEMENTY MUNDURU, KAMIZELEK, PLECAKI
 _beret = "PSZ_H_Beret_GroundForces";
@@ -91,4 +92,9 @@ _km =  "PSZ_PKM";
 _msds = "PSZ_Radon_HG";
 _granatnikM32 = "rhs_weap_m32";
 _rpg7 = "rhs_weap_rpg7";
+_spike = "PSZ_Spike_LR";
+_igla = "rhs_weap_igla";
 _alex = "PSZ_Alex338";
+_beryl = "PSZ_Beryl04_G";
+_berylZGranatnikiem =  "PSZ_Beryl96_Pallad_G";
+_miniBeryl = "PSZ_BerylMini04_G";
