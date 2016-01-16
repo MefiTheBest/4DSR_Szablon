@@ -3,6 +3,7 @@ _typJednostki = _this select 0;			//nie tykać
 _jednostka = _this select 1;			//nie tykać
 _rodzajSil = _this select 2;			//nie tykać
 if (!local _unit) exitWith {};			//nie tykać
+if (!isServer) exitWith {};				//nie tykać
 
 // CZYSZCZENIE WYPOSAŻENIA
 clearWeaponCargoGlobal _jednostka;
