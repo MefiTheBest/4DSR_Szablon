@@ -49,7 +49,8 @@ class Mission
 		"ace_map_gestures",
 		"A3_Modules_F_ObjectModifiers",
 		"a3_map_altis",
-		"RHS_US_A2Port_Armor"
+		"RHS_US_A2Port_Armor",
+		"A3_Weapons_F_Ammoboxes"
 	};
 	addOnsAuto[]=
 	{
@@ -97,6 +98,7 @@ class Mission
 		"rhs_c_pts",
 		"psz_wheeled_zbik",
 		"RHS_US_A2Port_Armor",
+		"A3_Weapons_F_Ammoboxes",
 		"a3_map_altis"
 	};
 	randomSeed=10592633;
@@ -1896,7 +1898,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10693.06,35.52615,13237.603};
+					position[]={14472.337,0.12195727,14415.334};
 					class args
 					{
 						items=3;
@@ -1936,7 +1938,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10814.692,32.138336,13232.255};
+					position[]={14549.264,0.10412835,14417.612};
 					class args
 					{
 						items=3;
@@ -1976,7 +1978,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11138.896,16.774412,13071.103};
+					position[]={14273.222,-0.013313785,14211.688};
 					class args
 					{
 						items=3;
@@ -2016,7 +2018,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11038.236,23.538397,13365.181};
+					position[]={14390.242,0.23836437,14919.927};
 					class args
 					{
 						items=13;
@@ -2116,7 +2118,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11236.265,18.60947,13370.001};
+					position[]={14469.828,-0.14621744,14926.346};
 					class args
 					{
 						items=3;
@@ -2156,7 +2158,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10937.859,28.256535,13226.905};
+					position[]={14272.106,0.20702326,14617.798};
 					class args
 					{
 						items=1;
@@ -2184,7 +2186,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11040.522,19.552914,13072.367};
+					position[]={14174.848,-0.28346872,14212.952};
 					class args
 					{
 						items=1;
@@ -2212,7 +2214,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11164.596,14.744867,12742.501};
+					position[]={14471.514,-0.19923966,13265.984};
 					class args
 					{
 						items=4;
@@ -2258,7 +2260,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10236.154,18.796568,12921.073};
+					position[]={13356.44,-0.0059128255,14022.725};
 					class args
 					{
 						items=7;
@@ -2322,7 +2324,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10934.613,23.364973,12933.771};
+					position[]={14054.899,-0.21786623,14035.423};
 					class args
 					{
 						items=6;
@@ -2380,7 +2382,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10043.297,21.714432,12924.464};
+					position[]={13163.583,-0.030347563,14026.115};
 					class args
 					{
 						items=2;
@@ -2414,7 +2416,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11233.127,14.002114,12935.204};
+					position[]={14353.413,-0.071544908,14036.855};
 					class args
 					{
 						items=6;
@@ -2472,7 +2474,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10834.476,25.621702,12932.323};
+					position[]={13954.762,-0.24429679,14033.975};
 					class args
 					{
 						items=2;
@@ -2506,7 +2508,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10137.62,18.286213,12920.536};
+					position[]={13257.906,-0.050977323,14022.188};
 					class args
 					{
 						items=1;
@@ -2534,7 +2536,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11333.719,12.741743,12933.46};
+					position[]={14454.005,-0.12465309,14035.111};
 					class args
 					{
 						items=4;
@@ -2580,7 +2582,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11339.965,14.011941,13071.626};
+					position[]={14474.29,0.11974504,14212.211};
 					class args
 					{
 						items=3;
@@ -2620,7 +2622,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10434.897,26.131689,12930.706};
+					position[]={13555.184,0.10999593,14032.357};
 					class args
 					{
 						items=1;
@@ -2648,7 +2650,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10733.708,30.805944,12932.896};
+					position[]={13853.994,-0.18019743,14034.548};
 					class args
 					{
 						items=5;
@@ -2700,7 +2702,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10638.231,32.310486,12934.806};
+					position[]={13758.518,0.10282658,14036.457};
 					class args
 					{
 						items=3;
@@ -2740,7 +2742,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10338.25,26.236397,12931.746};
+					position[]={13458.536,0.11650734,14033.397};
 					class args
 					{
 						items=5;
@@ -2792,7 +2794,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11038.534,21.976671,13227.478};
+					position[]={14363.756,0.032223985,14614.764};
 					class args
 					{
 						items=3;
@@ -2832,7 +2834,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11133.264,15.697988,12935.396};
+					position[]={14253.55,-0.090284824,14037.048};
 					class args
 					{
 						items=4;
@@ -2878,7 +2880,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10835.639,24.962851,13073.524};
+					position[]={13969.964,0.2127195,14214.109};
 					class args
 					{
 						items=1;
@@ -2906,7 +2908,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11034.036,19.574659,12935.415};
+					position[]={14154.322,0.0075398684,14037.066};
 					class args
 					{
 						items=10;
@@ -2988,13 +2990,13 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11239.647,15.532271,13228.935};
+					position[]={14547.996,-0.15659308,14510.879};
 					class args
 					{
 						items=2;
 						class Item0
 						{
-							value="mech1, mech2, mech3, mech4, mech5";
+							value="";
 							parentCls="ACE_moduleAssignEngineerRoles";
 							typeName="EnableList";
 						};
@@ -3022,13 +3024,13 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11136.043,19.928099,13367.378};
+					position[]={14544.069,-0.071633503,14813.285};
 					class args
 					{
 						items=2;
 						class Item0
 						{
-							value="spec1, spec2, spec3, spec4, spec5, spec6, spec7, spec8, spec9, spec10";
+							value="";
 							parentCls="ACE_moduleAssignMedicRoles";
 							typeName="EnableList";
 						};
@@ -3056,7 +3058,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11338.162,14.177455,13226.228};
+					position[]={14546.085,-0.19359587,14611.707};
 					class args
 					{
 						items=9;
@@ -3132,7 +3134,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11138.465,18.097811,13227.843};
+					position[]={14456.47,0.25256744,14615.126};
 					class args
 					{
 						items=1;
@@ -3160,7 +3162,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10536.716,27.755878,12933.743};
+					position[]={13657.002,-0.020069204,14035.395};
 					class args
 					{
 						items=1;
@@ -3188,7 +3190,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11253.607,14.872375,12743.725};
+					position[]={14383.27,0.012998002,13086.744};
 					class args
 					{
 						items=5;
@@ -3240,7 +3242,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11239.339,13.56852,13074.06};
+					position[]={14373.664,-0.13882942,14214.645};
 					class args
 					{
 						items=1;
@@ -3268,7 +3270,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10940.357,25.924665,13071.642};
+					position[]={14074.683,-0.1091092,14212.227};
 					class args
 					{
 						items=5;
@@ -3320,7 +3322,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11338.525,16.407928,13369.454};
+					position[]={14549.682,-0.021074295,14924.199};
 					class args
 					{
 						items=13;
@@ -3420,7 +3422,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11343.482,15.335299,12745.412};
+					position[]={14473.145,-0.17922106,13088.432};
 					class args
 					{
 						items=5;
@@ -3472,7 +3474,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10983.936,19.06814,12438.026};
+					position[]={14124.637,0.092779905,13702.998};
 					class args
 					{
 						items=2;
@@ -3508,7 +3510,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11040.203,19.748371,12741.91};
+					position[]={14493.44,0.036887765,13888.18};
 					class args
 					{
 						items=4;
@@ -3573,7 +3575,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15211.919,17.91,16758.561};
+					position[]={15080.075,17.996552,16597.459};
 					id=130;
 					side="WEST";
 					vehicle="PSZ_PL_WDL10_Soldier_SL";
@@ -3588,7 +3590,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=125;
+		items=140;
 		class Item0
 		{
 			position[]={15436.729,17.000385,17265.809};
@@ -3872,7 +3874,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="HMMV_PL_LAS_MEDYCZNY";
-			init="[""humvee"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+			init="[""medevac"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
 		};
 		class Item24
 		{
@@ -3884,7 +3886,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="HMMV_PL_PUSTYNIA_MEDYCZNY";
-			init="[""humvee"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+			init="[""medevac"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
 		};
 		class Item25
 		{
@@ -4169,7 +4171,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="HMMV_PL_LAS_MEDYCZNY_1";
-			init="[""humvee"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+			init="[""medevac"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
 		};
 		class Item49
 		{
@@ -4181,7 +4183,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="HMMV_PL_PUSTYNIA_MEDYCZNY_1";
-			init="[""humvee"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+			init="[""medevac"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
 		};
 		class Item50
 		{
@@ -4466,7 +4468,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="HMMV_PL_LAS_MEDYCZNY_1_1";
-			init="[""humvee"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+			init="[""medevac"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
 		};
 		class Item74
 		{
@@ -4478,7 +4480,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="HMMV_PL_PUSTYNIA_MEDYCZNY_1_1";
-			init="[""humvee"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+			init="[""medevac"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
 		};
 		class Item75
 		{
@@ -4763,7 +4765,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="HMMV_PL_LAS_MEDYCZNY_1_1_1";
-			init="[""humvee"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+			init="[""medevac"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
 		};
 		class Item99
 		{
@@ -4775,7 +4777,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="HMMV_PL_PUSTYNIA_MEDYCZNY_1_1_1";
-			init="[""humvee"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+			init="[""medevac"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
 		};
 		class Item100
 		{
@@ -5060,7 +5062,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="HMMV_PL_LAS_MEDYCZNY_1_1_1_1";
-			init="[""humvee"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+			init="[""medevac"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
 		};
 		class Item124
 		{
@@ -5072,12 +5074,187 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="HMMV_PL_PUSTYNIA_MEDYCZNY_1_1_1_1";
-			init="[""humvee"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+			init="[""medevac"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item125
+		{
+			position[]={15069.632,17.992844,16612.006};
+			azimut=-182.511;
+			id=256;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_LAS";
+			init="[""zwiadowcy"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item126
+		{
+			position[]={15075.529,18.000708,16611.93};
+			azimut=-182.511;
+			id=257;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_PUSTYNIA";
+			init="[""zwiadowcy"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item127
+		{
+			position[]={15176.419,17.916441,16723.748};
+			azimut=-182.511;
+			id=258;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_LAS_1";
+			init="[""zwiadowcy"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item128
+		{
+			position[]={15182.316,17.91,16723.672};
+			azimut=-182.511;
+			id=259;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_PUSTYNIA_1";
+			init="[""zwiadowcy"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item129
+		{
+			position[]={15108.277,17.91,16933.74};
+			azimut=-182.511;
+			id=260;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_LAS_2";
+			init="[""zwiadowcy"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item130
+		{
+			position[]={15114.175,17.91,16933.664};
+			azimut=-182.511;
+			id=261;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_PUSTYNIA_2";
+			init="[""zwiadowcy"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item131
+		{
+			position[]={15243.153,18.283947,17086.131};
+			azimut=-182.511;
+			id=262;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_LAS_2_1";
+			init="[""zwiadowcy"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item132
+		{
+			position[]={15249.051,18.999445,17086.055};
+			azimut=-182.511;
+			id=263;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_PUSTYNIA_2_1";
+			init="[""zwiadowcy"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item133
+		{
+			position[]={15384.141,17.91,17235.266};
+			azimut=-182.511;
+			id=264;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_LAS_2_2";
+			init="[""zwiadowcy"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item134
+		{
+			position[]={15390.038,17.910103,17235.189};
+			azimut=-182.511;
+			id=265;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_PUSTYNIA_2_2";
+			init="[""zwiadowcy"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item135
+		{
+			position[]={15061.941,17.99,16612.23};
+			azimut=-182.511;
+			id=266;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			leader=1;
+			skill=0.60000002;
+			init="[""snajperska"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_skrzynie.sqf""";
+		};
+		class Item136
+		{
+			position[]={15162.696,17.92,16724.053};
+			azimut=-182.511;
+			id=267;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			leader=1;
+			skill=0.60000002;
+			init="[""snajperska"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_skrzynie.sqf""";
+		};
+		class Item137
+		{
+			position[]={15093.048,17.91,16934.197};
+			azimut=-182.511;
+			id=268;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			leader=1;
+			skill=0.60000002;
+			init="[""snajperska"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_skrzynie.sqf""";
+		};
+		class Item138
+		{
+			position[]={15230.911,17.411486,17086.664};
+			azimut=-182.511;
+			id=269;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			leader=1;
+			skill=0.60000002;
+			init="[""snajperska"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_skrzynie.sqf""";
+		};
+		class Item139
+		{
+			position[]={15369.521,17.91,17236.965};
+			azimut=-182.511;
+			id=270;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			leader=1;
+			skill=0.60000002;
+			init="[""snajperska"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_skrzynie.sqf""";
 		};
 	};
 	class Markers
 	{
-		items=18;
+		items=23;
 		class Item0
 		{
 			position[]={15218.972,17.848434,17171.766};
@@ -5112,64 +5289,41 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={11518.172,11.566826,13222.11};
+			position[]={14650.899,-0.016631499,14610.993};
 			name="med_naglowek_1";
-			text="=====================Moduły logistyczne (wymagane) ====================";
+			text="Ustawienia Logistyki";
 			type="mil_dot";
 		};
 		class Item5
 		{
-			position[]={11517.158,12.540937,13370.216};
+			position[]={14657.891,-0.024822675,14934.563};
 			name="med_naglowek_1_1";
-			text="==================== Moduly Medyczne (wymagane) ====================";
+			text="Ustawienia Medyczne";
 			type="mil_dot";
 		};
 		class Item6
 		{
-			position[]={11519.623,11.790832,13080.042};
+			position[]={14653.948,0.24844848,14220.627};
 			name="med_naglowek_1_1_1";
-			text="==================== Moduly uzbrojenia i sprzetu ====================";
+			text="Uzbrojenie oraz sprzet";
 			type="mil_dot";
 		};
 		class Item7
 		{
-			position[]={11521.303,12.77414,12922.302};
+			position[]={14641.589,0.22349316,14023.953};
 			name="med_naglowek_1_1_1_1";
-			text="==================== Moduly efektow i dodatkowe moduly====================";
+			text="Inne ustawienia ACE ";
 			type="mil_dot";
 		};
 		class Item8
 		{
-			position[]={11523.113,13.764121,13606.03};
-			name="info1";
-			text="Podstawowe moduly by Grippen - ACE 3.4.1 (4DSR Vanillia)";
-			type="KIA";
-			colorName="ColorEAST";
-		};
-		class Item9
-		{
-			position[]={11522.975,19.625504,12748.458};
-			name="med_naglowek_1_1_1_1_1";
-			text="==================== Moduly do misji====================";
-			type="mil_dot";
-		};
-		class Item10
-		{
-			position[]={11522.975,24.174229,12621.643};
-			name="med_naglowek_1_1_1_1_2";
-			text="Moduły w ktorych mozna pisac cele misji oraz całą odprawe + modul zeusa do wpisania wlasciciela";
-			type="mil_dot";
-			colorName="ColorGreen";
-		};
-		class Item11
-		{
-			position[]={11519.221,29.944143,12428.028};
+			position[]={14637.427,0.0054512322,13710.451};
 			name="asdas";
 			text="Modul poziomu umiejetnosci (jest juz ustawiony) - wystarczy powiekszyc zsynchronizowany wyzwalacz 10000x10000 i wszyscy maja taki skill jak w module";
 			type="mil_dot";
-			colorName="ColorGreen";
+			colorName="ColorBlack";
 		};
-		class Item12
+		class Item9
 		{
 			position[]={15422.382,17.636259,17255.568};
 			name="m1";
@@ -5177,7 +5331,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item13
+		class Item10
 		{
 			position[]={15347.716,18.058065,17288.191};
 			name="m12";
@@ -5185,7 +5339,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item14
+		class Item11
 		{
 			position[]={15291.632,17.456688,17109.422};
 			name="m1_1";
@@ -5193,7 +5347,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item15
+		class Item12
 		{
 			position[]={15134.132,17.91,16957.438};
 			name="m1_1_1";
@@ -5201,7 +5355,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item16
+		class Item13
 		{
 			position[]={15203.933,17.91,16747.443};
 			name="m1_1_1_1";
@@ -5209,7 +5363,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item17
+		class Item14
 		{
 			position[]={15104.376,18.009478,16643.516};
 			name="m1_1_1_1_1";
@@ -5217,13 +5371,69 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
+		class Item15
+		{
+			position[]={14648.287,-0.19977158,14824.122};
+			name="med_naglowek_1_1_2";
+			text="W module obok wpisz nazwy, ktore zostaly nadane medykom w polu 'Lista'";
+			type="mil_dot";
+		};
+		class Item16
+		{
+			position[]={14647.291,0.19252297,14508.13};
+			name="med_naglowek_1_2";
+			text="W module obok wpisz nazwy, ktore zostaly nadane mechanikom w polu 'Lista'";
+			type="mil_dot";
+		};
+		class Item17
+		{
+			position[]={14650.492,-0.16716485,14421.698};
+			name="med_naglowek_1_2_1";
+			text="W modulach obok wpisz nazwy, ktore zostaly nadane pojazdom naprawczym w polu 'Lista'";
+			type="mil_dot";
+		};
+		class Item18
+		{
+			position[]={14390.95,-0.14544199,15071.739};
+			name="med_naglowek_1_1_3";
+			text="WYMAGANE MODULY WRAZ Z KROTKIMI INSTRUKCJAMI";
+			type="mil_dot";
+		};
+		class Item19
+		{
+			position[]={14636.416,0.16264531,13889.45};
+			name="med_naglowek_1_1_1_1_3";
+			text="Zeus dla admina serwera";
+			type="mil_dot";
+		};
+		class Item20
+		{
+			position[]={14307.023,-0.14488724,13371.938};
+			name="med_naglowek_1_1_3_1";
+			text="MODULY DODATKOWE";
+			type="mil_dot";
+		};
+		class Item21
+		{
+			position[]={14628.198,-0.073404513,13266.315};
+			name="med_naglowek_1_1_1_1_3_1";
+			text="Aby miec zeusa podczas gry, wpisz swoje ID gracza (z profilu ARMY) w pole 'Wlasciciel'";
+			type="mil_dot";
+		};
+		class Item22
+		{
+			position[]={14622.784,0.011723004,13094.876};
+			name="med_naglowek_1_1_1_1_3_1_1";
+			text="Moduly do brifingu";
+			type="mil_dot";
+		};
 	};
 	class Sensors
 	{
 		items=1;
 		class Item0
 		{
-			position[]={11336.684,28.557701,12433.776};
+			position[]={14477.385,-0.24804482,13698.748};
 			activationBy="ANY";
 			interruptable=1;
 			age="UNKNOWN";
