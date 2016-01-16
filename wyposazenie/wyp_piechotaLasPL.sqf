@@ -330,7 +330,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_granatIR,2];
 		_jednostka addmagazines [_flaraCzerwona,3];
 		_jednostka addmagazines [_granatBojowy,2];
-		_jednostka addBackpack "PSZ_B_wz97_WDL";
+		_jednostka addBackpack _dlugieRadio;
 		(unitBackpack _jednostka) addItemCargoGlobal [_tabelaBalistyczna,1];
 		(unitBackpack _jednostka) addItemCargoGlobal [_kestrel,1];
 		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,20];
@@ -345,10 +345,10 @@ switch (_typJednostki) do {
 		(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoP99,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
 		(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoBerylaZeSmugowymi,8];
-		_jednostka addItemToBackpack "ACE_DAGR";
-		_jednostka addItemToBackpack "ACE_ATragMX";
-		_jednostka addItemToBackpack "ACE_microDAGR";
-		_jednostka addItemToBackpack "ACE_MapTools";
+		_jednostka addItem "ACE_DAGR";
+		_jednostka addItem "ACE_ATragMX";
+		_jednostka addItem "ACE_microDAGR";
+		_jednostka addItem "ACE_MapTools";
 		_jednostka addHeadgear "PSZ_H_Booniehat_WDL";
 		_jednostka addWeapon _beryl;
 		_jednostka addPrimaryWeaponItem _bipodDlaBeryla;
