@@ -2,6 +2,7 @@ private ["_type", "_unit"]; 			//nie tykać
 _typJednostki = _this select 0;			//nie tykać
 _jednostka = _this select 1;			//nie tykać
 if (!local _unit) exitWith {};			//nie tykać
+if (!isServer) exitWith {};				//nie tykać
 
 // CZYSZCZENIE WYPOSAŻENIA
 removeAllWeapons _jednostka;
@@ -212,7 +213,7 @@ switch (_typJednostki) do {
 		removeGoggles _jednostka;
 		_jednostka addVest "PSZ_V_Kontraktor_WDL";
 		_jednostka linkItem _mapa;
-		_jednostka linkItem _krotkieRadioSnajperow;
+		_jednostka linkItem _krotkieRadio;
 		_jednostka linkItem _kompas;
 		_jednostka linkItem _dagr;
 		_jednostka linkItem _gps;
@@ -263,7 +264,7 @@ switch (_typJednostki) do {
 		removeGoggles _jednostka;
 		_jednostka addVest "PSZ_V_Kontraktor_WDL";
 		_jednostka linkItem _mapa;
-		_jednostka linkItem _krotkieRadioSnajperow;
+		_jednostka linkItem _krotkieRadio;
 		_jednostka linkItem _kompas;
 		_jednostka linkItem _dagr;
 		_jednostka linkItem _gps;
