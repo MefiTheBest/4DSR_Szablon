@@ -30,6 +30,7 @@ _jednostka addItemToUniform _stroboskop;
 _jednostka addItemToUniform _stroboskop;
 _jednostka addItemToUniform _beret;
 _jednostka addItemToUniform _zatyczkiDoUszu;
+_jednostka addGoggles "rhs_googles_yellow";   
 
 switch (_typJednostki) do {
 
@@ -359,16 +360,28 @@ switch (_typJednostki) do {
 	case "operatordrona":{
 		_jednostka addItemToUniform "PSZ_AccO_EOT552";
 		_jednostka addVest "PSZ_V_UKO_H_WDL_CO_Headset";
-		_jednostka addItemCargoGlobal [_bandaz,10];
-		_jednostka addItemCargoGlobal [_morfina,5];
-		_jednostka addItemCargoGlobal [_adrenalina,2];
+		_jednostka addItem _bandaz;
+		_jednostka addItem _bandaz;
+		_jednostka addItem _bandaz;
+		_jednostka addItem _bandaz;
+		_jednostka addItem _bandaz;
+		_jednostka addItem _bandaz;
+		_jednostka addItem _bandaz;
+		_jednostka addItem _bandaz;
+		_jednostka addItem _bandaz;
+		_jednostka addItem _bandaz;
+		_jednostka addItem _morfina;
+		_jednostka addItem _morfina;
+		_jednostka addItem _morfina;
+		_jednostka addItem _morfina;
+		_jednostka addItem _morfina;
+		_jednostka addItem _adrenalina;
+		_jednostka addItem _adrenalina;
 		_jednostka addItem _gps;
 		_jednostka addmagazines [_granatBojowy,2];
-		_jednostka addmagazines [_amunicjaDoMdms,7];
-		_jednostka addmagazines [_swiatloChemiczneZolte,2];
-		_jednostka addmagazines [_bialyDym,9];
-		_jednostka addmagazines [_pomaranczowyDym,3];
-		_jednostka addmagazines [_granatHukowy,2];
+		_jednostka addmagazines [_amunicjaDoMdms,6];
+		_jednostka addmagazines [_bialyDym,5];
+		_jednostka addmagazines [_pomaranczowyDym,2];
 		_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
 		_jednostka addBackpack "B_UAV_01_backpack_F";
 		_jednostka addWeapon _msds;
