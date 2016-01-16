@@ -853,7 +853,6 @@ class Mission
 					id=38;
 					side="WEST";
 					vehicle="rhsusf_army_ucp_medic";
-					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
 					text="Medyk_USA_LAS";
@@ -1708,7 +1707,8 @@ class Mission
 					position[]={14744.217,17.835827,16316.87};
 					id=83;
 					side="WEST";
-					vehicle="PSZ_PL_WDL10_Soldier_Ammo_PKM";
+					vehicle="PSZ_PL_WDL10_Soldier_MG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
 					text="CelowniczyKM_KAWALERIA";
