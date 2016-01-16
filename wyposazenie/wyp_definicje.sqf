@@ -118,3 +118,5 @@ _m249 = "rhs_weap_m249_pip_L_vfg";
 _m136 = "rhs_weap_M136";
 _javelin =  "rhs_weap_fgm148"; 
 _stinger = "rhs_weap_fim92";
+_m2010 = "rhs_weap_XM2010";
+_m107 = "R3F_M107_DES";
