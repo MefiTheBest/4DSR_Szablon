@@ -94,11 +94,15 @@ _dwojnog = "rhsusf_acc_harris_bipod";
 _bipodDlaBeryla = "bipod_01_F_blk";
 
 // ELEMENTY MUNDURU, KAMIZELEK, PLECAKI
+_mundurPolskiLas = "PSZ_U_PL_WDL_wz2010_Crye";
+_kamizelkaPolskaLasDowodca = "PSZ_V_UKO_H_WDL_CO_Headset";
 _beret = "PSZ_H_Beret_GroundForces";
 _helm = "PSZ_H_wz2005_WDL";
+_gogleZolte = "rhs_googles_yellow";   
 
 // RADIA
 _dlugieRadio = "tf_rt1523g_black";
+_radio = "ItemRadio";
 
 // BROŃ
 _km =  "PSZ_PKM";
