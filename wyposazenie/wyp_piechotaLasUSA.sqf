@@ -86,7 +86,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
 		_jednostka addWeapon _bocznaFlara;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 	};
    
 	// WYPOSAŻENIE GRENADIERA
@@ -109,7 +109,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _tlumik;
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 	};
 	
 	// WYPOSAŻENIE STRZELCA
@@ -131,7 +131,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _tlumik;
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		_jednostka addWeapon _bocznaFlara;
 	};
 
@@ -153,7 +153,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _tlumik;
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		_jednostka addWeapon _bocznaFlara;
 	};
 	
@@ -176,7 +176,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _tlumik;
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		_jednostka addWeapon _bocznaFlara;
 	};
 	
@@ -200,7 +200,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _tlumik;
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		_jednostka addWeapon _bocznaFlara;
 	};
 		
@@ -221,7 +221,7 @@ switch (_typJednostki) do {
 		_jednostka addWeapon _m249;
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		_jednostka addWeapon _bocznaFlara;
 	};
 
@@ -244,7 +244,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _tlumik;
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		_jednostka addWeapon _bocznaFlara;
 		_jednostka addWeapon _m136;
 		_jednostka addSecondaryWeaponItem "rhs_acc_at4_handler";
@@ -413,7 +413,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _tlumik;
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		_jednostka addWeapon _bocznaFlara;
 	};
 	
@@ -453,7 +453,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _tlumik;
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		_jednostka addWeapon _bocznaFlara;
 	};
 	
@@ -476,7 +476,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _dwojnog;
 		_jednostka addWeapon _bocznaFlara;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 	};
 	
 	// WYPOSAŻENIE AMUNICYJNEGO JAVELINA
@@ -512,7 +512,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _tlumik;
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		_jednostka addWeapon _bocznaFlara;
 	};
 
@@ -548,7 +548,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
 		_jednostka addWeapon _javelin;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 	};
 	
 	// WYPOSAŻENIE AMUNICYJNEGO PLOT
@@ -584,7 +584,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _tlumik;
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 	};
 
 	// WYPOSAŻENIE CELOWNICZEGO PLOT
@@ -620,7 +620,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
 		_jednostka addWeapon _stinger;
-		_jednostka addWeapon "Rangefinder"; 
+		_jednostka addWeapon _dalmierz; 
 	};
 	
 	// WYPOSAŻENIE AMUNICYJNEGO MOŹDZIEŻA
@@ -656,7 +656,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
 		_jednostka addWeapon _bocznaFlara;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 	};
 
 	// WYPOSAŻENIE OPERATORA MOŹDZIEŻA
@@ -692,7 +692,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _eotechusa;
 		_jednostka addWeapon _bocznaFlara;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 	};
 	
 }
