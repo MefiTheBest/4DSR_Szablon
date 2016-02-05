@@ -85,7 +85,7 @@ switch (_typJednostki) do {
 		 _jednostka addPrimaryWeaponItem _laser;
 		 _jednostka addPrimaryWeaponItem _mrco;
 		 _jednostka addWeapon _bocznaFlara;
-		 _jednostka addWeapon "Rangefinder";
+		 _jednostka addWeapon _dalmierz;
 		 [_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 	};
 	
@@ -109,7 +109,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _tlumik;
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _mrco;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 	};
 	
@@ -132,7 +132,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _tlumik;
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _mrco;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 	};
 	
@@ -151,7 +151,7 @@ switch (_typJednostki) do {
 		(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 		_jednostka addWeapon _km;
 		_jednostka addPrimaryWeaponItem _celownikDlaKm;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 	};
 	
@@ -176,7 +176,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _mrco;
 		_jednostka addWeapon _rpg7;
 		_jednostka addSecondaryWeaponItem _celownikDlaRpg;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 	};
 	
@@ -199,7 +199,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _tlumik;
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _mrco;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;  
 	};
 	
@@ -334,7 +334,7 @@ switch (_typJednostki) do {
 		_jednostka addPrimaryWeaponItem _laser;
 		_jednostka addPrimaryWeaponItem _mrco;
 		_jednostka addWeapon _bocznaFlara;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 	};
 	
@@ -354,7 +354,7 @@ switch (_typJednostki) do {
 		_jednostka addWeapon _alex;
 		_jednostka addPrimaryWeaponItem _celownikSOS;
 		_jednostka addWeapon _bocznaFlara;
-		_jednostka addWeapon "Rangefinder";
+		_jednostka addWeapon _dalmierz;
 		[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 	};
 	
