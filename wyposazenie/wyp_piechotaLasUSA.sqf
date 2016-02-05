@@ -21,7 +21,7 @@ removeGoggles _jednostka;
 _jednostka forceAddUniform "rhs_uniform_FROG01_wd";
 _jednostka addHeadgear "rhsusf_mich_helmet_marpatwd_headset";
 _jednostka linkItem _mapa;
-_jednostka linkItem _krotkieRadio;
+_jednostka linkItem _radio;
 _jednostka linkItem _kompas;
 _jednostka linkItem _dagr;
 _jednostka linkItem _gps;
