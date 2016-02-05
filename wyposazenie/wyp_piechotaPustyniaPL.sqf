@@ -20,7 +20,7 @@ removeGoggles _jednostka;
 _jednostka forceAddUniform "PSZ_U_PL_DES_wz2010_Crye_Folded";
 _jednostka addHeadgear "PSZ_H_wz2005_DES_ESS";
 _jednostka linkItem _mapa;
-_jednostka linkItem _krotkieRadio;
+_jednostka linkItem _radio;
 _jednostka linkItem _kompas;
 _jednostka linkItem _dagr;
 _jednostka linkItem _gps;
