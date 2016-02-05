@@ -99,8 +99,6 @@ _helm = "PSZ_H_wz2005_WDL";
 
 // RADIA
 _dlugieRadio = "tf_rt1523g_black";
-_krotkieRadio = "tf_anprc152_1";
-_krotkieRadioSnajperow = "tf_anprc152_1";
 
 // BROŃ
 _km =  "PSZ_PKM";
