@@ -21,7 +21,7 @@ removeGoggles _jednostka;
 _jednostka forceAddUniform "rhs_uniform_cu_ocp_101st";
 _jednostka addHeadgear "rhsusf_ach_helmet_headset_ocp";
 _jednostka linkItem _mapa;
-_jednostka linkItem _krotkieRadio;
+_jednostka linkItem _radio;
 _jednostka linkItem _kompas;
 _jednostka linkItem _dagr;
 _jednostka linkItem _gps;
