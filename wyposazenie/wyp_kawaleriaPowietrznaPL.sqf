@@ -17,27 +17,27 @@ removeGoggles _jednostka;
 #include "wyp_definicje.sqf" //NIE TYKAĆ
 
 // DODAWANIE RZECZY OGÓLNYCH
-_jednostka forceAddUniform "PSZ_U_PL_WDL_wz2010_Crye";
+_jednostka forceAddUniform _mundurPolskiLas;
 _jednostka addHeadgear _helm;
 _jednostka linkItem _mapa;
-_jednostka linkItem _krotkieRadio;
 _jednostka linkItem _kompas;
 _jednostka linkItem _dagr;
 _jednostka linkItem _gps;
 _jednostka linkItem _noktowizja;
+_jednostka linkItem _radio;
 _jednostka addItemToUniform _kajdanki;
 _jednostka addItemToUniform _kajdanki;
 _jednostka addItemToUniform _stroboskop;
 _jednostka addItemToUniform _stroboskop;
 _jednostka addItemToUniform _beret;
 _jednostka addItemToUniform _zatyczkiDoUszu;
-_jednostka addGoggles "rhs_googles_yellow";   
+_jednostka addGoggles _gogleZolte;
 
 switch (_typJednostki) do {
 
 	// WYPOSAŻENIE DOWÓDCY
 	case "dow":{
-		_jednostka addVest "PSZ_V_UKO_H_WDL_CO_Headset";
+		_jednostka addVest _kamizelkaPolskaLasDowodca;
 		_jednostka addItemToUniform _eotech;
 		_jednostka addmagazines [_flaraCzerwona,4];
 		_jednostka addmagazines [_granatBojowy,2];
