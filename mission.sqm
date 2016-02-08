@@ -50,7 +50,8 @@ class Mission
 		"A3_Modules_F_ObjectModifiers",
 		"a3_map_altis",
 		"RHS_US_A2Port_Armor",
-		"A3_Weapons_F_Ammoboxes"
+		"A3_Weapons_F_Ammoboxes",
+		"HMDs_Kimi_METRIC_RHS"
 	};
 	addOnsAuto[]=
 	{
@@ -85,7 +86,8 @@ class Mission
 		"ace_nightvision",
 		"ace_map_gestures",
 		"A3_Modules_F_ObjectModifiers",
-		"RHS_US_A2_AirImport",
+		"HMDs_Kimi_METRIC_RHS",
+		"rhs_us_a2_airimport",
 		"rhs_c_a2port_air",
 		"rhs_c_bmp",
 		"SMN_EI_units_IAF",
@@ -5254,7 +5256,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=23;
+		items=25;
 		class Item0
 		{
 			position[]={15218.972,17.848434,17171.766};
@@ -5426,6 +5428,20 @@ class Mission
 			name="med_naglowek_1_1_1_1_3_1_1";
 			text="Moduly do brifingu";
 			type="mil_dot";
+		};
+		class Item23
+		{
+			position[]={15020.678,17.684666,16424.566};
+			name="respawn_west";
+			type="Empty";
+		};
+		class Item24
+		{
+			position[]={15122.63,15.681789,16428.342};
+			name="xx";
+			text="Znacznik bazy - tu się będą odradzać gracze, niezbędne w razie problemów technicznych";
+			type="mil_arrow";
+			angle=270;
 		};
 	};
 	class Sensors
