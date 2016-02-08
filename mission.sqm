@@ -5294,36 +5294,35 @@ class Mission
 			position[]={14650.899,-0.016631499,14610.993};
 			name="med_naglowek_1";
 			text="Ustawienia Logistyki";
-			type="mil_dot";
+			type="Empty";
 		};
 		class Item5
 		{
 			position[]={14657.891,-0.024822675,14934.563};
 			name="med_naglowek_1_1";
 			text="Ustawienia Medyczne";
-			type="mil_dot";
+			type="Empty";
 		};
 		class Item6
 		{
 			position[]={14653.948,0.24844848,14220.627};
 			name="med_naglowek_1_1_1";
 			text="Uzbrojenie oraz sprzet";
-			type="mil_dot";
+			type="Empty";
 		};
 		class Item7
 		{
 			position[]={14641.589,0.22349316,14023.953};
 			name="med_naglowek_1_1_1_1";
 			text="Inne ustawienia ACE ";
-			type="mil_dot";
+			type="Empty";
 		};
 		class Item8
 		{
 			position[]={14637.427,0.0054512322,13710.451};
 			name="asdas";
 			text="Modul poziomu umiejetnosci (jest juz ustawiony) - wystarczy powiekszyc zsynchronizowany wyzwalacz 10000x10000 i wszyscy maja taki skill jak w module";
-			type="mil_dot";
-			colorName="ColorBlack";
+			type="Empty";
 		};
 		class Item9
 		{
@@ -5378,21 +5377,21 @@ class Mission
 			position[]={14648.287,-0.19977158,14824.122};
 			name="med_naglowek_1_1_2";
 			text="W module obok wpisz nazwy, ktore zostaly nadane medykom w polu 'Lista'";
-			type="mil_dot";
+			type="Empty";
 		};
 		class Item16
 		{
 			position[]={14647.291,0.19252297,14508.13};
 			name="med_naglowek_1_2";
 			text="W module obok wpisz nazwy, ktore zostaly nadane mechanikom w polu 'Lista'";
-			type="mil_dot";
+			type="Empty";
 		};
 		class Item17
 		{
 			position[]={14650.492,-0.16716485,14421.698};
 			name="med_naglowek_1_2_1";
 			text="W modulach obok wpisz nazwy, ktore zostaly nadane pojazdom naprawczym w polu 'Lista'";
-			type="mil_dot";
+			type="Empty";
 		};
 		class Item18
 		{
@@ -5406,7 +5405,7 @@ class Mission
 			position[]={14636.416,0.16264531,13889.45};
 			name="med_naglowek_1_1_1_1_3";
 			text="Zeus dla admina serwera";
-			type="mil_dot";
+			type="Empty";
 		};
 		class Item20
 		{
@@ -5420,14 +5419,14 @@ class Mission
 			position[]={14628.198,-0.073404513,13266.315};
 			name="med_naglowek_1_1_1_1_3_1";
 			text="Aby miec zeusa podczas gry, wpisz swoje ID gracza (z profilu ARMY) w pole 'Wlasciciel'";
-			type="mil_dot";
+			type="Empty";
 		};
 		class Item22
 		{
 			position[]={14622.784,0.011723004,13094.876};
 			name="med_naglowek_1_1_1_1_3_1_1";
 			text="Moduly do brifingu";
-			type="mil_dot";
+			type="Empty";
 		};
 		class Item23
 		{
