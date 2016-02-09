@@ -71,7 +71,7 @@ _zapasowaLufa = "ACE_SpareBarrel";
 _tabelaBalistyczna = "ACE_RangeCard";
 _kestrel = "ACE_Kestrel4500";
 _workiZPiaskiem = "ACE_Sandbag_empty";
-_dalmierz = "lerca_1200_black";
+_dalmierz = "ACE_Vector";
 
 // ŁADUNKI WYBUCHOWE
 _malyLadunekWybuchowy = "DemoCharge_Remote_Mag";
