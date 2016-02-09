@@ -89,6 +89,28 @@ switch (_typJednostki) do {
 		 [_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 	};
 	
+	case "strzelec":{	
+		_jednostka addItemToUniform _eotech;
+		_jednostka addVest "PSZ_V_UKO_H_WDL_R_Headset";
+		_jednostka addmagazines [_granatBojowy,2];
+		_jednostka addmagazines [_amunicjaDoMdms,10];
+		_jednostka addmagazines [_niebieskiDym,3];
+		_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
+		_jednostka addBackpack "PSZ_B_wz93_WDL";
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
+		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoMdms,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
+		_jednostka addWeapon _msds;
+		_jednostka addPrimaryWeaponItem _tlumik;
+		_jednostka addPrimaryWeaponItem _laser;
+		_jednostka addPrimaryWeaponItem _mrco;
+		_jednostka addWeapon _dalmierz;
+		[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
+	};
+	
 	// WYPOSAŻENIE GRENADIERA
 	case "grenadier":{
 		_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
