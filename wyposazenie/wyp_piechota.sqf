@@ -36,7 +36,7 @@ _jednostka addGoggles _gogleZolte;
 
 switch (_typJednostki) do {
 
-	case "kawaleriaPowierznaPolska":{
+	case "kawaleriaPowietrznaPolska":{
 		
 		_jednostka forceAddUniform _mundurPolskiLas;
 		_jednostka addHeadgear _helm;
