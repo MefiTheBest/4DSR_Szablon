@@ -44,7 +44,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_swiatloChemiczneNiebieskie,4];
 		_jednostka addmagazines [_amunicjaDoMdms,10];
 		_jednostka addBackpack _dlugieRadio;
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_atropina,5];
@@ -71,6 +71,7 @@ switch (_typJednostki) do {
 		 _jednostka addmagazines [_granatHukowy,2];
 		 _jednostka addBackpack "PSZ_B_wz93_Medical_WDL";
 		 (unitBackpack _jednostka) addItemCargoGlobal [_bandaz,30];
+		 (unitBackpack _jednostka) addItemCargoGlobal [_bandazElastyczny,30];
 		 (unitBackpack _jednostka) addItemCargoGlobal [_morfina,15];
 		 (unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,15];
 		 (unitBackpack _jednostka) addItemCargoGlobal [_atropina,15];
@@ -97,7 +98,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_niebieskiDym,3];
 		_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
 		_jednostka addBackpack "PSZ_B_wz93_WDL";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
@@ -120,7 +121,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_swiatloChemiczneZielone,2];
 		_jednostka addmagazines [_amunicjaDoMdms,10];
 		_jednostka addBackpack "PSZ_B_wz93_WDL";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_granatnikM32,1];
@@ -144,7 +145,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
 		_jednostka addmagazines [_amunicjaDoMdms,10];
 		_jednostka addBackpack "PSZ_B_wz97_WDL";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_zapasowaLufa,1];
@@ -165,7 +166,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_granatBojowy,2];
 		_jednostka addmagazines [_amunicjaDoKm,2];
 		_jednostka addBackpack "PSZ_B_wz93_WDL";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
@@ -185,7 +186,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_granatBojowy,2];
 		_jednostka addmagazines [_amunicjaDoMdms,10];
 		_jednostka addBackpack "PSZ_B_wz93_WDL";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
@@ -210,7 +211,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_swiatloChemiczneCzerwone,2];
 		_jednostka addmagazines [_amunicjaDoMdms,10];
 		_jednostka addBackpack "PSZ_B_wz97_WDL";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
@@ -340,7 +341,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_granatBojowy,2];
 		_jednostka addmagazines [_amunicjaDoMdms,10];
 		_jednostka addBackpack "PSZ_B_wz93_WDL";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
@@ -366,7 +367,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_amunicjaDoAlexa,10];
 		_jednostka addmagazines [_swiatloChemiczneZolte,2];
 		_jednostka addBackpack "PSZ_B_wz93_WDL";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_zoltyDym,3];
