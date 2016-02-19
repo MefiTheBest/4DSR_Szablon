@@ -45,7 +45,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
 		_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
 		_jednostka addBackpack "tf_rt1523g_black";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_atropina,5];
@@ -72,6 +72,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_granatHukowy,2];
 		_jednostka addBackpack "B_Kitbag_mcamo";
 		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,30];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandazElastyczny,30];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_atropina,15];
@@ -99,7 +100,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
 		_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
 		_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
@@ -122,7 +123,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
 		_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
 		_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
@@ -144,7 +145,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_granatBojowy,2];
 		_jednostka addmagazines [_swiatloChemiczneZolte,2];
 		_jednostka addBackpack "tf_rt1523g_black";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,15];
@@ -167,7 +168,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_swiatloChemiczneZielone,2];
 		_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
 		(unitBackpack _jednostka) addItemCargoGlobal [_narzedzia,1];
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,15];
@@ -190,7 +191,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
 		_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
 		_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_zapasowaLufa,1];
@@ -211,7 +212,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_granatBojowy,2];
 		_jednostka addmagazines [_amunicjaDoKmUsa,3];
 		_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
@@ -233,7 +234,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
 		_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
 		_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
@@ -289,7 +290,7 @@ switch (_typJednostki) do {
 		_jednostka addBackpack "rhsusf_assault_eagleaiii_ocp";
 		(unitBackpack _jednostka) addItemCargoGlobal [_tabelaBalistyczna,1];
 		(unitBackpack _jednostka) addItemCargoGlobal [_kestrel,1];
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_minaPulapka,2];
@@ -464,7 +465,7 @@ switch (_typJednostki) do {
 		_jednostka addmagazines [_amunicjaDosr25Specjalna,5];
 		_jednostka addmagazines [_swiatloChemiczneZolte,2];
 		_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
-		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,10];
+		(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
 		(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 		(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,2];
 		(unitBackpack _jednostka) addItemCargoGlobal [_zoltyDym,3];
