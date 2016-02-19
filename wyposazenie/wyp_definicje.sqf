@@ -43,7 +43,8 @@ _granatHukowy = "rhs_mag_mk84";
 _granatIR = "B_IR_Grenade";
 
 // MEDYCZNE
-_bandaz = "ACE_elasticBandage";
+_bandaz = "ACE_fieldDressing";
+_bandazElastyczny = "ACE_elasticBandage";
 _morfina = "ACE_morphine";
 _adrenalina = "ACE_epinephrine";
 _atropina =	"ACE_atropine";
@@ -65,7 +66,7 @@ _mapa = "ItemMap";
 _kompas = "ItemCompass";
 _dagr = "tf_microdagr";
 _gps = "ItemGPS";
-_noktowizja = "NVGoggles_INDEP";
+_noktowizja = "ACE_NVG_Gen4";
 _noktowizjaGen4 = "ACE_NVG_Gen4";
 _zapasowaLufa = "ACE_SpareBarrel";
 _tabelaBalistyczna = "ACE_RangeCard";
