@@ -1,9 +1,11 @@
+if (!local _unit) exitWith {};			//nie tykać
+if (!isServer) exitWith {};				//nie tykać
+
 private ["_type", "_unit"]; 			//nie tykać
 _typJednostki = _this select 0;			//nie tykać
 _jednostka = _this select 1;			//nie tykać
 _rodzajSil = _this select 2;			//nie tykać
-if (!local _unit) exitWith {};			//nie tykać
-if (!isServer) exitWith {};				//nie tykać
+
 
 // CZYSZCZENIE WYPOSAŻENIA
 clearWeaponCargoGlobal _jednostka;
@@ -18,7 +20,7 @@ switch (_typJednostki) do {
 	//Dla BWP-1, KTO ROSOMAK
 	case "bwp":{
 		switch (_rodzajSil) do {
-			case "kawaleria":{
+			case "kawaleriaPowietrznaPolska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoMdms,35];
 				_jednostka addItemCargoGlobal [_amunicjaDoAlexa,10];
 				_jednostka addItemCargoGlobal [_amunicjaDoKm,5];
@@ -27,7 +29,7 @@ switch (_typJednostki) do {
 				_jednostka addItemCargoGlobal [_amunicjaDoSPIKE,3];
 				_jednostka addItemCargoGlobal [_amunicjaDoIgly,3];
 			};
-			case "piechota":{
+			case "piechotaPolska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoBerylaZeSmugowymi,35];
 				_jednostka addItemCargoGlobal [_amunicjaDoAlexa,10];
 				_jednostka addItemCargoGlobal [_amunicjaDoKm,5];
@@ -36,7 +38,7 @@ switch (_typJednostki) do {
 				_jednostka addItemCargoGlobal [_amunicjaDoSPIKE,3];
 				_jednostka addItemCargoGlobal [_amunicjaDoIgly,3];
 			};
-			case "amerykanska":{
+			case "piechotaAmerykanska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoM4ZeSmugowymi ,15];
 				_jednostka addItemCargoGlobal [_amunicjaDoM4BezSmugowych ,20];
 				_jednostka addItemCargoGlobal [_amunicjaDosr25,10];
@@ -62,15 +64,15 @@ switch (_typJednostki) do {
 	// MEDEVAC 
 	case "medevac":{
 		switch (_rodzajSil) do {
-			case "kawaleria":{
+			case "kawaleriaPowietrznaPolska":{
 				_jednostka addItemCargoGlobal [_bandaz ,15];
 				_jednostka addItemCargoGlobal [_bandazElastyczny ,15];
 			};
-			case "piechota":{
+			case "piechotaPolska":{
 				_jednostka addItemCargoGlobal [_bandaz ,15];
 				_jednostka addItemCargoGlobal [_bandazElastyczny ,15];
 			};
-			case "amerykanska":{
+			case "piechotaAmerykanska":{
 				_jednostka addItemCargoGlobal [_bandaz ,15];
 				_jednostka addItemCargoGlobal [_bandazElastyczny ,15];
 			};
@@ -92,7 +94,7 @@ switch (_typJednostki) do {
 	// BLACK HOWK
 	case "smiglowiec":{
 		switch (_rodzajSil) do {
-			case "kawaleria":{
+			case "kawaleriaPowietrznaPolska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoMdms ,75];
 				_jednostka addItemCargoGlobal [_amunicjaDoAlexa,25];
 				_jednostka addItemCargoGlobal [_amunicjaDoKm,10];
@@ -100,7 +102,7 @@ switch (_typJednostki) do {
 				_jednostka addItemCargoGlobal [_amunicjaDoRpgVL,20];
 				_jednostka addItemCargoGlobal [_amunicjaDoSPIKE,5];
 			};
-			case "piechota":{
+			case "piechotaPolska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoBerylaZeSmugowymi ,75];
 				_jednostka addItemCargoGlobal [_amunicjaDoAlexa,25];
 				_jednostka addItemCargoGlobal [_amunicjaDoKm,10];
@@ -108,7 +110,7 @@ switch (_typJednostki) do {
 				_jednostka addItemCargoGlobal [_amunicjaDoRpgVL,20];
 				_jednostka addItemCargoGlobal [_amunicjaDoSPIKE,5];
 			};
-			case "amerykanska":{
+			case "piechotaAmerykanska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoM4ZeSmugowymi ,25];
 				_jednostka addItemCargoGlobal [_amunicjaDoM4BezSmugowych ,50];
 				_jednostka addItemCargoGlobal [_amunicjaDosr25,25];
@@ -132,13 +134,13 @@ switch (_typJednostki) do {
 	// POJAZD SAPERSKI
 	case "saperski":{
 		switch (_rodzajSil) do {
-			case "kawaleria":{
+			case "kawaleriaPowietrznaPolska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoMdms ,15];
 			};
-			case "piechota":{
+			case "piechotaPolska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoBerylaZeSmugowymi ,15];
 			};
-			case "amerykanska":{
+			case "piechotaAmerykanska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoM4ZeSmugowymi ,15];
 				_jednostka addItemCargoGlobal [_amunicjaDoM4BezSmugowych ,15];
 			};
@@ -157,23 +159,23 @@ switch (_typJednostki) do {
 	};	
 	
 	// POJAZD PIECHOTY
-	case "humvee":{
+	case "samochod":{
 		switch (_rodzajSil) do {
-			case "kawaleria":{
+			case "kawaleriaPowietrznaPolska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoMdms,25];
 				_jednostka addItemCargoGlobal [_amunicjaDoRpgVL,8];
 				_jednostka addItemCargoGlobal [_amunicjaDoKm,5];
 				_jednostka addItemCargoGlobal [_amunicjaDoSPIKE,2];
 				_jednostka addItemCargoGlobal [_amunicjaDoIgly,2];
 			};
-			case "piechota":{
+			case "piechotaPolska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoBerylaZeSmugowymi,25];
 				_jednostka addItemCargoGlobal [_amunicjaDoRpgVL,8];
 				_jednostka addItemCargoGlobal [_amunicjaDoKm,5];
 				_jednostka addItemCargoGlobal [_amunicjaDoSPIKE,2];
 				_jednostka addItemCargoGlobal [_amunicjaDoIgly,2];
 			};
-			case "amerykanska":{
+			case "piechotaAmerykanska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoM4ZeSmugowymi ,25];
 				_jednostka addItemCargoGlobal [_amunicjaDoM4BezSmugowych ,25];
 				_jednostka addItemCargoGlobal [_amunicjaM136,8];
@@ -196,21 +198,21 @@ switch (_typJednostki) do {
 	// CIEŻARÓWKI ZAOPATRZENIOWE
 	case "zaopatrzenie":{
 		switch (_rodzajSil) do {
-			case "kawaleria":{
+			case "kawaleriaPowietrznaPolska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoMdms,50];
 				_jednostka addItemCargoGlobal [_amunicjaDoAlexa,10];
 				_jednostka addItemCargoGlobal [_amunicjaDoKm,8];
 				_jednostka addItemCargoGlobal [_amunicjaDoSPIKE,3];
 				_jednostka addItemCargoGlobal [_amunicjaDoIgly,3];
 			};
-			case "piechota":{
+			case "piechotaPolska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoBerylaZeSmugowymi,50];
 				_jednostka addItemCargoGlobal [_amunicjaDoAlexa,10];
 				_jednostka addItemCargoGlobal [_amunicjaDoKm,8];
 				_jednostka addItemCargoGlobal [_amunicjaDoSPIKE,3];
 				_jednostka addItemCargoGlobal [_amunicjaDoIgly,3];
 			};
-			case "amerykanska":{
+			case "piechotaAmerykanska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoM4ZeSmugowymi ,25];
 				_jednostka addItemCargoGlobal [_amunicjaDoM4BezSmugowych ,25];
 				_jednostka addItemCargoGlobal [_amunicjaDosr25,10];
@@ -232,13 +234,13 @@ switch (_typJednostki) do {
 	// POJAZDY NAPRAWCZE
 	case "naprawczy":{
 		switch (_rodzajSil) do {
-			case "kawaleria":{
+			case "kawaleriaPowietrznaPolska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoMdms ,15];
 			};
-			case "piechota":{
+			case "piechotaPolska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoBerylaZeSmugowymi ,15];
 			};
-			case "amerykanska":{
+			case "piechotaAmerykanska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoM4ZeSmugowymi ,15];
 				_jednostka addItemCargoGlobal [_amunicjaDoM4BezSmugowych ,15];
 			};
@@ -249,7 +251,7 @@ switch (_typJednostki) do {
 	// DLA SNAJPERÓW
 	case "zwiadowcy":{
 		switch (_rodzajSil) do {
-			case "kawaleria":{
+			case "kawaleriaPowietrznaPolska":{
 				_jednostka addItemCargoGlobal ["PSZ_Tor" ,1];
 				_jednostka addItemCargoGlobal ["PSZ_Alex338" ,1];
 				_jednostka addItemCargoGlobal ["R3F_M107_DES" ,1];
@@ -258,7 +260,7 @@ switch (_typJednostki) do {
 				_jednostka addItemCargoGlobal ["R3F_10Rnd_127x99_PEI_M107" ,2];
 				_jednostka addItemCargoGlobal ["PSZ_9x19_P99_16" ,4];
 			};
-			case "piechota":{
+			case "piechotaPolska":{
 				_jednostka addItemCargoGlobal ["PSZ_Tor" ,1];
 				_jednostka addItemCargoGlobal ["PSZ_Alex338" ,1];
 				_jednostka addItemCargoGlobal ["R3F_M107_DES" ,1];
@@ -267,7 +269,7 @@ switch (_typJednostki) do {
 				_jednostka addItemCargoGlobal ["R3F_10Rnd_127x99_PEI_M107" ,2];
 				_jednostka addItemCargoGlobal ["PSZ_9x19_P99_16" ,4];
 			};
-			case "amerykanska":{
+			case "piechotaAmerykanska":{
 				_jednostka addItemCargoGlobal [_m2010 ,1];
 				_jednostka addItemCargoGlobal [_m107 ,1];
 				_jednostka addItemCargoGlobal [_sr25 ,1];
