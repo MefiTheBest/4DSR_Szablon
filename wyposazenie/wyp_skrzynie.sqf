@@ -66,4 +66,32 @@ switch (_typJednostki) do {
 				_jednostka addItemCargoGlobal ["ACE_MapTools",2];
 				_jednostka addItemCargoGlobal ["ACE_RangeCard",2];
 	};
+	
+	case "piechota":{
+		switch (_rodzajSil) do {
+			case "piechota":{
+				_jednostka addItemCargoGlobal [_amunicjaDoBerylaZeSmugowymi ,50];
+				_jednostka addItemCargoGlobal [_amunicjaDoKm ,20];
+				_jednostka addItemCargoGlobal [_bialyDym ,100];
+				_jednostka addItemCargoGlobal [_granatBojowy ,100];
+				_jednostka addItemCargoGlobal [_amunicjaDoRpgVL ,20];
+				_jednostka addItemCargoGlobal [_amunicjaDoGranatnikaPALLAD ,40];
+			};
+		};
+	};
+	case "med":{
+		switch (_rodzajSil) do {
+			case "wszystko":{
+				_jednostka addItemCargoGlobal [_bandaz ,200];
+				_jednostka addItemCargoGlobal [_bandazElastyczny ,200];
+				_jednostka addItemCargoGlobal [_morfina ,40];
+				_jednostka addItemCargoGlobal [_adrenalina ,40];
+				_jednostka addItemCargoGlobal [_atropina ,25];
+				_jednostka addItemCargoGlobal [_osocze500ml ,40];
+				_jednostka addItemCargoGlobal [_solFizjologiczna500ml ,40];
+				_jednostka addItemCargoGlobal [_staza ,20];
+				_jednostka addItemCargoGlobal [_apteczka ,10];
+			};
+		};
+	};
 }
