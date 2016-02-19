@@ -64,15 +64,19 @@ switch (_typJednostki) do {
 		switch (_rodzajSil) do {
 			case "kawaleria":{
 				_jednostka addItemCargoGlobal [_bandaz ,15];
+				_jednostka addItemCargoGlobal [_bandazElastyczny ,15];
 			};
 			case "piechota":{
 				_jednostka addItemCargoGlobal [_bandaz ,15];
+				_jednostka addItemCargoGlobal [_bandazElastyczny ,15];
 			};
 			case "amerykanska":{
 				_jednostka addItemCargoGlobal [_bandaz ,15];
+				_jednostka addItemCargoGlobal [_bandazElastyczny ,15];
 			};
 		};
 		_jednostka addItemCargoGlobal [_bandaz,50];
+		_jednostka addItemCargoGlobal [_bandazElastyczny ,50];
 		_jednostka addItemCargoGlobal [_morfina,30];
 		_jednostka addItemCargoGlobal [_adrenalina,30];
 		_jednostka addItemCargoGlobal [_atropina,30];
