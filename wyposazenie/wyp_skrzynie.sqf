@@ -1,9 +1,9 @@
+if (!local _unit) exitWith {};			//nie tykać
+if (!isServer) exitWith {};			//nie tykać
 private ["_type", "_unit"]; 			//nie tykać
 _typJednostki = _this select 0;			//nie tykać
 _jednostka = _this select 1;			//nie tykać
 _rodzajSil = _this select 2;			//nie tykać
-if (!local _unit) exitWith {};			//nie tykać
-if (!isServer) exitWith {};				//nie tykać
 
 // CZYSZCZENIE WYPOSAŻENIA
 clearWeaponCargoGlobal _jednostka;
@@ -18,7 +18,7 @@ switch (_typJednostki) do {
 	// DLA SNAJPERÓW
 	case "snajperska":{
 		switch (_rodzajSil) do {
-			case "kawaleria":{
+			case "kawaleriaPowietrznaPolska":{
 				_jednostka addItemCargoGlobal ["PSZ_Tor" ,1];
 				_jednostka addItemCargoGlobal ["PSZ_Alex338" ,1];
 				_jednostka addItemCargoGlobal ["R3F_M107_DES" ,1];
@@ -27,7 +27,7 @@ switch (_typJednostki) do {
 				_jednostka addItemCargoGlobal ["R3F_10Rnd_127x99_PEI_M107" ,2];
 				_jednostka addItemCargoGlobal ["PSZ_9x19_P99_16" ,4];
 			};
-			case "piechota":{
+			case "piechotaPolska":{
 				_jednostka addItemCargoGlobal ["PSZ_Tor" ,1];
 				_jednostka addItemCargoGlobal ["PSZ_Alex338" ,1];
 				_jednostka addItemCargoGlobal ["R3F_M107_DES" ,1];
@@ -36,7 +36,7 @@ switch (_typJednostki) do {
 				_jednostka addItemCargoGlobal ["R3F_10Rnd_127x99_PEI_M107" ,2];
 				_jednostka addItemCargoGlobal ["PSZ_9x19_P99_16" ,4];
 			};
-			case "amerykanska":{
+			case "piechotaAmerykanska":{
 				_jednostka addItemCargoGlobal [_m2010 ,1];
 				_jednostka addItemCargoGlobal [_m107 ,1];
 				_jednostka addItemCargoGlobal [_sr25 ,1];
@@ -69,7 +69,7 @@ switch (_typJednostki) do {
 	
 	case "piechota":{
 		switch (_rodzajSil) do {
-			case "piechota":{
+			case "piechotaPolska":{
 				_jednostka addItemCargoGlobal [_amunicjaDoBerylaZeSmugowymi ,50];
 				_jednostka addItemCargoGlobal [_amunicjaDoKm ,20];
 				_jednostka addItemCargoGlobal [_bialyDym ,100];
@@ -79,9 +79,7 @@ switch (_typJednostki) do {
 			};
 		};
 	};
-	case "med":{
-		switch (_rodzajSil) do {
-			case "wszystko":{
+	case "medyczne":{
 				_jednostka addItemCargoGlobal [_bandaz ,200];
 				_jednostka addItemCargoGlobal [_bandazElastyczny ,200];
 				_jednostka addItemCargoGlobal [_morfina ,40];
@@ -91,7 +89,5 @@ switch (_typJednostki) do {
 				_jednostka addItemCargoGlobal [_solFizjologiczna500ml ,40];
 				_jednostka addItemCargoGlobal [_staza ,20];
 				_jednostka addItemCargoGlobal [_apteczka ,10];
-			};
-		};
 	};
 }
