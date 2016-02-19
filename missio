@@ -1,0 +1,5558 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"psz_characters",
+		"rhsusf_c_troops",
+		"RHS_US_A2_AirImport",
+		"rhs_c_a2port_air",
+		"rhs_c_bmp",
+		"SMN_EI_units_IAF",
+		"A3_Armor_F_AMV",
+		"rhsusf_c_hmmwv",
+		"rhsusf_vehicles",
+		"A3_Soft_F_Gamma_HEMTT",
+		"rhsusf_c_rg33",
+		"psz_wheeled_star",
+		"rhs_c_pts",
+		"psz_wheeled_zbik",
+		"a3_map_stratis",
+		"ace_repair",
+		"map_vr",
+		"ace_mk6mortar",
+		"ace_medical",
+		"ace_refuel",
+		"ace_rearm",
+		"3DEN",
+		"a3_modules_f_curator_curator",
+		"task_force_radio_items",
+		"ace_map",
+		"ace_viewdistance",
+		"ace_weather",
+		"ace_finger",
+		"ace_optionsmenu",
+		"ace_hearing",
+		"ace_explosives",
+		"ace_interaction",
+		"ace_nametags",
+		"ace_captives",
+		"ace_zeus",
+		"ace_vehiclelock",
+		"ace_winddeflection",
+		"ace_microdagr",
+		"ace_advanced_ballistics",
+		"ace_cargo",
+		"ace_sitting",
+		"A3_Modules_F_Intel",
+		"ace_nightvision",
+		"ace_map_gestures",
+		"A3_Modules_F_ObjectModifiers",
+		"a3_map_altis",
+		"RHS_US_A2Port_Armor",
+		"A3_Weapons_F_Ammoboxes",
+		"HMDs_Kimi_METRIC_RHS"
+	};
+	addOnsAuto[]=
+	{
+		"psz_characters",
+		"rhsusf_c_troops",
+		"ace_repair",
+		"ace_mk6mortar",
+		"ace_medical",
+		"ace_refuel",
+		"ace_rearm",
+		"3DEN",
+		"a3_modules_f_curator_curator",
+		"task_force_radio_items",
+		"ace_map",
+		"ace_viewdistance",
+		"ace_weather",
+		"ace_finger",
+		"ace_optionsmenu",
+		"ace_hearing",
+		"ace_explosives",
+		"ace_interaction",
+		"ace_nametags",
+		"ace_captives",
+		"ace_zeus",
+		"ace_vehiclelock",
+		"ace_winddeflection",
+		"ace_microdagr",
+		"ace_advanced_ballistics",
+		"ace_cargo",
+		"ace_sitting",
+		"A3_Modules_F_Intel",
+		"ace_nightvision",
+		"ace_map_gestures",
+		"A3_Modules_F_ObjectModifiers",
+		"HMDs_Kimi_METRIC_RHS",
+		"rhs_us_a2_airimport",
+		"rhs_c_a2port_air",
+		"rhs_c_bmp",
+		"SMN_EI_units_IAF",
+		"A3_Armor_F_AMV",
+		"rhsusf_c_hmmwv",
+		"rhsusf_vehicles",
+		"A3_Soft_F_Gamma_HEMTT",
+		"rhsusf_c_rg33",
+		"psz_wheeled_star",
+		"rhs_c_pts",
+		"psz_wheeled_zbik",
+		"RHS_US_A2Port_Armor",
+		"A3_Weapons_F_Ammoboxes",
+		"a3_map_altis"
+	};
+	randomSeed=10592633;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=131;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15208.683,17.839813,17161.727};
+					id=0;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Grenadier";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyMk_LAS";
+					init="[""amunicyjnymk"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15216.199,17.662764,17192.383};
+					id=1;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_SL";
+					leader=1;
+					skill=0.60000002;
+					text="DowodcaLAS";
+					init="[""dow"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15219.137,17.617899,17192.463};
+					id=2;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Medic";
+					leader=1;
+					skill=0.60000002;
+					text="MedykLAS";
+					init="[""med"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15222.419,17.529739,17186.264};
+					id=3;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Grenadier";
+					leader=1;
+					skill=0.60000002;
+					text="GrenadierLAS";
+					init="[""grenadier"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15208.155,17.771118,17178.037};
+					id=4;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Ammo_PKM";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyKM_LAS";
+					init="[""amunicyjnykm"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15211.352,17.79847,17178.002};
+					id=5;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_MG";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyKM_LAS";
+					init="[""celowniczykm"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15225.26,17.477219,17177.805};
+					id=6;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Ammo_RPG7";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyRPG_LAS";
+					init="[""amunicyjnyrpg"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15228.168,17.5161,17177.889};
+					id=7;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Grenadier_RPG7";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyRPG_LAS";
+					init="[""celowniczyrpg"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15226.188,17.641117,17169.176};
+					id=8;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Ammo_RPG7";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyPLOT_LAS";
+					init="[""amunicyjnyplot"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15228.984,17.672794,17169.387};
+					id=9;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_AA";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyPLOT_LAS";
+					init="[""celowniczyplot"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15207.749,17.765987,17169.758};
+					id=10;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Ammo_Spike";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnySPIKE_LAS";
+					init="[""amunicyjnyspike"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15211.125,17.76297,17169.777};
+					id=11;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_AT_Spike";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczySPIKE_LAS";
+					init="[""celowniczyspike"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item12
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15216.393,17.587202,17186.293};
+					id=12;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Technician";
+					leader=1;
+					skill=0.60000002;
+					text="Mechanik_LAS";
+					init="[""mechanik"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item13
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15219.305,17.548836,17186.32};
+					id=13;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Rifleman";
+					leader=1;
+					skill=0.60000002;
+					text="StrzelecRTO_LAS";
+					init="[""rto"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item14
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15227.232,17.645596,17162.766};
+					id=14;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Sapper";
+					leader=1;
+					skill=0.60000002;
+					text="Saper_LAS";
+					init="[""saper"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item15
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15230.427,17.699024,17162.855};
+					id=15;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Sapper";
+					leader=1;
+					skill=0.60000002;
+					text="SpecWybcuh_LAS";
+					init="[""saperladunki"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item16
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15213.478,17.697943,17186.34};
+					id=16;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Marksman";
+					leader=1;
+					skill=0.60000002;
+					text="StrzelecWyborowy_LAS";
+					init="[""strzelecwyborowy"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item17
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15078.32,17.91,17023.307};
+					id=17;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_AA";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyPLOT_PUSTYNIA";
+					init="[""celowniczyplot"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item18
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15059.002,17.91,17023.701};
+					id=18;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Ammo_Spike";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnySPIKE_PUSTYNIA";
+					init="[""amunicyjnyspike"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item19
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15063.041,17.91,17023.654};
+					id=19;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_AT_Spike";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczySPIKE_PUSTYNIA";
+					init="[""celowniczyspike"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item20
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15059.009,17.91,17016.832};
+					id=20;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Grenadier";
+					leader=1;
+					skill=0.60000002;
+					text="AmuniicyjnyMk_PUSTYNIA";
+					init="[""amunicyjnymk"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item21
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15068.343,17.91,17042.717};
+					id=21;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_SL";
+					leader=1;
+					skill=0.60000002;
+					text="Dowodca_PUSTYNIA";
+					init="[""dow"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item22
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15072.446,17.91,17042.869};
+					id=22;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Medic";
+					leader=1;
+					skill=0.60000002;
+					text="Medyk_PUSTYNIA";
+					init="[""med"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item23
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15076.627,17.91,17037.02};
+					id=23;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Grenadier";
+					leader=1;
+					skill=0.60000002;
+					text="Grenadier_PUSTYNIA";
+					init="[""grenadier"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item24
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15059.653,17.91,17030.029};
+					id=24;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Ammo_PKM";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyKM_PUSTYNIA";
+					init="[""amunicyjnykm"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item25
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15062.951,17.91,17030.092};
+					id=25;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_MG";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyKM_PUSTYNIA";
+					init="[""celowniczykm"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item26
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15080.788,17.91,17030.527};
+					id=26;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Ammo_RPG7";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyRPG_PUSTYNIA";
+					init="[""amunicyjnyrpg"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item27
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15078.405,17.91,17030.604};
+					id=27;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Grenadier_RPG7";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyRPG_PUSTYNIA";
+					init="[""celowniczyrpg"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item28
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15080.62,17.91,17023.408};
+					id=28;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Rifleman";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyPLOT_PUSTYNIA";
+					init="[""amunicyjnyplot"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item29
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15069.132,17.91,17037.221};
+					id=29;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Technician";
+					leader=1;
+					skill=0.60000002;
+					text="Mechanik_PUSTYNIA";
+					init="[""mechanik"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item30
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15073.167,17.91,17037.189};
+					id=30;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Rifleman";
+					leader=1;
+					skill=0.60000002;
+					text="StrzelecRTO_PUSTYNIA";
+					init="[""rto"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item31
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15078.06,17.91,17017.16};
+					id=31;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Sapper";
+					leader=1;
+					skill=0.60000002;
+					text="Saper_PUSTYNIA";
+					init="[""saper"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item32
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15081.282,17.91,17017.111};
+					id=32;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Sapper";
+					leader=1;
+					skill=0.60000002;
+					text="SpecWybuch_PUSTYNIA";
+					init="[""saperladunki"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item33
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15066.018,17.91,17037.072};
+					id=33;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Marksman";
+					leader=1;
+					skill=0.60000002;
+					text="Wyborowy_PUSTYNIA";
+					init="[""strzelecwyborowy"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item34
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15063.032,17.91,17016.676};
+					id=34;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Grenadier";
+					leader=1;
+					skill=0.60000002;
+					text="OperatorMk1_PUSTYNIA";
+					init="[""operatormk"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item35
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15115.311,17.91,16816.525};
+					id=35;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_rifleman";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyJAVELIN_PUSTYNIA";
+					init="[""amunicyjnyjavelin"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item36
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15035.619,17.9,16734.561};
+					id=36;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_teamleader";
+					leader=1;
+					skill=0.60000002;
+					text="Dowodca_LAS";
+					init="[""dow"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item37
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15034.681,17.9,16727.443};
+					id=37;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_grenadier";
+					leader=1;
+					skill=0.60000002;
+					text="Grenadier_LAS";
+					init="[""grenadier"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item38
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15041.117,17.9,16735.43};
+					id=38;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_medic";
+					leader=1;
+					skill=0.60000002;
+					text="Medyk_USA_LAS";
+					init="[""med"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item39
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15129.047,17.91,16838.764};
+					id=39;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_teamleader";
+					leader=1;
+					skill=0.60000002;
+					text="Dowodca_USA_PUSTYNIA";
+					init="[""dow"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item40
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15125.607,17.91,16830.326};
+					id=40;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_grenadier";
+					leader=1;
+					skill=0.60000002;
+					text="Grenadier_USA_PUSTYNIA";
+					init="[""grenadier"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item41
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15132.783,17.91,16838.643};
+					id=41;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_medic";
+					leader=1;
+					skill=0.60000002;
+					text="Medyk_USA_PUSTYNIA";
+					init="[""med"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item42
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15115.204,17.91,16824.697};
+					id=42;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_machinegunnera";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyKM_USA_PUSTYNIA";
+					init="[""amunicyjnykm"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item43
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15120.495,17.91,16824.447};
+					id=43;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_machinegunner";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyKM_USA_PUSTYNIA";
+					init="[""celowniczykm"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item44
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15138.226,17.91,16824.621};
+					id=44;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_riflemanat";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyAT_USA_PUSTYNIA";
+					init="[""strzelecat"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item45
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15143.755,17.91,16824.654};
+					id=45;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_rifleman";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyAT_USA_PUSTYNIA";
+					init="[""strzelecat"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item46
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15023.338,17.889999,16719.365};
+					id=46;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_machinegunnera";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyKM_USA_LAS";
+					init="[""amunicyjnykm"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item47
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15028.22,17.889999,16719.205};
+					id=47;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_machinegunner";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyKM_USA_LAS";
+					init="[""celowniczykm"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item48
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15051.059,17.9,16719.111};
+					id=48;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_riflemanat";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyAT_LAS";
+					init="[""strzelecat"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item49
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15045.506,17.9,16719.537};
+					id=49;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_rifleman";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyAT_LAS";
+					init="[""strzelecat"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item50
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15046.419,17.92272,16704.453};
+					id=50;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_explosives";
+					leader=1;
+					skill=0.60000002;
+					text="Saper_USA_LAS";
+					init="[""saper"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item51
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15050.871,17.991869,16704.439};
+					id=51;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_explosives";
+					leader=1;
+					skill=0.60000002;
+					text="SpecWybuch_USA_LAS";
+					init="[""saperladunki"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item52
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15038.67,17.9,16727.354};
+					id=52;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_engineer";
+					leader=1;
+					skill=0.60000002;
+					text="Mechanik_USA_LAS";
+					init="[""mechanik"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item53
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15043.625,17.9,16727.768};
+					id=53;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_rifleman";
+					leader=1;
+					skill=0.60000002;
+					text="Strzelec_USA_LAS";
+					init="[""strzelec"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item54
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15140.101,17.91,16810.061};
+					id=54;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_explosives";
+					leader=1;
+					skill=0.60000002;
+					text="Saper_USA_PUSTYNIA";
+					init="[""saper"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item55
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15145.109,17.91,16810.363};
+					id=55;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_explosives";
+					leader=1;
+					skill=0.60000002;
+					text="SpecWybuch_USA_PUSTYNIA";
+					init="[""saperladunki"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item56
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15129.763,17.91,16830.271};
+					id=56;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_engineer";
+					leader=1;
+					skill=0.60000002;
+					text="Mechanik_USA_PUSTYNIA";
+					init="[""mechanik"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item57
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15120.804,17.91,16830.311};
+					id=57;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_rifleman";
+					leader=1;
+					skill=0.60000002;
+					text="Strzele_USA_PUSTYNIA";
+					init="[""strzelec"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item58
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15139.505,17.91,16817.689};
+					id=58;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_aa";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyPLOT_USA_PUSTYNIA";
+					init="[""celowniczyplot"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item59
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15144.877,17.91,16818.283};
+					id=59;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_rifleman";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyPLOT_USA_PUSTYNIA";
+					init="[""amunicyjnyplot"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item60
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15134.415,17.91,16830.213};
+					id=60;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_marksman";
+					leader=1;
+					skill=0.60000002;
+					text="Wyborowy_USA_PUSTYNIA";
+					init="[""strzelecwyborowy"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item61
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15051.335,17.948038,16712.352};
+					id=61;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_aa";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyPLOT_USA_LAS";
+					init="[""celowniczyplot"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item62
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15045.371,17.903469,16711.186};
+					id=62;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_rifleman";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyPLOT_USA_LAS";
+					init="[""amunicyjnyplot"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item63
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15121.715,17.91,16809.477};
+					id=63;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_grenadier";
+					leader=1;
+					skill=0.60000002;
+					text="OperatorMk_USA_PUSTYNIA";
+					init="[""operatormk"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item64
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15116.763,17.91,16808.941};
+					id=64;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_grenadier";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyMk_USA_PUSTYNIA";
+					init="[""amunicyjnymk"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item65
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15030.597,17.9,16727.563};
+					id=65;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_marksman";
+					leader=1;
+					skill=0.60000002;
+					text="Wyborowy_USA_LAS";
+					init="[""strzelecwyborowy"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item66
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15029.838,17.889999,16703.904};
+					id=66;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_grenadier";
+					leader=1;
+					skill=0.60000002;
+					text="OperatorMk1_USA_LAS";
+					init="[""operatormk"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item67
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15023.386,17.88291,16703.795};
+					id=67;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_grenadier";
+					leader=1;
+					skill=0.60000002;
+					text="AsystentMk1_USA_LAS";
+					init="[""amunicyjnymk"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item68
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15047.691,17.9,16728.158};
+					id=68;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_rifleman";
+					leader=1;
+					skill=0.60000002;
+					text="StrzelecRTO_USA_LAS";
+					init="[""rto"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item69
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15029.509,17.889999,16711.676};
+					id=69;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_javelin";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyJAVELIN_LAS";
+					init="[""celowniczyjavelin"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item70
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15041.16,17.89488,16697.564};
+					id=70;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_medic";
+					leader=1;
+					skill=0.60000002;
+					text="Obserwator_USA_LAS";
+					init="[""obserwator"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item71
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15139.104,17.91,16830.338};
+					id=71;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_rifleman";
+					leader=1;
+					skill=0.60000002;
+					text="StrzelecRTO_USA_PUSTYNIA";
+					init="[""rto"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item72
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15120.791,17.91,16816.572};
+					id=72;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_javelin";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyJAVELIN_PUSTYNIA";
+					init="[""celowniczyjavelin"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item73
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15215.812,17.868011,17154.357};
+					id=73;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Sniper";
+					leader=1;
+					skill=0.60000002;
+					text="Snajper_LAS";
+					init="[""snajper"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item74
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15219.863,17.833496,17154.309};
+					id=74;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Medic";
+					leader=1;
+					skill=0.60000002;
+					text="Obserwator_LAS";
+					init="[""obserwator"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item75
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15343.634,17.761955,17304.168};
+					id=75;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_SL";
+					leader=1;
+					skill=0.60000002;
+					text="Dowodca_KAWALERIA";
+					init="[""dow"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_kawaleriaPowietrznaPL.sqf""";
+				};
+			};
+		};
+		class Item76
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15347.505,17.575005,17304.313};
+					id=76;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Medic";
+					leader=1;
+					skill=0.60000002;
+					text="Medyk_KAWALERIA";
+					init="[""med"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_kawaleriaPowietrznaPL.sqf""";
+				};
+			};
+		};
+		class Item77
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15345.594,17.718845,17300.168};
+					id=77;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Grenadier";
+					leader=1;
+					skill=0.60000002;
+					text="Grenadier_KAWALERIA";
+					init="[""grenadier"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_kawaleriaPowietrznaPL.sqf""";
+				};
+			};
+		};
+		class Item78
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15352.632,18.011852,17280.586};
+					id=78;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Sapper";
+					leader=1;
+					skill=0.60000002;
+					text="SpecWybuch_KAWALERIA";
+					init="[""saper"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_kawaleriaPowietrznaPL.sqf""";
+				};
+			};
+		};
+		class Item79
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15356.217,18.078659,17280.578};
+					id=79;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Marksman";
+					leader=1;
+					skill=0.60000002;
+					text="Wyborowy_KAWALERIA";
+					init="[""strzelecwyborowy"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_kawaleriaPowietrznaPL.sqf""";
+				};
+			};
+		};
+		class Item80
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15353.845,17.718117,17293.742};
+					id=80;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Grenadier_RPG7";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyRPG_KAWALERIA";
+					init="[""celowniczyrpg"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_kawaleriaPowietrznaPL.sqf""";
+				};
+			};
+		};
+		class Item81
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15356.535,17.650467,17293.738};
+					id=81;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Ammo_RPG7";
+					leader=1;
+					skill=0.60000002;
+					text="PomocnikRPG_KAWALERIA";
+					init="[""amunicyjnyrpg"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_kawaleriaPowietrznaPL.sqf""";
+				};
+			};
+		};
+		class Item82
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15336.175,18.359697,17294.426};
+					id=82;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Ammo_PKM";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyKM_KAWALERIA";
+					init="[""amunicyjnykm"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_kawaleriaPowietrznaPL.sqf""";
+				};
+			};
+		};
+		class Item83
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15340.697,18.308758,17294.684};
+					id=83;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_MG";
+					leader=1;
+					skill=0.60000002;
+					text="CelowniczyKM_KAWALERIA";
+					init="[""celowniczykm"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_kawaleriaPowietrznaPL.sqf""";
+				};
+			};
+		};
+		class Item84
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15346.843,17.91,17271.008};
+					id=84;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Technician";
+					leader=1;
+					skill=0.60000002;
+					text="OperatorDRONA_KAWALERIA";
+					init="[""operatordrona"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_kawaleriaPowietrznaPL.sqf""";
+				};
+			};
+		};
+		class Item85
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15074.036,17.91,17009.566};
+					id=85;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Medic";
+					leader=1;
+					skill=0.60000002;
+					text="Obserwator_PUSTYNIA";
+					init="[""obserwator"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item86
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15069.141,17.91,17009.66};
+					id=86;
+					side="WEST";
+					vehicle="PSZ_PL_DES10_Soldier_Sniper";
+					leader=1;
+					skill=0.60000002;
+					text="Snajper_PUSTYNIA";
+					init="[""snajper"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaPL.sqf""";
+				};
+			};
+		};
+		class Item87
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15023.362,17.889999,16712.338};
+					id=87;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_rifleman";
+					leader=1;
+					skill=0.60000002;
+					text="AmunicyjnyJAVELIN_LAS";
+					init="[""amunicyjnyjavelin"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item88
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15035.674,17.889999,16697.443};
+					id=88;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_sniper";
+					leader=1;
+					skill=0.60000002;
+					text="Snajper_USA_LAS";
+					init="[""snajper"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasUSA.sqf""";
+				};
+			};
+		};
+		class Item89
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15132.978,17.91,16803.994};
+					id=89;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_medic";
+					leader=1;
+					skill=0.60000002;
+					text="Obserwator_USA_PUSTYNIA";
+					init="[""obserwator"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item90
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15128.84,17.91,16803.648};
+					id=90;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_sniper";
+					leader=1;
+					skill=0.60000002;
+					text="Snajper_USA_PUSTYNIA";
+					init="[""snajper"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaPustyniaUSA.sqf""";
+				};
+			};
+		};
+		class Item91
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15337.035,17.911575,17281.055};
+					id=91;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Sniper";
+					leader=1;
+					skill=0.60000002;
+					text="Snajper_LAS_1";
+					init="[""snajper"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_kawaleriaPowietrznaPL.sqf""";
+				};
+			};
+		};
+		class Item92
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15340.765,17.916401,17280.766};
+					id=92;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Medic";
+					leader=1;
+					skill=0.60000002;
+					text="Obserwator_LAS_1";
+					init="[""obserwator"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_kawaleriaPowietrznaPL.sqf""";
+				};
+			};
+		};
+		class Item93
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14472.337,0.12195727,14415.334};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="naprawczy1, naprawczy2";
+							parentCls="ACE_moduleAddSpareParts";
+							typeName="List";
+						};
+						class Item1
+						{
+							value="ACE_Wheel";
+							parentCls="ACE_moduleAddSpareParts";
+							typeName="Part";
+						};
+						class Item2
+						{
+							value="9";
+							parentCls="ACE_moduleAddSpareParts";
+							typeName="Amount";
+						};
+					};
+					id=93;
+					side="LOGIC";
+					vehicle="ACE_moduleAddSpareParts";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item94
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14549.264,0.10412835,14417.612};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="naprawczy1, naprawczy2";
+							parentCls="ACE_moduleAddSpareParts";
+							typeName="List";
+						};
+						class Item1
+						{
+							value="ACE_Track";
+							parentCls="ACE_moduleAddSpareParts";
+							typeName="Part";
+						};
+						class Item2
+						{
+							value="5";
+							parentCls="ACE_moduleAddSpareParts";
+							typeName="Amount";
+						};
+					};
+					id=94;
+					side="LOGIC";
+					vehicle="ACE_moduleAddSpareParts";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item95
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14273.222,-0.013313785,14211.688};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="0";
+							parentCls="ace_mk6mortar_module";
+							typeName="airResistanceEnabled";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ace_mk6mortar_module";
+							typeName="allowComputerRangefinder";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ace_mk6mortar_module";
+							typeName="allowCompass";
+						};
+					};
+					id=95;
+					side="LOGIC";
+					vehicle="ace_mk6mortar_module";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item96
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14390.242,0.23836437,14919.927};
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="enableFor";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="enableAdvancedWounds";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="enableVehicleCrashes";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="medicSetting_PAK";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="consumeItem_PAK";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="useCondition_PAK";
+						};
+						class Item6
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="useLocation_PAK";
+						};
+						class Item7
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="medicSetting_SurgicalKit";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="consumeItem_SurgicalKit";
+						};
+						class Item9
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="useLocation_SurgicalKit";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="useCondition_SurgicalKit";
+						};
+						class Item11
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="healHitPointAfterAdvBandage";
+						};
+						class Item12
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="painIsOnlySuppressed";
+						};
+					};
+					id=96;
+					side="LOGIC";
+					vehicle="ACE_moduleAdvancedMedicalSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item97
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14469.828,-0.14621744,14926.346};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_moduleReviveSettings";
+							typeName="enableRevive";
+						};
+						class Item1
+						{
+							value="1200";
+							parentCls="ACE_moduleReviveSettings";
+							typeName="maxReviveTime";
+						};
+						class Item2
+						{
+							value="-1";
+							parentCls="ACE_moduleReviveSettings";
+							typeName="amountOfReviveLives";
+						};
+					};
+					id=97;
+					side="LOGIC";
+					vehicle="ACE_moduleReviveSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item98
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14272.106,0.20702326,14617.798};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="5";
+							parentCls="ACE_moduleRefuelSettings";
+							typeName="rate";
+						};
+					};
+					id=98;
+					side="LOGIC";
+					vehicle="ACE_moduleRefuelSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item99
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14174.848,-0.28346872,14212.952};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="2";
+							parentCls="ACE_moduleRearmSettings";
+							typeName="level";
+						};
+					};
+					id=99;
+					side="LOGIC";
+					vehicle="ACE_moduleRearmSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item100
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14471.514,-0.19923966,13265.984};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=100;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item101
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13356.44,-0.0059128255,14022.725};
+					class args
+					{
+						items=7;
+						class Item0
+						{
+							value="0";
+							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
+							typeName="TeamLeaderRadio";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
+							typeName="RiflemanRadio";
+						};
+						class Item2
+						{
+							value="7";
+							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
+							typeName="terrain_interception_coefficient";
+						};
+						class Item3
+						{
+							value="TaskForceRadio";
+							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
+							typeName="radio_channel_name";
+						};
+						class Item4
+						{
+							value="123";
+							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
+							typeName="radio_channel_password";
+						};
+						class Item5
+						{
+							value="0";
+							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
+							typeName="same_sw_frequencies_for_side";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
+							typeName="same_lr_frequencies_for_side";
+						};
+					};
+					id=101;
+					side="LOGIC";
+					vehicle="tfar_ModuleTaskForceRadioEnforceUsage";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item102
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14054.899,-0.21786623,14035.423};
+					class args
+					{
+						items=6;
+						class Item0
+						{
+							value="0";
+							parentCls="ACE_ModuleMap";
+							typeName="MapIllumination";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ACE_ModuleMap";
+							typeName="MapGlow";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ACE_ModuleMap";
+							typeName="MapShake";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ACE_ModuleMap";
+							typeName="MapLimitZoom";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ACE_ModuleMap";
+							typeName="MapShowCursorCoordinates";
+						};
+						class Item5
+						{
+							value="0";
+							parentCls="ACE_ModuleMap";
+							typeName="DefaultChannel";
+						};
+					};
+					id=102;
+					side="LOGIC";
+					vehicle="ACE_ModuleMap";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item103
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13163.583,-0.030347563,14026.115};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_viewdistance_ModuleSettings";
+							typeName="moduleViewDistanceEnabled";
+						};
+						class Item1
+						{
+							value="5000";
+							parentCls="ace_viewdistance_ModuleSettings";
+							typeName="moduleViewDistanceLimit";
+						};
+					};
+					id=103;
+					side="LOGIC";
+					vehicle="ace_viewdistance_ModuleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item104
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14353.413,-0.071544908,14036.855};
+					class args
+					{
+						items=6;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="enableServerController";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="useACEWeather";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="syncRain";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="syncWind";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="syncMisc";
+						};
+						class Item5
+						{
+							value="60";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="serverUpdateInterval";
+						};
+					};
+					id=104;
+					side="LOGIC";
+					vehicle="ace_weather_ModuleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item105
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13954.762,-0.24429679,14033.975};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_finger_moduleSettings";
+							typeName="enabled";
+						};
+						class Item1
+						{
+							value="50";
+							parentCls="ace_finger_moduleSettings";
+							typeName="maxRange";
+						};
+					};
+					id=105;
+					side="LOGIC";
+					vehicle="ace_finger_moduleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item106
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13257.906,-0.050977323,14022.188};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_moduleAllowConfigExport";
+							typeName="allowconfigurationExport";
+						};
+					};
+					id=106;
+					side="LOGIC";
+					vehicle="ACE_moduleAllowConfigExport";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item107
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14454.005,-0.12465309,14035.111};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_ModuleHearing";
+							typeName="EnableCombatDeafness";
+						};
+						class Item1
+						{
+							value="-1";
+							parentCls="ACE_ModuleHearing";
+							typeName="DisableEarRinging";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ACE_ModuleHearing";
+							typeName="enabledForZeusUnits";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ACE_ModuleHearing";
+							typeName="autoAddEarplugsToUnits";
+						};
+					};
+					id=107;
+					side="LOGIC";
+					vehicle="ACE_ModuleHearing";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item108
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14474.29,0.11974504,14212.211};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="0";
+							parentCls="ACE_ModuleExplosive";
+							typeName="RequireSpecialist";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ACE_ModuleExplosive";
+							typeName="PunishNonSpecialists";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ACE_ModuleExplosive";
+							typeName="ExplodeOnDefuse";
+						};
+					};
+					id=108;
+					side="LOGIC";
+					vehicle="ACE_ModuleExplosive";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item109
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13555.184,0.10999593,14032.357};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_ModuleInteraction";
+							typeName="EnableTeamManagement";
+						};
+					};
+					id=109;
+					side="LOGIC";
+					vehicle="ACE_ModuleInteraction";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item110
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13853.994,-0.18019743,14034.548};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="2";
+							parentCls="ACE_ModuleNameTags";
+							typeName="showPlayerNames";
+						};
+						class Item1
+						{
+							value="50";
+							parentCls="ACE_ModuleNameTags";
+							typeName="playerNamesViewDistance";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ACE_ModuleNameTags";
+							typeName="showNamesForAI";
+						};
+						class Item3
+						{
+							value="-1";
+							parentCls="ACE_ModuleNameTags";
+							typeName="showVehicleCrewInfo";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ACE_ModuleNameTags";
+							typeName="showCursorTagForVehicles";
+						};
+					};
+					id=110;
+					side="LOGIC";
+					vehicle="ACE_ModuleNameTags";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item111
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13758.518,0.10282658,14036.457};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_captives_moduleSettings";
+							typeName="allowHandcuffOwnSide";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ace_captives_moduleSettings";
+							typeName="allowSurrender";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ace_captives_moduleSettings";
+							typeName="requireSurrender";
+						};
+					};
+					id=111;
+					side="LOGIC";
+					vehicle="ace_captives_moduleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item112
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13458.536,0.11650734,14033.397};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="zeusAscension";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="zeusBird";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="remoteWind";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="radioOrdnance";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="revealMines";
+						};
+					};
+					id=112;
+					side="LOGIC";
+					vehicle="ace_zeus_moduleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item113
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14363.756,0.032223985,14614.764};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="0";
+							parentCls="ACE_VehicleLock_ModuleSetup";
+							typeName="LockVehicleInventory";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ACE_VehicleLock_ModuleSetup";
+							typeName="VehicleStartingLockState";
+						};
+						class Item2
+						{
+							value="10";
+							parentCls="ACE_VehicleLock_ModuleSetup";
+							typeName="DefaultLockpickStrength";
+						};
+					};
+					id=113;
+					side="LOGIC";
+					vehicle="ACE_VehicleLock_ModuleSetup";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item114
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14253.55,-0.090284824,14037.048};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_winddeflection_ModuleSettings";
+							typeName="enabled";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ace_winddeflection_ModuleSettings";
+							typeName="vehicleEnabled";
+						};
+						class Item2
+						{
+							value="0.05";
+							parentCls="ace_winddeflection_ModuleSettings";
+							typeName="simulationInterval";
+						};
+						class Item3
+						{
+							value="3000";
+							parentCls="ace_winddeflection_ModuleSettings";
+							typeName="simulationRadius";
+						};
+					};
+					id=114;
+					side="LOGIC";
+					vehicle="ace_winddeflection_ModuleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item115
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13969.964,0.2127195,14214.109};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="2";
+							parentCls="ace_microdagr_dagrModule";
+							typeName="MapDataAvailable";
+						};
+					};
+					id=115;
+					side="LOGIC";
+					vehicle="ace_microdagr_dagrModule";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item116
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14154.322,0.0075398684,14037.066};
+					class args
+					{
+						items=10;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="enabled";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulateForSnipers";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulateForGroupMembers";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulateForEveryone";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="disabledInFullAutoMode";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="ammoTemperatureEnabled";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="barrelLengthInfluenceEnabled";
+						};
+						class Item7
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="bulletTraceEnabled";
+						};
+						class Item8
+						{
+							value="0";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulationInterval";
+						};
+						class Item9
+						{
+							value="3000";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulationRadius";
+						};
+					};
+					id=116;
+					side="LOGIC";
+					vehicle="ace_advanced_ballistics_ModuleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item117
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14547.996,-0.15659308,14510.879};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="";
+							parentCls="ACE_moduleAssignEngineerRoles";
+							typeName="EnableList";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_moduleAssignEngineerRoles";
+							typeName="role";
+						};
+					};
+					id=117;
+					side="LOGIC";
+					vehicle="ACE_moduleAssignEngineerRoles";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item118
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14544.069,-0.071633503,14813.285};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="";
+							parentCls="ACE_moduleAssignMedicRoles";
+							typeName="EnableList";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_moduleAssignMedicRoles";
+							typeName="role";
+						};
+					};
+					id=118;
+					side="LOGIC";
+					vehicle="ACE_moduleAssignMedicRoles";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item119
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14546.085,-0.19359587,14611.707};
+					class args
+					{
+						items=9;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="engineerSetting_Repair";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="engineerSetting_Wheel";
+						};
+						class Item2
+						{
+							value="0.4";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="repairDamageThreshold";
+						};
+						class Item3
+						{
+							value="0.3";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="repairDamageThreshold_Engineer";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="consumeItem_ToolKit";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="fullRepairLocation";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="engineerSetting_fullRepair";
+						};
+						class Item7
+						{
+							value="1";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="addSpareParts";
+						};
+						class Item8
+						{
+							value="0";
+							parentCls="ACE_moduleRepairSettings";
+							typeName="wheelRepairRequiredItems";
+						};
+					};
+					id=119;
+					side="LOGIC";
+					vehicle="ACE_moduleRepairSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item120
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14456.47,0.25256744,14615.126};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_moduleCargoSettings";
+							typeName="enable";
+						};
+					};
+					id=120;
+					side="LOGIC";
+					vehicle="ACE_moduleCargoSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item121
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13657.002,-0.020069204,14035.395};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_ModuleSitting";
+							typeName="enable";
+						};
+					};
+					id=121;
+					side="LOGIC";
+					vehicle="ACE_ModuleSitting";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item122
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14383.27,0.012998002,13086.744};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="3";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Subject";
+						};
+						class Item2
+						{
+							value="Situation";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="PresetTitle";
+						};
+						class Item3
+						{
+							value="Cele";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Title";
+						};
+						class Item4
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Description";
+						};
+					};
+					id=122;
+					side="LOGIC";
+					vehicle="ModuleCreateDiaryRecord_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item123
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14373.664,-0.13882942,14214.645};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="0";
+							parentCls="ace_nightvision_ModuleSettings";
+							typeName="disableNVGsWithSights";
+						};
+					};
+					id=123;
+					side="LOGIC";
+					vehicle="ace_nightvision_ModuleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item124
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14074.683,-0.1091092,14212.227};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_map_gestures_moduleSettings";
+							typeName="enabled";
+						};
+						class Item1
+						{
+							value="7";
+							parentCls="ace_map_gestures_moduleSettings";
+							typeName="maxRange";
+						};
+						class Item2
+						{
+							value="0.03";
+							parentCls="ace_map_gestures_moduleSettings";
+							typeName="interval";
+						};
+						class Item3
+						{
+							value="1,0.88,0,0.95";
+							parentCls="ace_map_gestures_moduleSettings";
+							typeName="defaultLeadColor";
+						};
+						class Item4
+						{
+							value="1,0.88,0,0.7";
+							parentCls="ace_map_gestures_moduleSettings";
+							typeName="defaultColor";
+						};
+					};
+					id=124;
+					side="LOGIC";
+					vehicle="ace_map_gestures_moduleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item125
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14549.682,-0.021074295,14924.199};
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="2";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="level";
+						};
+						class Item1
+						{
+							value="2";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="medicSetting";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="allowLitterCreation";
+						};
+						class Item3
+						{
+							value="360";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="litterCleanUpDelay";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="enableScreams";
+						};
+						class Item5
+						{
+							value="1.4";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="playerDamageThreshold";
+						};
+						class Item6
+						{
+							value="0.7";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="AIDamageThreshold";
+						};
+						class Item7
+						{
+							value="0";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="enableUnconsciousnessAI";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="remoteControlledAI";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="preventInstaDeath";
+						};
+						class Item10
+						{
+							value="0.7";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="bleedingCoefficient";
+						};
+						class Item11
+						{
+							value="0.4";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="painCoefficient";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="keepLocalSettingsSynced";
+						};
+					};
+					id=125;
+					side="LOGIC";
+					vehicle="ACE_moduleMedicalSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item126
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14473.145,-0.17922106,13088.432};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="3";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Subject";
+						};
+						class Item2
+						{
+							value="Mission";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="PresetTitle";
+						};
+						class Item3
+						{
+							value="Wprowadzenie w sytuację taktyczną.";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Title";
+						};
+						class Item4
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Description";
+						};
+					};
+					id=126;
+					side="LOGIC";
+					vehicle="ModuleCreateDiaryRecord_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item127
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14124.637,0.092779905,13702.998};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="2";
+							parentCls="ModuleSkill_F";
+							typeName="Units";
+						};
+						class Item1
+						{
+							value="0.2";
+							parentCls="ModuleSkill_F";
+							typeName="Value";
+						};
+					};
+					id=127;
+					side="LOGIC";
+					vehicle="ModuleSkill_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=0;
+					synchronizations[]={1};
+				};
+			};
+		};
+		class Item128
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14493.44,0.036887765,13888.18};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="#adminLogged";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="2";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=128;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item129
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15211.864,17.860748,17161.797};
+					id=129;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_Grenadier";
+					leader=1;
+					skill=0.60000002;
+					text="OperatorMk_LAS";
+					init="[""operatormk"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_piechotaLasPL.sqf""";
+				};
+			};
+		};
+		class Item130
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15080.075,17.996552,16597.459};
+					id=130;
+					side="WEST";
+					vehicle="PSZ_PL_WDL10_Soldier_SL";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="Dowodca_KAWALERIA_1";
+					init="[""dow"", this] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_kawaleriaPowietrznaPL.sqf""";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=140;
+		class Item0
+		{
+			position[]={15436.729,17.000385,17265.809};
+			azimut=-182.511;
+			id=131;
+			side="EMPTY";
+			vehicle="RHS_UH60M_MEV2";
+			leader=1;
+			skill=0.60000002;
+			text="BlackHawk_PL";
+			init="[""medevac"", this,""wszystko""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item1
+		{
+			position[]={15455.162,17.24313,17265.367};
+			azimut=-182.511;
+			id=132;
+			side="EMPTY";
+			vehicle="RHS_Mi24V_AT_vvs";
+			leader=1;
+			skill=0.60000002;
+			text="MI24_PL";
+			init="[""smiglowiec"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item2
+		{
+			position[]={15378.797,16.414196,17294.879};
+			azimut=-182.511;
+			id=133;
+			side="EMPTY";
+			vehicle="rhs_bmp1_vdv";
+			leader=1;
+			skill=0.60000002;
+			text="BWP1_PL";
+			init="[""bwp"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item3
+		{
+			position[]={15387.843,16.03812,17294.457};
+			azimut=-182.511;
+			id=134;
+			side="EMPTY";
+			vehicle="EI_APCwdl_Wheeled_01_cannon_F";
+			leader=1;
+			skill=0.60000002;
+			text="ROSOMAK_PL_LAS";
+			init="[""bwp"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item4
+		{
+			position[]={15395.998,15.805201,17294.299};
+			azimut=-182.511;
+			id=135;
+			side="EMPTY";
+			vehicle="B_APC_Wheeled_01_cannon_F";
+			leader=1;
+			skill=0.60000002;
+			text="ROSOMAK_PL_PUSTYNIA";
+			init="[""bwp"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item5
+		{
+			position[]={15386.678,17.927288,17250.086};
+			azimut=-182.511;
+			id=136;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_mk19";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS";
+			init="[""humvee"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item6
+		{
+			position[]={15392.903,17.995586,17250.574};
+			azimut=-182.511;
+			id=137;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_Mk19";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA";
+			init="[""humvee"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item7
+		{
+			position[]={15399.723,18.123257,17250.65};
+			azimut=-182.511;
+			id=138;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_m2";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS2";
+			init="[""humvee"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item8
+		{
+			position[]={15406.049,18.190411,17250.854};
+			azimut=-182.511;
+			id=139;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_m2";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA2";
+			init="[""humvee"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item9
+		{
+			position[]={15404.979,17.100981,17271.666};
+			azimut=-182.511;
+			id=140;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS_SAPER";
+			init="[""saperski"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item10
+		{
+			position[]={15411.392,16.849541,17271.697};
+			azimut=-182.511;
+			id=141;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_s";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA_SAPER";
+			init="[""saperski"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item11
+		{
+			position[]={15401.675,17.95838,17234.082};
+			azimut=-182.511;
+			id=142;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_Repair_F";
+			leader=1;
+			skill=0.60000002;
+			text="naprawczy2";
+			init="[""naprawczy"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item12
+		{
+			position[]={15406.847,17.995378,17233.039};
+			azimut=-182.511;
+			id=143;
+			side="EMPTY";
+			vehicle="B_Truck_01_Repair_F";
+			leader=1;
+			skill=0.60000002;
+			text="naprawczy1";
+			init="[""naprawczy"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item13
+		{
+			position[]={15435.487,18.562283,17236.326};
+			azimut=-182.511;
+			id=144;
+			side="EMPTY";
+			vehicle="B_Truck_01_fuel_F";
+			leader=1;
+			skill=0.60000002;
+			text="CYSTERNA_PL_PUSTYNIA";
+			init="[""zaopatrzenie"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item14
+		{
+			position[]={15429.951,18.34449,17236.182};
+			azimut=-182.511;
+			id=145;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_fuel_F";
+			leader=1;
+			skill=0.60000002;
+			text="CYSTERNA_PL_LAS";
+			init="[""zaopatrzenie"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item15
+		{
+			position[]={15443.091,18.315571,17236.203};
+			azimut=-182.511;
+			id=146;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_ammo_F";
+			leader=1;
+			skill=0.60000002;
+			text="AMUNICJA_PL_LAS";
+			init="[""zaopatrzenie"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item16
+		{
+			position[]={15448.698,18.129572,17236.309};
+			azimut=-182.511;
+			id=147;
+			side="EMPTY";
+			vehicle="B_Truck_01_ammo_F";
+			leader=1;
+			skill=0.60000002;
+			text="AMUNICJA_PL_PUSTYNIA";
+			init="[""zaopatrzenie"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item17
+		{
+			position[]={15391.884,17.897387,17271.012};
+			azimut=-182.511;
+			id=148;
+			side="EMPTY";
+			vehicle="rhsusf_rg33_m2_wd";
+			leader=1;
+			skill=0.60000002;
+			text="MRAP_PL_LAS";
+			init="[""saperski"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item18
+		{
+			position[]={15398.674,17.454737,17271.086};
+			azimut=-182.511;
+			id=149;
+			side="EMPTY";
+			vehicle="rhsusf_rg33_m2_d";
+			leader=1;
+			skill=0.60000002;
+			text="MRAP_PL_PUSTYNIA";
+			init="[""saperski"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item19
+		{
+			position[]={15456.153,17.820782,17236.986};
+			azimut=-182.511;
+			id=150;
+			side="EMPTY";
+			vehicle="PSZ_PL_Star_944";
+			leader=1;
+			skill=0.60000002;
+			init="[""zaopatrzenie"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item20
+		{
+			position[]={15384.592,18.346262,17271.529};
+			azimut=-182.511;
+			id=151;
+			side="EMPTY";
+			vehicle="rhs_pts_vmf";
+			leader=1;
+			skill=0.60000002;
+			init="[""saperski"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item21
+		{
+			position[]={15404.177,15.675586,17294.434};
+			azimut=-182.511;
+			id=152;
+			side="EMPTY";
+			vehicle="PSZ_PL_Zbik_M97_W";
+			leader=1;
+			skill=0.60000002;
+			text="ROZPOZNANIEiWSPARCIE_LAS";
+			init="[""bwp"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item22
+		{
+			position[]={15473.85,17.493477,17265.508};
+			azimut=-182.511;
+			id=153;
+			side="EMPTY";
+			vehicle="RHS_UH60M";
+			leader=1;
+			skill=0.60000002;
+			init="[""smiglowiec"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item23
+		{
+			position[]={15372.643,17.91,17250.266};
+			azimut=-182.511;
+			id=154;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_2dr_fulltop";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS_MEDYCZNY";
+			init="[""medevac"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item24
+		{
+			position[]={15378.615,17.91,17250.164};
+			azimut=-182.511;
+			id=155;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_2dr_fulltop";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA_MEDYCZNY";
+			init="[""medevac"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item25
+		{
+			position[]={15309.743,17.68898,17115.734};
+			azimut=-182.511;
+			id=156;
+			side="EMPTY";
+			vehicle="RHS_UH60M_MEV2";
+			leader=1;
+			skill=0.60000002;
+			text="BlackHawk_PL_1";
+			init="[""medevac"", this,""wszystko""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item26
+		{
+			position[]={15328.177,17.918741,17115.293};
+			azimut=-182.511;
+			id=157;
+			side="EMPTY";
+			vehicle="RHS_Mi24V_AT_vvs";
+			leader=1;
+			skill=0.60000002;
+			text="MI24_PL_1";
+			init="[""smiglowiec"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item27
+		{
+			position[]={15251.812,17.446049,17144.805};
+			azimut=-182.511;
+			id=158;
+			side="EMPTY";
+			vehicle="rhs_bmp1_vdv";
+			leader=1;
+			skill=0.60000002;
+			text="BWP1_PL_1";
+			init="[""bwp"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item28
+		{
+			position[]={15260.857,17.480268,17144.383};
+			azimut=-182.511;
+			id=159;
+			side="EMPTY";
+			vehicle="EI_APCwdl_Wheeled_01_cannon_F";
+			leader=1;
+			skill=0.60000002;
+			text="ROSOMAK_PL_LAS_1";
+			init="[""bwp"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item29
+		{
+			position[]={15269.013,17.509106,17144.225};
+			azimut=-182.511;
+			id=160;
+			side="EMPTY";
+			vehicle="B_APC_Wheeled_01_cannon_F";
+			leader=1;
+			skill=0.60000002;
+			text="ROSOMAK_PL_PUSTYNIA_1";
+			init="[""bwp"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item30
+		{
+			position[]={15259.692,19.236618,17100.012};
+			azimut=-182.511;
+			id=161;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_mk19";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS_1";
+			init="[""humvee"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item31
+		{
+			position[]={15265.918,19.299683,17100.5};
+			azimut=-182.511;
+			id=162;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_Mk19";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA_1";
+			init="[""humvee"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item32
+		{
+			position[]={15272.737,19.34095,17100.576};
+			azimut=-182.511;
+			id=163;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_m2";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS2_1";
+			init="[""humvee"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item33
+		{
+			position[]={15279.063,19.219301,17100.779};
+			azimut=-182.511;
+			id=164;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_m2";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA2_1";
+			init="[""humvee"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item34
+		{
+			position[]={15277.994,17.378735,17121.592};
+			azimut=-182.511;
+			id=165;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS_SAPER_1";
+			init="[""saperski"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item35
+		{
+			position[]={15284.406,17.575558,17121.623};
+			azimut=-182.511;
+			id=166;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_s";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA_SAPER_1";
+			init="[""saperski"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item36
+		{
+			position[]={15285.495,18.867069,17084.502};
+			azimut=-182.511;
+			id=167;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_Repair_F";
+			leader=1;
+			skill=0.60000002;
+			text="naprawczy2_1";
+			init="[""naprawczy"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item37
+		{
+			position[]={15290.667,18.278099,17083.459};
+			azimut=-182.511;
+			id=168;
+			side="EMPTY";
+			vehicle="B_Truck_01_Repair_F";
+			leader=1;
+			skill=0.60000002;
+			text="naprawczy1_1";
+			init="[""naprawczy"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item38
+		{
+			position[]={15308.502,17.655743,17086.252};
+			azimut=-182.511;
+			id=169;
+			side="EMPTY";
+			vehicle="B_Truck_01_fuel_F";
+			leader=1;
+			skill=0.60000002;
+			text="CYSTERNA_PL_PUSTYNIA_1";
+			init="[""zaopatrzenie"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item39
+		{
+			position[]={15302.966,17.524487,17086.107};
+			azimut=-182.511;
+			id=170;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_fuel_F";
+			leader=1;
+			skill=0.60000002;
+			text="CYSTERNA_PL_LAS_1";
+			init="[""zaopatrzenie"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item40
+		{
+			position[]={15316.105,17.705898,17086.129};
+			azimut=-182.511;
+			id=171;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_ammo_F";
+			leader=1;
+			skill=0.60000002;
+			text="AMUNICJA_PL_LAS_1";
+			init="[""zaopatrzenie"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item41
+		{
+			position[]={15321.713,17.739401,17086.234};
+			azimut=-182.511;
+			id=172;
+			side="EMPTY";
+			vehicle="B_Truck_01_ammo_F";
+			leader=1;
+			skill=0.60000002;
+			text="AMUNICJA_PL_PUSTYNIA_1";
+			init="[""zaopatrzenie"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item42
+		{
+			position[]={15264.898,17.512119,17120.938};
+			azimut=-182.511;
+			id=173;
+			side="EMPTY";
+			vehicle="rhsusf_rg33_m2_wd";
+			leader=1;
+			skill=0.60000002;
+			text="MRAP_PL_LAS_1";
+			init="[""saperski"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item43
+		{
+			position[]={15271.688,17.527491,17121.012};
+			azimut=-182.511;
+			id=174;
+			side="EMPTY";
+			vehicle="rhsusf_rg33_m2_d";
+			leader=1;
+			skill=0.60000002;
+			text="MRAP_PL_PUSTYNIA_1";
+			init="[""saperski"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item44
+		{
+			position[]={15329.168,17.853117,17086.912};
+			azimut=-182.511;
+			id=175;
+			side="EMPTY";
+			vehicle="PSZ_PL_Star_944";
+			leader=1;
+			skill=0.60000002;
+			init="[""zaopatrzenie"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item45
+		{
+			position[]={15257.606,17.405746,17121.455};
+			azimut=-182.511;
+			id=176;
+			side="EMPTY";
+			vehicle="rhs_pts_vmf";
+			leader=1;
+			skill=0.60000002;
+			init="[""saperski"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item46
+		{
+			position[]={15277.191,17.535988,17144.359};
+			azimut=-182.511;
+			id=177;
+			side="EMPTY";
+			vehicle="PSZ_PL_Zbik_M97_W";
+			leader=1;
+			skill=0.60000002;
+			text="ROZPOZNANIEiWSPARCIE_LAS_1";
+			init="[""bwp"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item47
+		{
+			position[]={15346.864,18.005434,17115.434};
+			azimut=-182.511;
+			id=178;
+			side="EMPTY";
+			vehicle="RHS_UH60M";
+			leader=1;
+			skill=0.60000002;
+			init="[""smiglowiec"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item48
+		{
+			position[]={15245.657,18.415821,17100.191};
+			azimut=-182.511;
+			id=179;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_2dr_fulltop";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS_MEDYCZNY_1";
+			init="[""medevac"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item49
+		{
+			position[]={15251.63,18.856909,17100.09};
+			azimut=-182.511;
+			id=180;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_2dr_fulltop";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA_MEDYCZNY_1";
+			init="[""medevac"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item50
+		{
+			position[]={15152.243,17.91,16963.75};
+			azimut=-182.511;
+			id=181;
+			side="EMPTY";
+			vehicle="RHS_UH60M_MEV2";
+			leader=1;
+			skill=0.60000002;
+			text="BlackHawk_PL_1_1";
+			init="[""medevac"", this,""wszystko""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item51
+		{
+			position[]={15170.677,17.897114,16963.309};
+			azimut=-182.511;
+			id=182;
+			side="EMPTY";
+			vehicle="RHS_Mi24V_AT_vvs";
+			leader=1;
+			skill=0.60000002;
+			text="MI24_PL_1_1";
+			init="[""smiglowiec"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item52
+		{
+			position[]={15094.312,17.91,16992.82};
+			azimut=-182.511;
+			id=183;
+			side="EMPTY";
+			vehicle="rhs_bmp1_vdv";
+			leader=1;
+			skill=0.60000002;
+			text="BWP1_PL_1_1";
+			init="[""bwp"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item53
+		{
+			position[]={15103.357,17.91,16992.398};
+			azimut=-182.511;
+			id=184;
+			side="EMPTY";
+			vehicle="EI_APCwdl_Wheeled_01_cannon_F";
+			leader=1;
+			skill=0.60000002;
+			text="ROSOMAK_PL_LAS_1_1";
+			init="[""bwp"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item54
+		{
+			position[]={15111.513,17.91,16992.24};
+			azimut=-182.511;
+			id=185;
+			side="EMPTY";
+			vehicle="B_APC_Wheeled_01_cannon_F";
+			leader=1;
+			skill=0.60000002;
+			text="ROSOMAK_PL_PUSTYNIA_1_1";
+			init="[""bwp"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item55
+		{
+			position[]={15102.192,17.91,16948.027};
+			azimut=-182.511;
+			id=186;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_mk19";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS_1_1";
+			init="[""humvee"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item56
+		{
+			position[]={15108.418,17.91,16948.516};
+			azimut=-182.511;
+			id=187;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_Mk19";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA_1_1";
+			init="[""humvee"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item57
+		{
+			position[]={15115.237,17.91,16948.592};
+			azimut=-182.511;
+			id=188;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_m2";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS2_1_1";
+			init="[""humvee"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item58
+		{
+			position[]={15121.563,17.91,16948.795};
+			azimut=-182.511;
+			id=189;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_m2";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA2_1_1";
+			init="[""humvee"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item59
+		{
+			position[]={15120.494,17.91,16969.607};
+			azimut=-182.511;
+			id=190;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS_SAPER_1_1";
+			init="[""saperski"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item60
+		{
+			position[]={15126.906,17.91,16969.639};
+			azimut=-182.511;
+			id=191;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_s";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA_SAPER_1_1";
+			init="[""saperski"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item61
+		{
+			position[]={15127.995,17.91,16932.518};
+			azimut=-182.511;
+			id=192;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_Repair_F";
+			leader=1;
+			skill=0.60000002;
+			text="naprawczy2_1_1";
+			init="[""naprawczy"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item62
+		{
+			position[]={15133.167,17.91,16931.475};
+			azimut=-182.511;
+			id=193;
+			side="EMPTY";
+			vehicle="B_Truck_01_Repair_F";
+			leader=1;
+			skill=0.60000002;
+			text="naprawczy1_1_1";
+			init="[""naprawczy"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item63
+		{
+			position[]={15151.002,17.91,16934.268};
+			azimut=-182.511;
+			id=194;
+			side="EMPTY";
+			vehicle="B_Truck_01_fuel_F";
+			leader=1;
+			skill=0.60000002;
+			text="CYSTERNA_PL_PUSTYNIA_1_1";
+			init="[""zaopatrzenie"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item64
+		{
+			position[]={15145.466,17.91,16934.123};
+			azimut=-182.511;
+			id=195;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_fuel_F";
+			leader=1;
+			skill=0.60000002;
+			text="CYSTERNA_PL_LAS_1_1";
+			init="[""zaopatrzenie"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item65
+		{
+			position[]={15158.605,17.91,16934.145};
+			azimut=-182.511;
+			id=196;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_ammo_F";
+			leader=1;
+			skill=0.60000002;
+			text="AMUNICJA_PL_LAS_1_1";
+			init="[""zaopatrzenie"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item66
+		{
+			position[]={15164.213,17.91,16934.25};
+			azimut=-182.511;
+			id=197;
+			side="EMPTY";
+			vehicle="B_Truck_01_ammo_F";
+			leader=1;
+			skill=0.60000002;
+			text="AMUNICJA_PL_PUSTYNIA_1_1";
+			init="[""zaopatrzenie"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item67
+		{
+			position[]={15107.398,17.91,16968.953};
+			azimut=-182.511;
+			id=198;
+			side="EMPTY";
+			vehicle="rhsusf_rg33_m2_wd";
+			leader=1;
+			skill=0.60000002;
+			text="MRAP_PL_LAS_1_1";
+			init="[""saperski"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item68
+		{
+			position[]={15114.188,17.91,16969.027};
+			azimut=-182.511;
+			id=199;
+			side="EMPTY";
+			vehicle="rhsusf_rg33_m2_d";
+			leader=1;
+			skill=0.60000002;
+			text="MRAP_PL_PUSTYNIA_1_1";
+			init="[""saperski"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item69
+		{
+			position[]={15171.668,17.91,16934.928};
+			azimut=-182.511;
+			id=200;
+			side="EMPTY";
+			vehicle="PSZ_PL_Star_944";
+			leader=1;
+			skill=0.60000002;
+			init="[""zaopatrzenie"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item70
+		{
+			position[]={15100.106,17.91,16969.471};
+			azimut=-182.511;
+			id=201;
+			side="EMPTY";
+			vehicle="rhs_pts_vmf";
+			leader=1;
+			skill=0.60000002;
+			init="[""saperski"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item71
+		{
+			position[]={15119.691,17.91,16992.375};
+			azimut=-182.511;
+			id=202;
+			side="EMPTY";
+			vehicle="PSZ_PL_Zbik_M97_W";
+			leader=1;
+			skill=0.60000002;
+			text="ROZPOZNANIEiWSPARCIE_LAS_1_1";
+			init="[""bwp"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item72
+		{
+			position[]={15189.364,17.707472,16963.449};
+			azimut=-182.511;
+			id=203;
+			side="EMPTY";
+			vehicle="RHS_UH60M";
+			leader=1;
+			skill=0.60000002;
+			init="[""smiglowiec"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item73
+		{
+			position[]={15088.157,17.91,16948.207};
+			azimut=-182.511;
+			id=204;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_2dr_fulltop";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS_MEDYCZNY_1_1";
+			init="[""medevac"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item74
+		{
+			position[]={15094.13,17.91,16948.105};
+			azimut=-182.511;
+			id=205;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_2dr_fulltop";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA_MEDYCZNY_1_1";
+			init="[""medevac"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item75
+		{
+			position[]={15222.044,17.91,16753.756};
+			azimut=-182.511;
+			id=206;
+			side="EMPTY";
+			vehicle="RHS_UH60M_MEV2";
+			leader=1;
+			skill=0.60000002;
+			text="BlackHawk_PL_1_1_1";
+			init="[""medevac"", this,""wszystko""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item76
+		{
+			position[]={15240.478,17.91,16753.314};
+			azimut=-182.511;
+			id=207;
+			side="EMPTY";
+			vehicle="RHS_Mi24V_AT_vvs";
+			leader=1;
+			skill=0.60000002;
+			text="MI24_PL_1_1_1";
+			init="[""smiglowiec"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item77
+		{
+			position[]={15164.112,17.651527,16782.826};
+			azimut=-182.511;
+			id=208;
+			side="EMPTY";
+			vehicle="RHS_M2A3_wd";
+			leader=1;
+			skill=0.60000002;
+			text="BWP1_PL_1_1_1";
+			init="[""bwp"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item78
+		{
+			position[]={15173.158,17.91,16782.404};
+			azimut=-182.511;
+			id=209;
+			side="EMPTY";
+			vehicle="EI_APCwdl_Wheeled_01_cannon_F";
+			leader=1;
+			skill=0.60000002;
+			text="ROSOMAK_PL_LAS_1_1_1";
+			init="[""bwp"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item79
+		{
+			position[]={15181.313,17.91,16782.246};
+			azimut=-182.511;
+			id=210;
+			side="EMPTY";
+			vehicle="B_APC_Wheeled_01_cannon_F";
+			leader=1;
+			skill=0.60000002;
+			text="ROSOMAK_PL_PUSTYNIA_1_1_1";
+			init="[""bwp"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item80
+		{
+			position[]={15171.993,17.91,16738.033};
+			azimut=-182.511;
+			id=211;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_mk19";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS_1_1_1";
+			init="[""humvee"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item81
+		{
+			position[]={15178.219,17.91,16738.521};
+			azimut=-182.511;
+			id=212;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_Mk19";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA_1_1_1";
+			init="[""humvee"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item82
+		{
+			position[]={15185.038,17.91,16738.598};
+			azimut=-182.511;
+			id=213;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_m2";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS2_1_1_1";
+			init="[""humvee"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item83
+		{
+			position[]={15191.364,17.91,16738.801};
+			azimut=-182.511;
+			id=214;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_m2";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA2_1_1_1";
+			init="[""humvee"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item84
+		{
+			position[]={15190.295,17.91,16759.613};
+			azimut=-182.511;
+			id=215;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS_SAPER_1_1_1";
+			init="[""saperski"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item85
+		{
+			position[]={15196.707,17.91,16759.645};
+			azimut=-182.511;
+			id=216;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_s";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA_SAPER_1_1_1";
+			init="[""saperski"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item86
+		{
+			position[]={15197.796,17.91,16722.523};
+			azimut=-182.511;
+			id=217;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_Repair_F";
+			leader=1;
+			skill=0.60000002;
+			text="naprawczy2_1_1_1";
+			init="[""naprawczy"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item87
+		{
+			position[]={15202.968,17.91,16721.48};
+			azimut=-182.511;
+			id=218;
+			side="EMPTY";
+			vehicle="B_Truck_01_Repair_F";
+			leader=1;
+			skill=0.60000002;
+			text="naprawczy1_1_1_1";
+			init="[""naprawczy"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item88
+		{
+			position[]={15220.803,17.91,16724.273};
+			azimut=-182.511;
+			id=219;
+			side="EMPTY";
+			vehicle="B_Truck_01_fuel_F";
+			leader=1;
+			skill=0.60000002;
+			text="CYSTERNA_PL_PUSTYNIA_1_1_1";
+			init="[""zaopatrzenie"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item89
+		{
+			position[]={15215.267,17.91,16724.129};
+			azimut=-182.511;
+			id=220;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_fuel_F";
+			leader=1;
+			skill=0.60000002;
+			text="CYSTERNA_PL_LAS_1_1_1";
+			init="[""zaopatrzenie"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item90
+		{
+			position[]={15228.406,17.91,16724.15};
+			azimut=-182.511;
+			id=221;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_ammo_F";
+			leader=1;
+			skill=0.60000002;
+			text="AMUNICJA_PL_LAS_1_1_1";
+			init="[""zaopatrzenie"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item91
+		{
+			position[]={15234.014,17.91,16724.256};
+			azimut=-182.511;
+			id=222;
+			side="EMPTY";
+			vehicle="B_Truck_01_ammo_F";
+			leader=1;
+			skill=0.60000002;
+			text="AMUNICJA_PL_PUSTYNIA_1_1_1";
+			init="[""zaopatrzenie"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item92
+		{
+			position[]={15177.199,17.91,16758.959};
+			azimut=-182.511;
+			id=223;
+			side="EMPTY";
+			vehicle="rhsusf_rg33_m2_wd";
+			leader=1;
+			skill=0.60000002;
+			text="MRAP_PL_LAS_1_1_1";
+			init="[""saperski"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item93
+		{
+			position[]={15183.989,17.91,16759.033};
+			azimut=-182.511;
+			id=224;
+			side="EMPTY";
+			vehicle="rhsusf_rg33_m2_d";
+			leader=1;
+			skill=0.60000002;
+			text="MRAP_PL_PUSTYNIA_1_1_1";
+			init="[""saperski"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item94
+		{
+			position[]={15241.469,17.91,16724.934};
+			azimut=-182.511;
+			id=225;
+			side="EMPTY";
+			vehicle="PSZ_PL_Star_944";
+			leader=1;
+			skill=0.60000002;
+			init="[""zaopatrzenie"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item95
+		{
+			position[]={15169.907,17.906544,16759.477};
+			azimut=-182.511;
+			id=226;
+			side="EMPTY";
+			vehicle="rhs_pts_vmf";
+			leader=1;
+			skill=0.60000002;
+			init="[""saperski"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item96
+		{
+			position[]={15155.517,17.418734,16782.527};
+			azimut=-182.511;
+			id=227;
+			side="EMPTY";
+			vehicle="RHS_M2A3";
+			leader=1;
+			skill=0.60000002;
+			text="ROZPOZNANIEiWSPARCIE_LAS_1_1_1";
+			init="[""bwp"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item97
+		{
+			position[]={15259.165,17.91,16753.455};
+			azimut=-182.511;
+			id=228;
+			side="EMPTY";
+			vehicle="RHS_UH60M";
+			leader=1;
+			skill=0.60000002;
+			init="[""smiglowiec"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item98
+		{
+			position[]={15157.958,17.912382,16738.213};
+			azimut=-182.511;
+			id=229;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_2dr_fulltop";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS_MEDYCZNY_1_1_1";
+			init="[""medevac"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item99
+		{
+			position[]={15163.931,17.912518,16738.111};
+			azimut=-182.511;
+			id=230;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_2dr_fulltop";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA_MEDYCZNY_1_1_1";
+			init="[""medevac"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item100
+		{
+			position[]={15122.487,17.983591,16649.828};
+			azimut=-182.511;
+			id=231;
+			side="EMPTY";
+			vehicle="RHS_UH60M_MEV2";
+			leader=1;
+			skill=0.60000002;
+			text="BlackHawk_PL_1_1_1_1";
+			init="[""medevac"", this,""wszystko""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item101
+		{
+			position[]={15140.921,17.941288,16649.387};
+			azimut=-182.511;
+			id=232;
+			side="EMPTY";
+			vehicle="RHS_Mi24V_AT_vvs";
+			leader=1;
+			skill=0.60000002;
+			text="MI24_PL_1_1_1_1";
+			init="[""smiglowiec"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item102
+		{
+			position[]={15064.556,18.344597,16678.898};
+			azimut=-182.511;
+			id=233;
+			side="EMPTY";
+			vehicle="RHS_M2A3_wd";
+			leader=1;
+			skill=0.60000002;
+			text="BWP1_PL_1_1_1_1";
+			init="[""bwp"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item103
+		{
+			position[]={15073.602,18.037447,16678.477};
+			azimut=-182.511;
+			id=234;
+			side="EMPTY";
+			vehicle="EI_APCwdl_Wheeled_01_cannon_F";
+			leader=1;
+			skill=0.60000002;
+			text="ROSOMAK_PL_LAS_1_1_1_1";
+			init="[""bwp"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item104
+		{
+			position[]={15081.757,17.993231,16678.318};
+			azimut=-182.511;
+			id=235;
+			side="EMPTY";
+			vehicle="B_APC_Wheeled_01_cannon_F";
+			leader=1;
+			skill=0.60000002;
+			text="ROSOMAK_PL_PUSTYNIA_1_1_1_1";
+			init="[""bwp"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item105
+		{
+			position[]={15072.437,18.004608,16634.105};
+			azimut=-182.511;
+			id=236;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_mk19";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS_1_1_1_1";
+			init="[""humvee"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item106
+		{
+			position[]={15078.662,18,16634.594};
+			azimut=-182.511;
+			id=237;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_Mk19";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA_1_1_1_1";
+			init="[""humvee"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item107
+		{
+			position[]={15085.481,18.003977,16634.67};
+			azimut=-182.511;
+			id=238;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_m2";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS2_1_1_1_1";
+			init="[""humvee"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item108
+		{
+			position[]={15091.808,18.01,16634.873};
+			azimut=-182.511;
+			id=239;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_m2";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA2_1_1_1_1";
+			init="[""humvee"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item109
+		{
+			position[]={15090.738,18.01,16655.686};
+			azimut=-182.511;
+			id=240;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS_SAPER_1_1_1_1";
+			init="[""saperski"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item110
+		{
+			position[]={15097.15,18.01,16655.717};
+			azimut=-182.511;
+			id=241;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_s";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA_SAPER_1_1_1_1";
+			init="[""saperski"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item111
+		{
+			position[]={15098.239,18.009014,16618.596};
+			azimut=-182.511;
+			id=242;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_Repair_F";
+			leader=1;
+			skill=0.60000002;
+			text="naprawczy2_1_1_1_1";
+			init="[""naprawczy"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item112
+		{
+			position[]={15103.411,18.006739,16617.553};
+			azimut=-182.511;
+			id=243;
+			side="EMPTY";
+			vehicle="B_Truck_01_Repair_F";
+			leader=1;
+			skill=0.60000002;
+			text="naprawczy1_1_1_1_1";
+			init="[""naprawczy"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item113
+		{
+			position[]={15121.246,17.937782,16620.346};
+			azimut=-182.511;
+			id=244;
+			side="EMPTY";
+			vehicle="B_Truck_01_fuel_F";
+			leader=1;
+			skill=0.60000002;
+			text="CYSTERNA_PL_PUSTYNIA_1_1_1_1";
+			init="[""zaopatrzenie"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item114
+		{
+			position[]={15115.71,17.974583,16620.201};
+			azimut=-182.511;
+			id=245;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_fuel_F";
+			leader=1;
+			skill=0.60000002;
+			text="CYSTERNA_PL_LAS_1_1_1_1";
+			init="[""zaopatrzenie"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item115
+		{
+			position[]={15128.85,17.910595,16620.223};
+			azimut=-182.511;
+			id=246;
+			side="EMPTY";
+			vehicle="EI_Truckwdl_01_ammo_F";
+			leader=1;
+			skill=0.60000002;
+			text="AMUNICJA_PL_LAS_1_1_1_1";
+			init="[""zaopatrzenie"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item116
+		{
+			position[]={15134.457,17.910879,16620.328};
+			azimut=-182.511;
+			id=247;
+			side="EMPTY";
+			vehicle="B_Truck_01_ammo_F";
+			leader=1;
+			skill=0.60000002;
+			text="AMUNICJA_PL_PUSTYNIA_1_1_1_1";
+			init="[""zaopatrzenie"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item117
+		{
+			position[]={15077.643,18.01,16655.031};
+			azimut=-182.511;
+			id=248;
+			side="EMPTY";
+			vehicle="rhsusf_rg33_m2_wd";
+			leader=1;
+			skill=0.60000002;
+			text="MRAP_PL_LAS_1_1_1_1";
+			init="[""saperski"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item118
+		{
+			position[]={15084.433,18.01,16655.105};
+			azimut=-182.511;
+			id=249;
+			side="EMPTY";
+			vehicle="rhsusf_rg33_m2_d";
+			leader=1;
+			skill=0.60000002;
+			text="MRAP_PL_PUSTYNIA_1_1_1_1";
+			init="[""saperski"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item119
+		{
+			position[]={15141.912,17.91,16621.006};
+			azimut=-182.511;
+			id=250;
+			side="EMPTY";
+			vehicle="PSZ_PL_Star_944";
+			leader=1;
+			skill=0.60000002;
+			init="[""zaopatrzenie"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item120
+		{
+			position[]={15070.351,18.01,16655.549};
+			azimut=-182.511;
+			id=251;
+			side="EMPTY";
+			vehicle="rhs_pts_vmf";
+			leader=1;
+			skill=0.60000002;
+			init="[""saperski"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item121
+		{
+			position[]={15055.96,18.423286,16678.6};
+			azimut=-182.511;
+			id=252;
+			side="EMPTY";
+			vehicle="RHS_M2A3";
+			leader=1;
+			skill=0.60000002;
+			text="ROZPOZNANIEiWSPARCIE_LAS_1_1_1_1";
+			init="[""bwp"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item122
+		{
+			position[]={15159.608,17.91,16649.527};
+			azimut=-182.511;
+			id=253;
+			side="EMPTY";
+			vehicle="RHS_UH60M";
+			leader=1;
+			skill=0.60000002;
+			init="[""smiglowiec"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item123
+		{
+			position[]={15058.401,18.009048,16634.285};
+			azimut=-182.511;
+			id=254;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_2dr_fulltop";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_LAS_MEDYCZNY_1_1_1_1";
+			init="[""medevac"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item124
+		{
+			position[]={15064.374,18.01,16634.184};
+			azimut=-182.511;
+			id=255;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_2dr_fulltop";
+			leader=1;
+			skill=0.60000002;
+			text="HMMV_PL_PUSTYNIA_MEDYCZNY_1_1_1_1";
+			init="[""medevac"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item125
+		{
+			position[]={15069.632,17.992844,16612.006};
+			azimut=-182.511;
+			id=256;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_LAS";
+			init="[""zwiadowcy"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item126
+		{
+			position[]={15075.529,18.000708,16611.93};
+			azimut=-182.511;
+			id=257;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_PUSTYNIA";
+			init="[""zwiadowcy"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item127
+		{
+			position[]={15176.419,17.916441,16723.748};
+			azimut=-182.511;
+			id=258;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_LAS_1";
+			init="[""zwiadowcy"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item128
+		{
+			position[]={15182.316,17.91,16723.672};
+			azimut=-182.511;
+			id=259;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_PUSTYNIA_1";
+			init="[""zwiadowcy"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item129
+		{
+			position[]={15108.277,17.91,16933.74};
+			azimut=-182.511;
+			id=260;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_LAS_2";
+			init="[""zwiadowcy"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item130
+		{
+			position[]={15114.175,17.91,16933.664};
+			azimut=-182.511;
+			id=261;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_PUSTYNIA_2";
+			init="[""zwiadowcy"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item131
+		{
+			position[]={15243.153,18.283947,17086.131};
+			azimut=-182.511;
+			id=262;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_LAS_2_1";
+			init="[""zwiadowcy"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item132
+		{
+			position[]={15249.051,18.999445,17086.055};
+			azimut=-182.511;
+			id=263;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_PUSTYNIA_2_1";
+			init="[""zwiadowcy"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item133
+		{
+			position[]={15384.141,17.91,17235.266};
+			azimut=-182.511;
+			id=264;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_LAS_2_2";
+			init="[""zwiadowcy"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item134
+		{
+			position[]={15390.038,17.910103,17235.189};
+			azimut=-182.511;
+			id=265;
+			side="EMPTY";
+			vehicle="rhsusf_m998_d_s_4dr";
+			leader=1;
+			skill=0.60000002;
+			text="ZWIADOWCY_PUSTYNIA_2_2";
+			init="[""zwiadowcy"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_pojazdy.sqf""";
+		};
+		class Item135
+		{
+			position[]={15061.941,17.99,16612.23};
+			azimut=-182.511;
+			id=266;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			leader=1;
+			skill=0.60000002;
+			init="[""snajperska"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_skrzynie.sqf""";
+		};
+		class Item136
+		{
+			position[]={15162.696,17.92,16724.053};
+			azimut=-182.511;
+			id=267;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			leader=1;
+			skill=0.60000002;
+			init="[""snajperska"", this,""amerykanska""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_skrzynie.sqf""";
+		};
+		class Item137
+		{
+			position[]={15093.048,17.91,16934.197};
+			azimut=-182.511;
+			id=268;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			leader=1;
+			skill=0.60000002;
+			init="[""snajperska"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_skrzynie.sqf""";
+		};
+		class Item138
+		{
+			position[]={15230.911,17.411486,17086.664};
+			azimut=-182.511;
+			id=269;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			leader=1;
+			skill=0.60000002;
+			init="[""snajperska"", this,""piechota""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_skrzynie.sqf""";
+		};
+		class Item139
+		{
+			position[]={15369.521,17.91,17236.965};
+			azimut=-182.511;
+			id=270;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			leader=1;
+			skill=0.60000002;
+			init="[""snajperska"", this,""kawaleria""] call compile  preprocessFileLineNumbers ""wyposazenie\wyp_skrzynie.sqf""";
+		};
+	};
+	class Markers
+	{
+		items=25;
+		class Item0
+		{
+			position[]={15218.972,17.848434,17171.766};
+			name="s_1";
+			text="Polska Piechota Las";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item1
+		{
+			position[]={15068.58,17.91,17024.373};
+			name="s_2";
+			text="Polska Piechota Pustynia";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item2
+		{
+			position[]={15129.796,17.91,16818.193};
+			name="s_3";
+			text="Amerykańska Piechota Pustynia";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item3
+		{
+			position[]={15036.885,17.89599,16715.105};
+			name="s_4";
+			text="Amerykańska Piechota Las";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item4
+		{
+			position[]={14650.899,-0.016631499,14610.993};
+			name="med_naglowek_1";
+			text="Ustawienia Logistyki";
+			type="Empty";
+		};
+		class Item5
+		{
+			position[]={14657.891,-0.024822675,14934.563};
+			name="med_naglowek_1_1";
+			text="Ustawienia Medyczne";
+			type="Empty";
+		};
+		class Item6
+		{
+			position[]={14653.948,0.24844848,14220.627};
+			name="med_naglowek_1_1_1";
+			text="Uzbrojenie oraz sprzet";
+			type="Empty";
+		};
+		class Item7
+		{
+			position[]={14641.589,0.22349316,14023.953};
+			name="med_naglowek_1_1_1_1";
+			text="Inne ustawienia ACE ";
+			type="Empty";
+		};
+		class Item8
+		{
+			position[]={14637.427,0.0054512322,13710.451};
+			name="asdas";
+			text="Modul poziomu umiejetnosci (jest juz ustawiony) - wystarczy powiekszyc zsynchronizowany wyzwalacz 10000x10000 i wszyscy maja taki skill jak w module";
+			type="Empty";
+		};
+		class Item9
+		{
+			position[]={15422.382,17.636259,17255.568};
+			name="m1";
+			text="Kawaleria Powietrzna Pojazdy";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item10
+		{
+			position[]={15347.716,18.058065,17288.191};
+			name="m12";
+			text="Kawaleria Powietrzna Piechota";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item11
+		{
+			position[]={15291.632,17.456688,17109.422};
+			name="m1_1";
+			text="Polskie Pojazdy Las";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item12
+		{
+			position[]={15134.132,17.91,16957.438};
+			name="m1_1_1";
+			text="Polskie Pojazdy Pustynia";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item13
+		{
+			position[]={15203.933,17.91,16747.443};
+			name="m1_1_1_1";
+			text="Amerykańskie Pojazdy Pustynia";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item14
+		{
+			position[]={15104.376,18.009478,16643.516};
+			name="m1_1_1_1_1";
+			text="Amerykańskie Pojazdy Las";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item15
+		{
+			position[]={14648.287,-0.19977158,14824.122};
+			name="med_naglowek_1_1_2";
+			text="W module obok wpisz nazwy, ktore zostaly nadane medykom w polu 'Lista'";
+			type="Empty";
+		};
+		class Item16
+		{
+			position[]={14647.291,0.19252297,14508.13};
+			name="med_naglowek_1_2";
+			text="W module obok wpisz nazwy, ktore zostaly nadane mechanikom w polu 'Lista'";
+			type="Empty";
+		};
+		class Item17
+		{
+			position[]={14650.492,-0.16716485,14421.698};
+			name="med_naglowek_1_2_1";
+			text="W modulach obok wpisz nazwy, ktore zostaly nadane pojazdom naprawczym w polu 'Lista'";
+			type="Empty";
+		};
+		class Item18
+		{
+			position[]={14390.95,-0.14544199,15071.739};
+			name="med_naglowek_1_1_3";
+			text="WYMAGANE MODULY WRAZ Z KROTKIMI INSTRUKCJAMI";
+			type="mil_dot";
+		};
+		class Item19
+		{
+			position[]={14636.416,0.16264531,13889.45};
+			name="med_naglowek_1_1_1_1_3";
+			text="Zeus dla admina serwera";
+			type="Empty";
+		};
+		class Item20
+		{
+			position[]={14307.023,-0.14488724,13371.938};
+			name="med_naglowek_1_1_3_1";
+			text="MODULY DODATKOWE";
+			type="mil_dot";
+		};
+		class Item21
+		{
+			position[]={14628.198,-0.073404513,13266.315};
+			name="med_naglowek_1_1_1_1_3_1";
+			text="Aby miec zeusa podczas gry, wpisz swoje ID gracza (z profilu ARMY) w pole 'Wlasciciel'";
+			type="Empty";
+		};
+		class Item22
+		{
+			position[]={14622.784,0.011723004,13094.876};
+			name="med_naglowek_1_1_1_1_3_1_1";
+			text="Moduly do brifingu";
+			type="Empty";
+		};
+		class Item23
+		{
+			position[]={15020.678,17.684666,16424.566};
+			name="respawn_west";
+			type="Empty";
+		};
+		class Item24
+		{
+			position[]={15122.63,15.681789,16428.342};
+			name="xx";
+			text="Znacznik bazy - tu się będą odradzać gracze, niezbędne w razie problemów technicznych";
+			type="mil_arrow";
+			angle=270;
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={14477.385,-0.24804482,13698.748};
+			activationBy="ANY";
+			interruptable=1;
+			age="UNKNOWN";
+			class Effects
+			{
+			};
+			synchronizations[]={0};
+			syncId=1;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_stratis",
+		"map_vr",
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=5847233;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_stratis",
+		"map_vr",
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=1573644;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_stratis",
+		"map_vr",
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=15605555;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
