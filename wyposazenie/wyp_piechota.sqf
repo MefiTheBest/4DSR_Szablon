@@ -88,15 +88,15 @@ switch (_typJednostki) do {
 				 [_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 			};
 			
-			//WYPOSAŻENIE STRZELCA
-			case "strzelec":{	
+			//WYPOSAŻENIE ZWIADOWCY
+			case "zwiadowca":{	
 				_jednostka addItemToUniform _eotech;
 				_jednostka addVest "PSZ_V_UKO_H_WDL_R_Headset";
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_amunicjaDoMdms,10];
 				_jednostka addmagazines [_niebieskiDym,3];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
+				_jednostka addBackpack _dlugieRadio;
 				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoMdms,10];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _msds;
@@ -454,8 +454,8 @@ switch (_typJednostki) do {
 				[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 			};
 	
-			// WYPOSAŻENIE STRZELCA RTO
-			case "rto":{
+			// WYPOSAŻENIE ZWIADOWCY
+			case "zwiadowca":{
 				_jednostka addItemToUniform "PSZ_AccO_EOT552";
 				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
 				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
@@ -464,8 +464,9 @@ switch (_typJednostki) do {
 				_jednostka addBackpack "tf_rt1523g_black";
 				(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
-				_jednostka addWeapon _beryl;
-				_jednostka addPrimaryWeaponItem _bipodDlaBeryla;
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoGranatnikaPALLAD,10];
+				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
+				_jednostka addWeapon _berylZGranatnikiem;
 				_jednostka addPrimaryWeaponItem _laser;
 				_jednostka addPrimaryWeaponItem _mrco;
 				_jednostka addWeapon _dalmierz;
@@ -945,8 +946,8 @@ switch (_typJednostki) do {
 				[_jednostka,"PSZ_Insignia_ISAF"] call bis_fnc_setUnitInsignia;
 			};
 	
-			// WYPOSAŻENIE STRZELCA RTO
-			case "rto":{
+			// WYPOSAŻENIE ZWIADOWCA
+			case "zwiadowca":{
 				_jednostka addItemToUniform "PSZ_AccO_EOT552";
 				_jednostka addVest "PSZ_V_UKO_L_DES_R_Headset";
 				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
@@ -955,8 +956,9 @@ switch (_typJednostki) do {
 				_jednostka addBackpack "tf_rt1523g_sage";
 				(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
-				_jednostka addWeapon _beryl;
-				_jednostka addPrimaryWeaponItem _bipodDlaBeryla;
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoGranatnikaPALLAD,10];
+				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
+				_jednostka addWeapon _berylZGranatnikiem;
 				_jednostka addPrimaryWeaponItem _laser;
 				_jednostka addPrimaryWeaponItem _mrco;
 				_jednostka addWeapon _dalmierz;
@@ -1429,28 +1431,9 @@ switch (_typJednostki) do {
 				_jednostka addPrimaryWeaponItem _eotechusa;
 				_jednostka addWeapon _dalmierz;
 			};
-	
-			// WYPOSAŻENIE STRZELCA
-			case "strzelec":{
-				_jednostka addVest "rhsusf_spc_rifleman";
-				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
-				_jednostka addmagazines [_zielonyDym,3];
-				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_swiatloChemiczneZielone,2];
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
-				_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
-				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
-				_jednostka addWeapon _m4a1;
-				_jednostka addPrimaryWeaponItem _tlumik;
-				_jednostka addPrimaryWeaponItem _laser;
-				_jednostka addPrimaryWeaponItem _eotechusa;
-				_jednostka addWeapon _dalmierz;
-				_jednostka addWeapon _bocznaFlara;
-			};
 
-			// WYPOSAŻENIE STRZELCA RTO
-			case "rto":{
+			// WYPOSAŻENIE ZWIADOWCY
+			case "zwiadowcy":{
 				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
 				_jednostka addVest "rhsusf_spc_rifleman";
 				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
@@ -1460,7 +1443,8 @@ switch (_typJednostki) do {
 				_jednostka addBackpack "tf_rt1523g_black";
 				(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
-				_jednostka addWeapon _m4a1;
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoGranatnikaM4,10];
+				_jednostka addWeapon _m4a1ZGranatnikiem;
 				_jednostka addPrimaryWeaponItem _tlumik;
 				_jednostka addPrimaryWeaponItem _laser;
 				_jednostka addPrimaryWeaponItem _eotechusa;
