@@ -26,12 +26,6 @@ _jednostka linkItem _gps;
 _jednostka linkItem _noktowizja;
 _jednostka linkItem _radio;
 
-_jednostka addItemToUniform _kajdanki;
-_jednostka addItemToUniform _kajdanki;
-_jednostka addItemToUniform _stroboskop;
-_jednostka addItemToUniform _stroboskop;
-_jednostka addItemToUniform _zatyczkiDoUszu;
-_jednostka addItemToUniform "ACE_MapTools";
 _jednostka addGoggles _gogleZolte;
 
 switch (_typJednostki) do {
@@ -224,12 +218,7 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _stroboskop;
-				_jednostka addItemToUniform _stroboskop;
 				_jednostka addItemToUniform _beret;
-				_jednostka addItemToUniform _zatyczkiDoUszu;
 				_jednostka addmagazines [_amunicjaDoTora,2];
 				_jednostka addmagazines [_amunicjaDoP99,4];
 				_jednostka addmagazines [_bialyDym,2];
@@ -271,12 +260,7 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _stroboskop;
-				_jednostka addItemToUniform _stroboskop;
 				_jednostka addItemToUniform _beret;
-				_jednostka addItemToUniform _zatyczkiDoUszu;
 				_jednostka addmagazines [_amunicjaDoMdms,2];
 				_jednostka addmagazines [_amunicjaDoP99,4];
 				_jednostka addmagazines [_bialyDym,2];
@@ -492,12 +476,7 @@ switch (_typJednostki) do {
 			case "mechanik":{
 				removeUniform _jednostka;
 				_jednostka forceAddUniform "PSZ_U_PL_WDL_wz2010_Polar";
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _stroboskop;
-				_jednostka addItemToUniform _stroboskop;
 				_jednostka addItemToUniform _beret;
-				_jednostka addItemToUniform _zatyczkiDoUszu;
 				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
 				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
 				_jednostka addmagazines [_granatBojowy,2];
@@ -605,12 +584,7 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _stroboskop;
-				_jednostka addItemToUniform _stroboskop;
 				_jednostka addItemToUniform _beret;
-				_jednostka addItemToUniform _zatyczkiDoUszu;
 				_jednostka addmagazines [_amunicjaDoTora,2];
 				_jednostka addmagazines [_amunicjaDoP99,4];
 				_jednostka addmagazines [_bialyDym,2];
@@ -652,12 +626,7 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _stroboskop;
-				_jednostka addItemToUniform _stroboskop;
 				_jednostka addItemToUniform _beret;
-				_jednostka addItemToUniform _zatyczkiDoUszu;
 				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,2];
 				_jednostka addmagazines [_amunicjaDoP99,4];
 				_jednostka addmagazines [_bialyDym,2];
@@ -1111,12 +1080,7 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _stroboskop;
-				_jednostka addItemToUniform _stroboskop;
 				_jednostka addItemToUniform _beret;
-				_jednostka addItemToUniform _zatyczkiDoUszu;
 				_jednostka addmagazines [_amunicjaDoTora,2];
 				_jednostka addmagazines [_amunicjaDoP99,4];
 				_jednostka addmagazines [_bialyDym,2];
@@ -1158,12 +1122,7 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _stroboskop;
-				_jednostka addItemToUniform _stroboskop;
 				_jednostka addItemToUniform _beret;
-				_jednostka addItemToUniform _zatyczkiDoUszu;
 				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,2];
 				_jednostka addmagazines [_amunicjaDoP99,4];
 				_jednostka addmagazines [_bialyDym,2];
@@ -1611,11 +1570,6 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _stroboskop;
-				_jednostka addItemToUniform _stroboskop;
-				_jednostka addItemToUniform _zatyczkiDoUszu;
 				_jednostka addmagazines ["rhsusf_mag_7x45acp_MHP",2];
 				_jednostka addmagazines [_amunicjaDoP99,4];
 				_jednostka addmagazines [_bialyDym,2];
@@ -1668,11 +1622,6 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _kajdanki;
-				_jednostka addItemToUniform _stroboskop;
-				_jednostka addItemToUniform _stroboskop;
-				_jednostka addItemToUniform _zatyczkiDoUszu;
 				_jednostka addmagazines ["rhsusf_mag_7x45acp_MHP",2];
 				_jednostka addmagazines ["rhsusf_mag_7x45acp_MHP",4];
 				_jednostka addmagazines [_bialyDym,2];
@@ -1920,3 +1869,9 @@ switch (_typJednostki) do {
 (unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,5];
 (unitBackpack _jednostka) addItemCargoGlobal [_atropina,5];
 (unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
+_jednostka addItemToUniform _kajdanki;
+_jednostka addItemToUniform _kajdanki;
+_jednostka addItemToUniform _stroboskop;
+_jednostka addItemToUniform _stroboskop;
+_jednostka addItemToUniform _zatyczkiDoUszu;
+_jednostka addItemToUniform "ACE_MapTools";
