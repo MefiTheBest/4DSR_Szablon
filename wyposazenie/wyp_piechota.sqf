@@ -25,7 +25,7 @@ _jednostka linkItem _dagr;
 _jednostka linkItem _gps;
 _jednostka linkItem _noktowizja;
 _jednostka linkItem _radio;
-
+_jednostka linkItem _zatyczkiDoUszu;
 _jednostka addGoggles _gogleZolte;
 
 switch (_typJednostki) do {
