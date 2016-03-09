@@ -1,9 +1,9 @@
-if (!local _unit) exitWith {};			//nie tykać
-if (!isServer) exitWith {};			//nie tykać
 private ["_type", "_unit"]; 			//nie tykać
 _typJednostki = _this select 0;			//nie tykać
 _jednostka = _this select 1;			//nie tykać
 _rodzajSil = _this select 2;			//nie tykać
+if (!local _unit) exitWith {};			//nie tykać
+if (!isServer) exitWith {};				//nie tykać
 
 // CZYSZCZENIE WYPOSAŻENIA
 clearWeaponCargoGlobal _jednostka;
@@ -70,17 +70,17 @@ switch (_typJednostki) do {
 	case "piechota":{
 		switch (_rodzajSil) do {
 			case "piechotaPolska":{
-				_jednostka addItemCargoGlobal [_amunicjaDoBerylaZeSmugowymi ,50];
-				_jednostka addItemCargoGlobal [_amunicjaDoKm ,20];
+				_jednostka addItemCargoGlobal [_amunicjaBerylZeSmugowymi ,50];
+				_jednostka addItemCargoGlobal [_amunicjaKm ,20];
 				_jednostka addItemCargoGlobal [_bialyDym ,100];
 				_jednostka addItemCargoGlobal [_granatBojowy ,100];
-				_jednostka addItemCargoGlobal [_amunicjaDoRpgVL ,20];
-				_jednostka addItemCargoGlobal [_amunicjaDoGranatnikaPALLAD ,40];
+				_jednostka addItemCargoGlobal [_amunicjaRpgVL ,20];
+				_jednostka addItemCargoGlobal [_amunicjaPALLAD ,40];
 			};
 		};
 	};
 	case "medyczne":{
-				_jednostka addItemCargoGlobal [_bandaz ,200];
+				_jednostka addItemCargoGlobal [_bandazUciskowy ,200];
 				_jednostka addItemCargoGlobal [_bandazElastyczny ,200];
 				_jednostka addItemCargoGlobal [_morfina ,40];
 				_jednostka addItemCargoGlobal [_adrenalina ,40];
