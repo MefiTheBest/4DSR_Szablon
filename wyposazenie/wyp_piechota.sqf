@@ -25,7 +25,13 @@ _jednostka linkItem _dagr;
 _jednostka linkItem _gps;
 _jednostka linkItem _noktowizja;
 _jednostka linkItem _radio;
-_jednostka linkItem _zatyczkiDoUszu;
+
+_jednostka addItemToUniform _kajdanki;
+_jednostka addItemToUniform _kajdanki;
+_jednostka addItemToUniform _stroboskop;
+_jednostka addItemToUniform _stroboskop;
+_jednostka addItemToUniform _zatyczkiDoUszu;
+_jednostka addItemToUniform "ACE_MapTools";
 _jednostka addGoggles _gogleZolte;
 
 switch (_typJednostki) do {
@@ -45,7 +51,7 @@ switch (_typJednostki) do {
 				_jednostka addmagazines [_flaraCzerwona,4];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,4];
-				_jednostka addmagazines [_amunicjaDoMdms,10];
+				_jednostka addmagazines [_amunicjaMdms,10];
 				_jednostka addBackpack _dlugieRadio;
 				(unitBackpack _jednostka) addItemCargoGlobal [_pomaranczowyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
@@ -57,18 +63,17 @@ switch (_typJednostki) do {
 				_jednostka addItemToBackpack _bateriaDoWskaznika;
 				_jednostka addWeapon _wskaznikLaserowy;
 				[_jednostka,"PSZ_Insignia_Poland"] call bis_fnc_setUnitInsignia;  
-
 			};
 	
 			// WYPOSAŻENIE MEDYKA
 			case "med":{
-				_jednostka addVest "PSZ_V_UKO_H_WDL_M_Headset";
+				_jednostka addVest _kamizelkaPolskaLasMedyk;
 				_jednostka addItemToUniform _eotech;
 				 _jednostka addmagazines [_granatBojowy,2];
-				 _jednostka addmagazines [_amunicjaDoMdms,10];
+				 _jednostka addmagazines [_amunicjaMdms,10];
 				 _jednostka addmagazines [_granatHukowy,2];
-				 _jednostka addBackpack "PSZ_B_wz93_Medical_WDL";
-				 (unitBackpack _jednostka) addItemCargoGlobal [_bandaz,30];
+				 _jednostka addBackpack _plecakPolskaLasMedyk;
+				 (unitBackpack _jednostka) addItemCargoGlobal [_bandazUciskowy,30];
 				 (unitBackpack _jednostka) addItemCargoGlobal [_bandazElastyczny,30];
 				 (unitBackpack _jednostka) addItemCargoGlobal [_morfina,15];
 				 (unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,15];
@@ -88,16 +93,17 @@ switch (_typJednostki) do {
 				 [_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 			};
 			
-			//WYPOSAŻENIE ZWIADOWCY
+			//WYPOSAŻENIE STRZELCA
 			case "zwiadowca":{	
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addItemToUniform _eotech;
-				_jednostka addVest "PSZ_V_UKO_H_WDL_R_Headset";
+				_jednostka addmagazines [_zielonyDym,3];
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoMdms,10];
-				_jednostka addmagazines [_niebieskiDym,3];
-				_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
+				_jednostka addmagazines [_swiatloChemiczneZielone,2];
+				_jednostka addmagazines [_amunicjaMdms,10];
 				_jednostka addBackpack _dlugieRadio;
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoMdms,10];
+				(unitBackpack _jednostka) addItemCargoGlobal [_granatnikM32,1];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaM433,8];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _msds;
 				_jednostka addPrimaryWeaponItem _tlumik;
@@ -109,15 +115,15 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE GRENADIERA
 			case "grenadier":{
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addItemToUniform _eotech;
 				_jednostka addmagazines [_zielonyDym,3];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
-				_jednostka addmagazines [_amunicjaDoMdms,10];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
+				_jednostka addmagazines [_amunicjaMdms,10];
+				_jednostka addBackpack _plecakPolskaLasStrzelec;
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatnikM32,1];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoGranatnikaM433,8];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaM433,8];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _msds;
 				_jednostka addPrimaryWeaponItem _tlumik;
@@ -129,15 +135,15 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE AMUNICYJNEGO KM
 			case "amunicyjnykm":{
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addItemToUniform _eotech;
 				_jednostka addmagazines [_niebieskiDym,3];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
-				_jednostka addmagazines [_amunicjaDoMdms,10];
+				_jednostka addmagazines [_amunicjaMdms,10];
 				_jednostka addBackpack "PSZ_B_wz97_WDL";
 				(unitBackpack _jednostka) addItemCargoGlobal [_zapasowaLufa,1];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoKm,3];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaKm,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _msds;
 				_jednostka addPrimaryWeaponItem _tlumik;
@@ -152,8 +158,8 @@ switch (_typJednostki) do {
 				_jednostka addItemToUniform "PSZ_AccO_PCS5";
 				_jednostka addVest "PSZ_V_UKO_L_WDL_MG_Headset";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoKm,2];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
+				_jednostka addmagazines [_amunicjaKm,2];
+				_jednostka addBackpack _plecakPolskaLasStrzelec;
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _km;
@@ -164,14 +170,14 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE CELOWNICZEGO RPG
 			case "celowniczyrpg":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
+				_jednostka addItemToUniform _eotech;
 				_jednostka addItemToUniform "rhs_acc_1pn93_2";
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoMdms,10];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
+				_jednostka addmagazines [_amunicjaMdms,10];
+				_jednostka addBackpack _plecakPolskaLasStrzelec;
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoRpgVL,4];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaRpgVL,4];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _msds;
 				_jednostka addPrimaryWeaponItem _tlumik;
@@ -185,14 +191,14 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE AMUNICYJNEGO RPG
 			case "amunicyjnyrpg":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
+				_jednostka addItemToUniform _eotech;
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneCzerwone,2];
-				_jednostka addmagazines [_amunicjaDoMdms,10];
+				_jednostka addmagazines [_amunicjaMdms,10];
 				_jednostka addBackpack "PSZ_B_wz97_WDL";
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoRpgVL,5];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaRpgVL,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _msds;
 				_jednostka addPrimaryWeaponItem _tlumik;
@@ -218,9 +224,14 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _stroboskop;
+				_jednostka addItemToUniform _stroboskop;
 				_jednostka addItemToUniform _beret;
-				_jednostka addmagazines [_amunicjaDoTora,2];
-				_jednostka addmagazines [_amunicjaDoP99,4];
+				_jednostka addItemToUniform _zatyczkiDoUszu;
+				_jednostka addmagazines [_amunicjaTor,2];
+				_jednostka addmagazines [_amunicjaP99,4];
 				_jednostka addmagazines [_bialyDym,2];
 				_jednostka addmagazines [_czerwonyDym,2];
 				_jednostka addmagazines [_swiatloChemiczneZolte,2];
@@ -231,8 +242,8 @@ switch (_typJednostki) do {
 				(unitBackpack _jednostka) addItemCargoGlobal [_tabelaBalistyczna,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_kestrel,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_minaPulapka,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoP99,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoTora,8];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaP99,2];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaTor,8];
 				_jednostka addItemToBackpack "ACE_DAGR";
 				_jednostka addItemToBackpack "ACE_ATragMX";
 				_jednostka addItemToBackpack "ACE_microDAGR";
@@ -260,9 +271,14 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _stroboskop;
+				_jednostka addItemToUniform _stroboskop;
 				_jednostka addItemToUniform _beret;
-				_jednostka addmagazines [_amunicjaDoMdms,2];
-				_jednostka addmagazines [_amunicjaDoP99,4];
+				_jednostka addItemToUniform _zatyczkiDoUszu;
+				_jednostka addmagazines [_amunicjaMdms,2];
+				_jednostka addmagazines [_amunicjaP99,4];
 				_jednostka addmagazines [_bialyDym,2];
 				_jednostka addmagazines [_czerwonyDym,2];
 				_jednostka addmagazines [_swiatloChemiczneZolte,2];
@@ -272,7 +288,7 @@ switch (_typJednostki) do {
 				_jednostka addBackpack _dlugieRadio;
 				(unitBackpack _jednostka) addItemCargoGlobal [_tabelaBalistyczna,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_kestrel,1];
-				(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,5];
+				(unitBackpack _jednostka) addItemCargoGlobal [_bandazUciskowy,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_atropina,10];
@@ -281,9 +297,9 @@ switch (_typJednostki) do {
 				(unitBackpack _jednostka) addItemCargoGlobal [_solFizjologiczna500ml,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_apteczka,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_minaPulapka,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoP99,2];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaP99,2];
 				(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoMdms,8];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaMdms,8];
 				_jednostka addItem "ACE_DAGR";
 				_jednostka addItem "ACE_ATragMX";
 				_jednostka addItem "ACE_microDAGR";
@@ -299,11 +315,11 @@ switch (_typJednostki) do {
 	
 			//WYPOSAŻENIE SAPERA
 			case "saper":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
+				_jednostka addItemToUniform _eotech;
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoMdms,10];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
+				_jednostka addmagazines [_amunicjaMdms,10];
+				_jednostka addBackpack _plecakPolskaLasStrzelec;
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_malyLadunekWybuchowy,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
@@ -322,14 +338,14 @@ switch (_typJednostki) do {
 			
 			//WYPOSAŻENIE STRZELCA WYBOROWEGO
 			case "strzelecwyborowy":{
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoAlexa,10];
+				_jednostka addmagazines [_amunicjaAlex,10];
 				_jednostka addmagazines [_swiatloChemiczneZolte,2];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
+				_jednostka addBackpack _plecakPolskaLasStrzelec;
 				(unitBackpack _jednostka) addItemCargoGlobal [_zoltyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoAlexa,2];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaAlex,2];
 				_jednostka addWeapon _alex;
 				_jednostka addPrimaryWeaponItem _celownikSOS;
 				_jednostka addWeapon _bocznaFlara;
@@ -339,18 +355,18 @@ switch (_typJednostki) do {
 	
 			//WYPOSAŻENIE OPERATORA DRONA
 			case "operatordrona":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
+				_jednostka addItemToUniform _eotech;
 				_jednostka addVest "PSZ_V_UKO_H_WDL_CO_Headset";
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
@@ -360,7 +376,7 @@ switch (_typJednostki) do {
 				_jednostka addItem _adrenalina;
 				_jednostka addItem _gps;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoMdms,6];
+				_jednostka addmagazines [_amunicjaMdms,6];
 				_jednostka addmagazines [_bialyDym,5];
 				_jednostka addmagazines [_pomaranczowyDym,2];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
@@ -380,7 +396,7 @@ switch (_typJednostki) do {
 	
 	//POLSKA PIECHOTA LAS
 	case "polskaPiechotaLas":{
-		_jednostka forceAddUniform "PSZ_U_PL_WDL_wz2010_Crye";
+		_jednostka forceAddUniform _mundurPolskiLas;
 		_jednostka addHeadgear _helm;
 		_jednostka addItemToUniform _beret;
 
@@ -388,12 +404,12 @@ switch (_typJednostki) do {
 
 			// WYPOSAŻENIE DOWÓDCY
 			case "dow":{
-				_jednostka addVest "PSZ_V_UKO_H_WDL_CO_Headset";
+				_jednostka addVest _kamizelkaPolskaLasDowodca;
 				_jednostka addItemToUniform _eotech;
 				_jednostka addmagazines [_flaraCzerwona,4];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,4];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addBackpack _dlugieRadio;
 				(unitBackpack _jednostka) addItemCargoGlobal [_pomaranczowyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
@@ -410,13 +426,13 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE MEDYKA
 			case "med":{
-				_jednostka addVest "PSZ_V_UKO_H_WDL_M_Headset";
+				_jednostka addVest _kamizelkaPolskaLasMedyk;
 				_jednostka addItemToUniform _eotech;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_granatHukowy,2];
-				_jednostka addBackpack "PSZ_B_wz93_Medical_WDL";
-				(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,30];
+				_jednostka addBackpack _plecakPolskaLasMedyk;
+				(unitBackpack _jednostka) addItemCargoGlobal [_bandazUciskowy,30];
 				(unitBackpack _jednostka) addItemCargoGlobal [_bandazElastyczny,30];
 				(unitBackpack _jednostka) addItemCargoGlobal [_morfina,15];
 				(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,15];
@@ -438,14 +454,14 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE GRENADIERA
 			case "grenadier":{
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addItemToUniform _eotech;
 				_jednostka addmagazines [_zielonyDym,3];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoGranatnikaPALLAD,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
+				_jednostka addBackpack _plecakPolskaLasStrzelec;
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaPALLAD,10];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _berylZGranatnikiem;
 				_jednostka addPrimaryWeaponItem _laser;
@@ -456,33 +472,37 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE ZWIADOWCY
 			case "zwiadowca":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
+				_jednostka addItemToUniform _eotech;
+				_jednostka addmagazines [_zielonyDym,3];
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_swiatloChemiczneZolte,2];
-				_jednostka addBackpack "tf_rt1523g_black";
-				(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,5];
-				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoGranatnikaPALLAD,10];
+				_jednostka addmagazines [_swiatloChemiczneZielone,2];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
+				_jednostka addBackpack _dlugieRadio;
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaPALLAD,10];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _berylZGranatnikiem;
 				_jednostka addPrimaryWeaponItem _laser;
 				_jednostka addPrimaryWeaponItem _mrco;
 				_jednostka addWeapon _dalmierz;
-				[_jednostka,"PSZ_Insignia_Poland"] call bis_fnc_setUnitInsignia;
+				[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 			};
 	
 			// WYPOSAŻENIE MECHANIKA
 			case "mechanik":{
 				removeUniform _jednostka;
-				_jednostka forceAddUniform "PSZ_U_PL_WDL_wz2010_Polar";
+				_jednostka forceAddUniform _mundurPolskiLasPolar;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _stroboskop;
+				_jednostka addItemToUniform _stroboskop;
 				_jednostka addItemToUniform _beret;
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addItemToUniform _zatyczkiDoUszu;
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
+				_jednostka addBackpack _plecakPolskaLasStrzelec;
 				(unitBackpack _jednostka) addItemCargoGlobal [_narzedzia,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_zielonyDym,6];
@@ -495,15 +515,15 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE AMUNICYJNEGO KM
 			case "amunicyjnykm":{
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addItemToUniform _eotech;
 				_jednostka addmagazines [_niebieskiDym,3];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addBackpack "PSZ_B_wz97_WDL";
 				(unitBackpack _jednostka) addItemCargoGlobal [_zapasowaLufa,1];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoKm,3];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaKm,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _beryl;
 				_jednostka addPrimaryWeaponItem _bipodDlaBeryla;
@@ -518,8 +538,8 @@ switch (_typJednostki) do {
 				_jednostka addItemToUniform "PSZ_AccO_PCS5";
 				_jednostka addVest "PSZ_V_UKO_L_WDL_MG_Headset";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoKm,2];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
+				_jednostka addmagazines [_amunicjaKm,2];
+				_jednostka addBackpack _plecakPolskaLasStrzelec;
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _km;
@@ -530,14 +550,14 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE CELOWNICZEGO RPG
 			case "celowniczyrpg":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
+				_jednostka addItemToUniform _eotech;
 				_jednostka addItemToUniform "rhs_acc_1pn93_2";
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
+				_jednostka addBackpack _plecakPolskaLasStrzelec;
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoRpgVL,4];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaRpgVL,4];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _miniBeryl;
 				_jednostka addPrimaryWeaponItem _bipodDlaBeryla;
@@ -552,14 +572,14 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE AMUNICYJNEGO RPG
 			case "amunicyjnyrpg":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
+				_jednostka addItemToUniform _eotech;
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneCzerwone,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addBackpack "PSZ_B_wz97_WDL";
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoRpgVL,5];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaRpgVL,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _beryl;
 				_jednostka addPrimaryWeaponItem _bipodDlaBeryla;
@@ -585,9 +605,14 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _stroboskop;
+				_jednostka addItemToUniform _stroboskop;
 				_jednostka addItemToUniform _beret;
-				_jednostka addmagazines [_amunicjaDoTora,2];
-				_jednostka addmagazines [_amunicjaDoP99,4];
+				_jednostka addItemToUniform _zatyczkiDoUszu;
+				_jednostka addmagazines [_amunicjaTor,2];
+				_jednostka addmagazines [_amunicjaP99,4];
 				_jednostka addmagazines [_bialyDym,2];
 				_jednostka addmagazines [_czerwonyDym,2];
 				_jednostka addmagazines [_swiatloChemiczneZolte,2];
@@ -598,8 +623,8 @@ switch (_typJednostki) do {
 				(unitBackpack _jednostka) addItemCargoGlobal [_tabelaBalistyczna,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_kestrel,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_minaPulapka,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoP99,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoTora,8];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaP99,2];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaTor,8];
 				_jednostka addItemToBackpack "ACE_DAGR";
 				_jednostka addItemToBackpack "ACE_ATragMX";
 				_jednostka addItemToBackpack "ACE_microDAGR";
@@ -627,9 +652,14 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _stroboskop;
+				_jednostka addItemToUniform _stroboskop;
 				_jednostka addItemToUniform _beret;
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,2];
-				_jednostka addmagazines [_amunicjaDoP99,4];
+				_jednostka addItemToUniform _zatyczkiDoUszu;
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,2];
+				_jednostka addmagazines [_amunicjaP99,4];
 				_jednostka addmagazines [_bialyDym,2];
 				_jednostka addmagazines [_czerwonyDym,2];
 				_jednostka addmagazines [_swiatloChemiczneZolte,2];
@@ -639,7 +669,7 @@ switch (_typJednostki) do {
 				_jednostka addBackpack _dlugieRadio;
 				(unitBackpack _jednostka) addItemCargoGlobal [_tabelaBalistyczna,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_kestrel,1];
-				(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,5];
+				(unitBackpack _jednostka) addItemCargoGlobal [_bandazUciskowy,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_atropina,10];
@@ -648,8 +678,8 @@ switch (_typJednostki) do {
 				(unitBackpack _jednostka) addItemCargoGlobal [_solFizjologiczna500ml,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_apteczka,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_minaPulapka,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoP99,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoBerylaZeSmugowymi,8];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaP99,2];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaBerylZeSmugowymi,8];
 				_jednostka addItem "ACE_DAGR";
 				_jednostka addItem "ACE_ATragMX";
 				_jednostka addItem "ACE_microDAGR";
@@ -665,12 +695,12 @@ switch (_typJednostki) do {
 	
 			//WYPOSAŻENIE SPECJALISTY OD ŁADUNKÓW WYBUCHOWYCH
 			case "saperladunki":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
+				_jednostka addItemToUniform _eotech;
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
+				_jednostka addBackpack _plecakPolskaLasStrzelec;
 				(unitBackpack _jednostka) addItemCargoGlobal [_zoltyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_malyLadunekWybuchowy,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
@@ -689,12 +719,12 @@ switch (_typJednostki) do {
 	
 			//WYPOSAŻENIE SAPERA
 			case "saper":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addItemToUniform _eotech;
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
+				_jednostka addBackpack _plecakPolskaLasStrzelec;
 				_jednostka addItemToBackpack _zastawDoRozbrajania;
 				_jednostka addItemToBackpack _zapalnikM26;
 				_jednostka addItemToBackpack _zapalnik;
@@ -712,14 +742,14 @@ switch (_typJednostki) do {
 	
 			//WYPOSAŻENIE STRZELCA WYBOROWEGO
 			case "strzelecwyborowy":{
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoAlexa,10];
+				_jednostka addmagazines [_amunicjaAlex,10];
 				_jednostka addmagazines [_swiatloChemiczneZolte,2];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
+				_jednostka addBackpack _plecakPolskaLasStrzelec;
 				(unitBackpack _jednostka) addItemCargoGlobal [_zoltyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoAlexa,2];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaAlex,2];
 				_jednostka addWeapon _alex;
 				_jednostka addPrimaryWeaponItem _celownikSOS;
 				_jednostka addWeapon _bocznaFlara;
@@ -729,14 +759,14 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE AMUNICYJNEGO SPIKE
 			case "amunicyjnyspike":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset"; 
+				_jednostka addItemToUniform _eotech;
+				_jednostka addVest _kamizelkaPolskaLasStrzelec; 
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
 				_jednostka addBackpack "PSZ_B_wz97_WDL";
 				(unitBackpack _jednostka) addItemCargoGlobal [_zielonyDym,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoSPIKE,1];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaSPIKE,1];
 				_jednostka addWeapon _beryl;
 				_jednostka addPrimaryWeaponItem _bipodDlaBeryla;
 				_jednostka addPrimaryWeaponItem _laser;
@@ -747,12 +777,12 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE CELOWNICZEGO SPIKE
 			case "celowniczyspike":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addItemToUniform _eotech;
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_zielonyDym,2];
 				_jednostka addBackpack "PSZ_B_wz97_WDL";
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoSPIKE,1];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaSPIKE,1];
 				_jednostka addWeapon _miniBeryl;
 				_jednostka addPrimaryWeaponItem _laser;
 				_jednostka addPrimaryWeaponItem _mrco;
@@ -763,13 +793,13 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE AMUNICYJNEGO PLOT
 			case "amunicyjnyplot":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
+				_jednostka addItemToUniform _eotech;
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoIgly,2];
+				_jednostka addBackpack _plecakPolskaLasStrzelec;
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaIgla,2];
 				_jednostka addWeapon _beryl;
 				_jednostka addPrimaryWeaponItem _bipodDlaBeryla;
 				_jednostka addPrimaryWeaponItem _laser;
@@ -780,12 +810,12 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE CELOWNICZEGO PLOT
 			case "celowniczyplot":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";
+				_jednostka addItemToUniform _eotech;
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
-				_jednostka addBackpack "PSZ_B_wz93_WDL";
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoIgly,3];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
+				_jednostka addBackpack _plecakPolskaLasStrzelec;
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaIgla,3];
 				_jednostka addWeapon _miniBeryl;
 				_jednostka addPrimaryWeaponItem _laser;
 				_jednostka addPrimaryWeaponItem _mrco;
@@ -798,18 +828,18 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE AMUNICYJNEGO MOŹDZIEŻA
 			case "amunicyjnymk":{
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";	
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;	
+				_jednostka addItemToUniform _eotech;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
@@ -818,7 +848,7 @@ switch (_typJednostki) do {
 				_jednostka addItem _adrenalina;
 				_jednostka addItem _adrenalina;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
 				_jednostka addmagazines [_bialyDym,8];
 				_jednostka addmagazines [_zielonyDym,3];
@@ -833,18 +863,18 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE OPERATORA MOŹDZIEŻA
 			case "operatormk":{
-				_jednostka addVest "PSZ_V_UKO_L_WDL_R_Headset";	
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;	
+				_jednostka addItemToUniform _eotech;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
@@ -853,7 +883,7 @@ switch (_typJednostki) do {
 				_jednostka addItem _adrenalina;
 				_jednostka addItem _adrenalina;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
 				_jednostka addmagazines [_bialyDym,8];
 				_jednostka addmagazines [_zielonyDym,3];
@@ -885,7 +915,7 @@ switch (_typJednostki) do {
 				_jednostka addmagazines [_flaraCzerwona,4];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,4];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addBackpack "tf_rt1523g_sage";
 				(unitBackpack _jednostka) addItemCargoGlobal [_pomaranczowyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
@@ -905,10 +935,10 @@ switch (_typJednostki) do {
 				_jednostka addVest "PSZ_V_UKO_H_DES_M_Headset";
 				_jednostka addItemToUniform _eotech;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_granatHukowy,2];
 				_jednostka addBackpack "PSZ_B_wz93_Medical_DES";
-				(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,30];
+				(unitBackpack _jednostka) addItemCargoGlobal [_bandazUciskowy,30];
 				(unitBackpack _jednostka) addItemCargoGlobal [_bandazElastyczny,30];
 				(unitBackpack _jednostka) addItemCargoGlobal [_morfina,15];
 				(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,15];
@@ -935,9 +965,9 @@ switch (_typJednostki) do {
 				_jednostka addmagazines [_zielonyDym,3];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addBackpack "PSZ_B_wz93_DES";
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoGranatnikaPALLAD,10];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaPALLAD,10];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _berylZGranatnikiem;
 				_jednostka addPrimaryWeaponItem _laser;
@@ -946,23 +976,22 @@ switch (_typJednostki) do {
 				[_jednostka,"PSZ_Insignia_ISAF"] call bis_fnc_setUnitInsignia;
 			};
 	
-			// WYPOSAŻENIE ZWIADOWCA
+			// WYPOSAŻENIE ZWIADOWCY
 			case "zwiadowca":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addVest "PSZ_V_UKO_L_DES_R_Headset";
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addVest _kamizelkaPolskaLasStrzelec;
+				_jednostka addItemToUniform _eotech;
+				_jednostka addmagazines [_zielonyDym,3];
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_swiatloChemiczneZolte,2];
-				_jednostka addBackpack "tf_rt1523g_sage";
-				(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,5];
-				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoGranatnikaPALLAD,10];
+				_jednostka addmagazines [_swiatloChemiczneZielone,2];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
+				_jednostka addBackpack _dlugieRadio;
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaPALLAD,10];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _berylZGranatnikiem;
 				_jednostka addPrimaryWeaponItem _laser;
 				_jednostka addPrimaryWeaponItem _mrco;
 				_jednostka addWeapon _dalmierz;
-				[_jednostka,"PSZ_Insignia_ISAF"] call bis_fnc_setUnitInsignia;
+				[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 			};
 	
 			// WYPOSAŻENIE MECHANIKA
@@ -976,7 +1005,7 @@ switch (_typJednostki) do {
 				_jednostka addItemToUniform _beret;
 				_jednostka addItemToUniform _zatyczkiDoUszu;
 				_jednostka addVest "PSZ_V_UKO_L_DES_R_Headset";
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
 				_jednostka addBackpack "PSZ_B_wz93_DES";
@@ -997,10 +1026,10 @@ switch (_typJednostki) do {
 				_jednostka addmagazines [_niebieskiDym,3];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addBackpack "PSZ_B_wz97_DES";
 				(unitBackpack _jednostka) addItemCargoGlobal [_zapasowaLufa,1];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoKm,3];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaKm,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _beryl;
 				_jednostka addPrimaryWeaponItem _bipodDlaBeryla;
@@ -1015,7 +1044,7 @@ switch (_typJednostki) do {
 				_jednostka addItemToUniform "PSZ_AccO_PCS5";
 				_jednostka addVest "PSZ_V_UKO_L_DES_MG_Headset";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoKm,2];
+				_jednostka addmagazines [_amunicjaKm,2];
 				_jednostka addBackpack "PSZ_B_wz93_DES";
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
@@ -1027,14 +1056,14 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE CELOWNICZEGO RPG
 			case "celowniczyrpg":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
+				_jednostka addItemToUniform _eotech;
 				_jednostka addItemToUniform "rhs_acc_1pn93_2";
 				_jednostka addVest "PSZ_V_UKO_L_DES_R_Headset";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addBackpack "PSZ_B_wz93_DES";
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoRpgVL,4];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaRpgVL,4];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _miniBeryl;
 				_jednostka addPrimaryWeaponItem _bipodDlaBeryla;
@@ -1049,14 +1078,14 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE AMUNICYJNEGO RPG
 			case "amunicyjnyrpg":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
+				_jednostka addItemToUniform _eotech;
 				_jednostka addVest "PSZ_V_UKO_L_DES_R_Headset";
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneCzerwone,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addBackpack "PSZ_B_wz97_DES";
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoRpgVL,5];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaRpgVL,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _beryl;
 				_jednostka addPrimaryWeaponItem _bipodDlaBeryla;
@@ -1082,9 +1111,14 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _stroboskop;
+				_jednostka addItemToUniform _stroboskop;
 				_jednostka addItemToUniform _beret;
-				_jednostka addmagazines [_amunicjaDoTora,2];
-				_jednostka addmagazines [_amunicjaDoP99,4];
+				_jednostka addItemToUniform _zatyczkiDoUszu;
+				_jednostka addmagazines [_amunicjaTor,2];
+				_jednostka addmagazines [_amunicjaP99,4];
 				_jednostka addmagazines [_bialyDym,2];
 				_jednostka addmagazines [_czerwonyDym,2];
 				_jednostka addmagazines [_swiatloChemiczneZolte,2];
@@ -1095,8 +1129,8 @@ switch (_typJednostki) do {
 				(unitBackpack _jednostka) addItemCargoGlobal [_tabelaBalistyczna,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_kestrel,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_minaPulapka,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoP99,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoTora,8];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaP99,2];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaTor,8];
 				_jednostka addItemToBackpack "ACE_DAGR";
 				_jednostka addItemToBackpack "ACE_ATragMX";
 				_jednostka addItemToBackpack "ACE_microDAGR";
@@ -1124,9 +1158,14 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _stroboskop;
+				_jednostka addItemToUniform _stroboskop;
 				_jednostka addItemToUniform _beret;
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,2];
-				_jednostka addmagazines [_amunicjaDoP99,4];
+				_jednostka addItemToUniform _zatyczkiDoUszu;
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,2];
+				_jednostka addmagazines [_amunicjaP99,4];
 				_jednostka addmagazines [_bialyDym,2];
 				_jednostka addmagazines [_czerwonyDym,2];
 				_jednostka addmagazines [_swiatloChemiczneZolte,2];
@@ -1136,7 +1175,7 @@ switch (_typJednostki) do {
 				_jednostka addBackpack "tf_rt1523g_sage";
 				(unitBackpack _jednostka) addItemCargoGlobal [_tabelaBalistyczna,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_kestrel,1];
-				(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,5];
+				(unitBackpack _jednostka) addItemCargoGlobal [_bandazUciskowy,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_atropina,10];
@@ -1145,8 +1184,8 @@ switch (_typJednostki) do {
 				(unitBackpack _jednostka) addItemCargoGlobal [_solFizjologiczna500ml,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_apteczka,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_minaPulapka,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoP99,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoBerylaZeSmugowymi,8];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaP99,2];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaBerylZeSmugowymi,8];
 				_jednostka addItem "ACE_DAGR";
 				_jednostka addItem "ACE_ATragMX";
 				_jednostka addItem "ACE_microDAGR";
@@ -1162,10 +1201,10 @@ switch (_typJednostki) do {
 	
 			//WYPOSAŻENIE SPECJALISTY OD ŁADUNKÓW WYBUCHOWYCH
 			case "saperladunki":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
+				_jednostka addItemToUniform _eotech;
 				_jednostka addVest "PSZ_V_UKO_L_DES_R_Headset";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
 				_jednostka addBackpack "PSZ_B_wz93_DES";
 				(unitBackpack _jednostka) addItemCargoGlobal [_zoltyDym,3];
@@ -1186,9 +1225,9 @@ switch (_typJednostki) do {
 			
 			//WYPOSAŻENIE SAPERA
 			case "saper":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
+				_jednostka addItemToUniform _eotech;
 				_jednostka addVest "PSZ_V_UKO_L_DES_R_Headset";
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
 				_jednostka addBackpack "PSZ_B_wz93_DES";
@@ -1211,12 +1250,12 @@ switch (_typJednostki) do {
 			case "strzelecwyborowy":{
 				_jednostka addVest "PSZ_V_UKO_L_DES_R_Headset";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoAlexa,10];
+				_jednostka addmagazines [_amunicjaAlex,10];
 				_jednostka addmagazines [_swiatloChemiczneZolte,2];
 				_jednostka addBackpack "PSZ_B_wz93_DES";
 				(unitBackpack _jednostka) addItemCargoGlobal [_zoltyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoAlexa,2];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaAlex,2];
 				_jednostka addWeapon _alex;
 				_jednostka addPrimaryWeaponItem _celownikSOS;
 				_jednostka addWeapon _bocznaFlara;
@@ -1226,14 +1265,14 @@ switch (_typJednostki) do {
 			
 			// WYPOSAŻENIE AMUNICYJNEGO SPIKE
 			case "amunicyjnyspike":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
+				_jednostka addItemToUniform _eotech;
 				_jednostka addVest "PSZ_V_UKO_L_DES_R_Headset"; 
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
 				_jednostka addBackpack "PSZ_B_wz97_DES";
 				(unitBackpack _jednostka) addItemCargoGlobal [_zielonyDym,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoSPIKE,1];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaSPIKE,1];
 				_jednostka addWeapon _beryl;
 				_jednostka addPrimaryWeaponItem _bipodDlaBeryla;
 				_jednostka addPrimaryWeaponItem _laser;
@@ -1244,12 +1283,12 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE CELOWNICZEGO SPIKE
 			case "celowniczyspike":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
+				_jednostka addItemToUniform _eotech;
 				_jednostka addVest "PSZ_V_UKO_L_DES_R_Headset";
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_zielonyDym,2];
 				_jednostka addBackpack "PSZ_B_wz97_DES";
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoSPIKE,1];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaSPIKE,1];
 				_jednostka addWeapon _miniBeryl;
 				_jednostka addPrimaryWeaponItem _laser;
 				_jednostka addPrimaryWeaponItem _mrco;
@@ -1260,13 +1299,13 @@ switch (_typJednostki) do {
 	
 			// WYPOSAŻENIE AMUNICYJNEGO PLOT
 			case "amunicyjnyplot":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
+				_jednostka addItemToUniform _eotech;
 				_jednostka addVest "PSZ_V_UKO_L_DES_R_Headset";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
 				_jednostka addBackpack "PSZ_B_wz93_DES";
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoIgly,2];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaIgla,2];
 				_jednostka addWeapon _beryl;
 				_jednostka addPrimaryWeaponItem _bipodDlaBeryla;
 				_jednostka addPrimaryWeaponItem _laser;
@@ -1277,12 +1316,12 @@ switch (_typJednostki) do {
 			
 			// WYPOSAŻENIE CELOWNICZEGO PLOT
 			case "celowniczyplot":{
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
+				_jednostka addItemToUniform _eotech;
 				_jednostka addVest "PSZ_V_UKO_L_DES_R_Headset";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addBackpack "PSZ_B_wz93_DES";
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoIgly,3];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaIgla,3];
 				_jednostka addWeapon _miniBeryl;
 				_jednostka addPrimaryWeaponItem _laser;
 				_jednostka addPrimaryWeaponItem _mrco;
@@ -1294,24 +1333,24 @@ switch (_typJednostki) do {
 			// WYPOSAŻENIE AMUNICYJNEGO MOŹDZIEŻA
 			case "amunicyjnymk":{
 				_jednostka addVest "PSZ_V_UKO_L_DES_R_Headset";	
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
+				_jednostka addItemToUniform _eotech;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
 				_jednostka addmagazines [_bialyDym,8];
 				_jednostka addBackpack "rhs_M252_Bipod_Bag";
@@ -1326,24 +1365,24 @@ switch (_typJednostki) do {
 			// WYPOSAŻENIE OPERATORA MOŹDZIEŻA
 			case "operatormk":{
 				_jednostka addVest "PSZ_V_UKO_L_DES_R_Headset";	
-				_jednostka addItemToUniform "PSZ_AccO_EOT552";
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
+				_jednostka addItemToUniform _eotech;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoBerylaZeSmugowymi,10];
+				_jednostka addmagazines [_amunicjaBerylZeSmugowymi,10];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
 				_jednostka addmagazines [_bialyDym,8];
 				_jednostka addBackpack "rhs_M252_Gun_Bag";
@@ -1371,8 +1410,8 @@ switch (_typJednostki) do {
 				_jednostka addmagazines [_flaraCzerwona,4];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,4];
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
 				_jednostka addBackpack "tf_rt1523g_black";
 				(unitBackpack _jednostka) addItemCargoGlobal [_pomaranczowyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
@@ -1390,11 +1429,11 @@ switch (_typJednostki) do {
 				_jednostka addVest "rhsusf_spc_corpsman";
 				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
 				_jednostka addmagazines [_granatHukowy,2];
 				_jednostka addBackpack "B_Kitbag_mcamo";
-				(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,30];
+				(unitBackpack _jednostka) addItemCargoGlobal [_bandazUciskowy,30];
 				(unitBackpack _jednostka) addItemCargoGlobal [_bandazElastyczny,30];
 				(unitBackpack _jednostka) addItemCargoGlobal [_morfina,15];
 				(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,15];
@@ -1420,10 +1459,29 @@ switch (_typJednostki) do {
 				_jednostka addmagazines [_zielonyDym,3];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
 				_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoGranatnikaM4,10];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaGranatnikM4,10];
+				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
+				_jednostka addWeapon _m4a1ZGranatnikiem;
+				_jednostka addPrimaryWeaponItem _tlumik;
+				_jednostka addPrimaryWeaponItem _laser;
+				_jednostka addPrimaryWeaponItem _eotechusa;
+				_jednostka addWeapon _dalmierz;
+			};
+	
+			// WYPOSAŻENIE ZWIADOWCY
+			case "zwiadowca":{
+				_jednostka addVest "rhsusf_spc_rifleman";
+				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
+				_jednostka addmagazines [_zielonyDym,3];
+				_jednostka addmagazines [_granatBojowy,2];
+				_jednostka addmagazines [_swiatloChemiczneZielone,2];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
+				_jednostka addBackpack "tf_rt1523g_black";
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaGranatnikM4,10];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _m4a1ZGranatnikiem;
 				_jednostka addPrimaryWeaponItem _tlumik;
@@ -1432,32 +1490,13 @@ switch (_typJednostki) do {
 				_jednostka addWeapon _dalmierz;
 			};
 
-			// WYPOSAŻENIE ZWIADOWCY
-			case "zwiadowcy":{
-				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
-				_jednostka addVest "rhsusf_spc_rifleman";
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
-				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_swiatloChemiczneZolte,2];
-				_jednostka addBackpack "tf_rt1523g_black";
-				(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,5];
-				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoGranatnikaM4,10];
-				_jednostka addWeapon _m4a1ZGranatnikiem;
-				_jednostka addPrimaryWeaponItem _tlumik;
-				_jednostka addPrimaryWeaponItem _laser;
-				_jednostka addPrimaryWeaponItem _eotechusa;
-				_jednostka addWeapon _dalmierz;
-				_jednostka addWeapon _bocznaFlara;
-			};
 	
 			// WYPOSAŻENIE MECHANIKA
 			case "mechanik":{
 				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
 				_jednostka addVest "rhsusf_spc_rifleman";
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
 				_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
@@ -1479,12 +1518,12 @@ switch (_typJednostki) do {
 				_jednostka addmagazines [_niebieskiDym,3];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
 				_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
 				(unitBackpack _jednostka) addItemCargoGlobal [_zapasowaLufa,1];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoKmUsa,1];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoKmUsaKrotsza,1];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaKmUsa,1];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaKmUsaKrotsza,1];
 				_jednostka addWeapon _m4a1;
 				_jednostka addPrimaryWeaponItem _tlumik;
 				_jednostka addPrimaryWeaponItem _laser;
@@ -1498,11 +1537,11 @@ switch (_typJednostki) do {
 				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
 				_jednostka addVest "rhsusf_spc_rifleman";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoKmUsa,3];
+				_jednostka addmagazines [_amunicjaKmUsa,3];
 				_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoKmUsa,2];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaKmUsa,2];
 				_jednostka addWeapon _m249;
 				_jednostka addPrimaryWeaponItem _laser;
 				_jednostka addPrimaryWeaponItem _eotechusa;
@@ -1515,8 +1554,8 @@ switch (_typJednostki) do {
 				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
 				_jednostka addVest "rhsusf_spc_rifleman";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
 				_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaM136,1];
@@ -1554,8 +1593,13 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _stroboskop;
+				_jednostka addItemToUniform _stroboskop;
+				_jednostka addItemToUniform _zatyczkiDoUszu;
 				_jednostka addmagazines ["rhsusf_mag_7x45acp_MHP",2];
-				_jednostka addmagazines [_amunicjaDoP99,4];
+				_jednostka addmagazines [_amunicjaP99,4];
 				_jednostka addmagazines [_bialyDym,2];
 				_jednostka addmagazines [_czerwonyDym,2];
 				_jednostka addmagazines [_swiatloChemiczneZolte,2];
@@ -1566,7 +1610,7 @@ switch (_typJednostki) do {
 				(unitBackpack _jednostka) addItemCargoGlobal [_tabelaBalistyczna,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_kestrel,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_minaPulapka,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoP99,2];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaP99,2];
 				(unitBackpack _jednostka) addItemCargoGlobal ["rhsusf_5Rnd_300winmag_xm2010",5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_workiZPiaskiem,3];
 				_jednostka addItemToBackpack "ACE_DAGR";
@@ -1606,6 +1650,11 @@ switch (_typJednostki) do {
 				_jednostka linkItem _dagr;
 				_jednostka linkItem _gps;
 				_jednostka linkItem _noktowizjaGen4;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _kajdanki;
+				_jednostka addItemToUniform _stroboskop;
+				_jednostka addItemToUniform _stroboskop;
+				_jednostka addItemToUniform _zatyczkiDoUszu;
 				_jednostka addmagazines ["rhsusf_mag_7x45acp_MHP",2];
 				_jednostka addmagazines ["rhsusf_mag_7x45acp_MHP",4];
 				_jednostka addmagazines [_bialyDym,2];
@@ -1617,7 +1666,7 @@ switch (_typJednostki) do {
 				_jednostka addBackpack "tf_rt1523g_big_bwmod_tropen";
 				(unitBackpack _jednostka) addItemCargoGlobal [_tabelaBalistyczna,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_kestrel,1];
-				(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,5];
+				(unitBackpack _jednostka) addItemCargoGlobal [_bandazUciskowy,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,5];
 				(unitBackpack _jednostka) addItemCargoGlobal [_atropina,10];
@@ -1627,7 +1676,7 @@ switch (_typJednostki) do {
 				(unitBackpack _jednostka) addItemCargoGlobal [_apteczka,1];
 				(unitBackpack _jednostka) addItemCargoGlobal [_minaPulapka,2];
 				(unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDosr25,6];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaSr25,6];
 				(unitBackpack _jednostka) addItemCargoGlobal [_workiZPiaskiem,3];
 				_jednostka addItem "ACE_DAGR";
 				_jednostka addItem "ACE_ATragMX";
@@ -1647,8 +1696,8 @@ switch (_typJednostki) do {
 				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
 				_jednostka addVest "rhsusf_spc_rifleman";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
 				_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
 				(unitBackpack _jednostka) addItemCargoGlobal [_malyLadunekWybuchowy,2];
@@ -1668,8 +1717,8 @@ switch (_typJednostki) do {
 			case "saper":{
 				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
 				_jednostka addVest "rhsusf_spc_rifleman";
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_swiatloChemiczneNiebieskie,2];
 				_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
@@ -1690,12 +1739,12 @@ switch (_typJednostki) do {
 			case "strzelecwyborowy":{
 				_jednostka addVest "rhsusf_spc_marksman";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDosr25,5];
-				_jednostka addmagazines [_amunicjaDosr25Specjalna,5];
+				_jednostka addmagazines [_amunicjaSr25,5];
+				_jednostka addmagazines [_amunicjaSr25Specjalna,5];
 				_jednostka addmagazines [_swiatloChemiczneZolte,2];
 				_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDosr25,5];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaSr25,5];
 				_jednostka addWeapon _sr25;
 				_jednostka addPrimaryWeaponItem _celownikDMS;
 				_jednostka addPrimaryWeaponItem _laser;
@@ -1709,11 +1758,11 @@ switch (_typJednostki) do {
 				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
 				_jednostka addVest "rhsusf_spc_rifleman"; 
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
 				_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoJaveina,1];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaJavelin,1];
 				_jednostka addWeapon _m4a1;
 				_jednostka addPrimaryWeaponItem _tlumik;
 				_jednostka addPrimaryWeaponItem _laser;
@@ -1726,10 +1775,10 @@ switch (_typJednostki) do {
 			case "celowniczyjavelin":{
 				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
 				_jednostka addVest "rhsusf_spc_rifleman";
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
 				_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoJaveina,1];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaJavelin,1];
 				_jednostka addWeapon _m4a1;
 				_jednostka addPrimaryWeaponItem _tlumik;
 				_jednostka addPrimaryWeaponItem _laser;
@@ -1743,11 +1792,11 @@ switch (_typJednostki) do {
 				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
 				_jednostka addVest "rhsusf_spc_rifleman";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
 				_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoStingera,1];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaStinger,1];
 				_jednostka addWeapon _m4a1;
 				_jednostka addPrimaryWeaponItem _tlumik;
 				_jednostka addPrimaryWeaponItem _laser;
@@ -1760,10 +1809,10 @@ switch (_typJednostki) do {
 				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
 				_jednostka addVest "rhsusf_spc_rifleman";
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
 				_jednostka addBackpack "rhsusf_assault_eagleaiii_coy";
-				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaDoStingera,2];
+				(unitBackpack _jednostka) addItemCargoGlobal [_amunicjaStinger,2];
 				_jednostka addWeapon _m4a1;
 				_jednostka addPrimaryWeaponItem _tlumik;
 				_jednostka addPrimaryWeaponItem _laser;
@@ -1776,16 +1825,16 @@ switch (_typJednostki) do {
 			case "amunicyjnymk":{
 				_jednostka addVest "rhsusf_spc_rifleman";	
 				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
@@ -1794,8 +1843,8 @@ switch (_typJednostki) do {
 				_jednostka addItem _adrenalina;
 				_jednostka addItem _adrenalina;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
 				_jednostka addmagazines [_bialyDym,8];
 				_jednostka addmagazines [_zielonyDym,3];
@@ -1812,16 +1861,16 @@ switch (_typJednostki) do {
 			case "operatormk":{
 				_jednostka addVest "rhsusf_spc_rifleman";	
 				_jednostka addItemToUniform "ACE_optic_Hamr_2D";
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
-				_jednostka addItem _bandaz;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
+				_jednostka addItem _bandazUciskowy;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
 				_jednostka addItem _morfina;
@@ -1830,8 +1879,8 @@ switch (_typJednostki) do {
 				_jednostka addItem _adrenalina;
 				_jednostka addItem _adrenalina;
 				_jednostka addmagazines [_granatBojowy,2];
-				_jednostka addmagazines [_amunicjaDoM4BezSmugowych,5];
-				_jednostka addmagazines [_amunicjaDoM4ZeSmugowymi,5];
+				_jednostka addmagazines [_amunicjaM4BezSmugowych,5];
+				_jednostka addmagazines [_amunicjaM4ZeSmugowymi,5];
 				_jednostka addmagazines [_swiatloChemiczneZielone,2];
 				_jednostka addmagazines [_bialyDym,8];
 				_jednostka addmagazines [_zielonyDym,3];
@@ -1848,14 +1897,8 @@ switch (_typJednostki) do {
 	
 };
 
-(unitBackpack _jednostka) addItemCargoGlobal [_bandaz,15];
+(unitBackpack _jednostka) addItemCargoGlobal [_bandazUciskowy,15];
 (unitBackpack _jednostka) addItemCargoGlobal [_morfina,5];
 (unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,5];
 (unitBackpack _jednostka) addItemCargoGlobal [_atropina,5];
 (unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
-_jednostka addItemToUniform _kajdanki;
-_jednostka addItemToUniform _kajdanki;
-_jednostka addItemToUniform _stroboskop;
-_jednostka addItemToUniform _stroboskop;
-_jednostka addItemToUniform _zatyczkiDoUszu;
-_jednostka addItemToUniform "ACE_MapTools";
