@@ -33,7 +33,14 @@ switch (_typJednostki) do {
 		_jednostka forceAddUniform _mundurPolskiLas;
 		_jednostka addHeadgear _helm;
 		_jednostka addItemToUniform _beret;
-		
+		_jednostka addItemToUniform _kajdanki;
+		_jednostka addItemToUniform _kajdanki;
+		_jednostka addItemToUniform _stroboskop;
+		_jednostka addItemToUniform _stroboskop;
+		_jednostka addItemToUniform _zatyczkiDoUszu;
+		_jednostka addItemToUniform "ACE_MapTools";
+		_jednostka addGoggles _gogleZolte;
+
 		switch (_przydzial) do {
 
 			// WYPOSAŻENIE DOWÓDCY
@@ -391,7 +398,14 @@ switch (_typJednostki) do {
 		_jednostka forceAddUniform _mundurPolskiLas;
 		_jednostka addHeadgear _helm;
 		_jednostka addItemToUniform _beret;
-
+		_jednostka addItemToUniform _kajdanki;
+		_jednostka addItemToUniform _kajdanki;
+		_jednostka addItemToUniform _stroboskop;
+		_jednostka addItemToUniform _stroboskop;
+		_jednostka addItemToUniform _zatyczkiDoUszu;
+		_jednostka addItemToUniform "ACE_MapTools";
+		_jednostka addGoggles _gogleZolte;
+		
 		switch (_przydzial) do {
 
 			// WYPOSAŻENIE DOWÓDCY
@@ -897,7 +911,14 @@ switch (_typJednostki) do {
 		_jednostka forceAddUniform "PSZ_U_PL_DES_wz2010_Crye_Folded";
 		_jednostka addHeadgear "PSZ_H_wz2005_DES_ESS";
 		_jednostka addItemToUniform _beret;
-
+		_jednostka addItemToUniform _kajdanki;
+		_jednostka addItemToUniform _kajdanki;
+		_jednostka addItemToUniform _stroboskop;
+		_jednostka addItemToUniform _stroboskop;
+		_jednostka addItemToUniform _zatyczkiDoUszu;
+		_jednostka addItemToUniform "ACE_MapTools";
+		_jednostka addGoggles _gogleZolte;
+		
 		switch (_przydzial) do {
 
 			// WYPOSAŻENIE DOWÓDCY
@@ -1390,9 +1411,15 @@ switch (_typJednostki) do {
 	
 	//AMERYKAŃSKA PIECHOTA LAS
 	case "amerykanskaPiechotaLas":{
-	_jednostka forceAddUniform "rhs_uniform_FROG01_wd";
-	_jednostka addHeadgear "rhsusf_mich_helmet_marpatwd_headset";
-		
+		_jednostka forceAddUniform "rhs_uniform_FROG01_wd";
+		_jednostka addHeadgear "rhsusf_mich_helmet_marpatwd_headset";
+		_jednostka addItemToUniform _kajdanki;
+		_jednostka addItemToUniform _kajdanki;
+		_jednostka addItemToUniform _stroboskop;
+		_jednostka addItemToUniform _stroboskop;
+		_jednostka addItemToUniform _zatyczkiDoUszu;
+		_jednostka addItemToUniform "ACE_MapTools";
+		_jednostka addGoggles _gogleZolte;	
 		switch (_przydzial) do {
 
 			// WYPOSAŻENIE DOWÓDCY
@@ -1894,10 +1921,4 @@ switch (_typJednostki) do {
 (unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,5];
 (unitBackpack _jednostka) addItemCargoGlobal [_atropina,5];
 (unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
-_jednostka addItemToUniform _kajdanki;
-_jednostka addItemToUniform _kajdanki;
-_jednostka addItemToUniform _stroboskop;
-_jednostka addItemToUniform _stroboskop;
-_jednostka addItemToUniform _zatyczkiDoUszu;
-_jednostka addItemToUniform "ACE_MapTools";
-_jednostka addGoggles _gogleZolte;
+
