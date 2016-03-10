@@ -26,14 +26,6 @@ _jednostka linkItem _gps;
 _jednostka linkItem _noktowizja;
 _jednostka linkItem _radio;
 
-_jednostka addItemToUniform _kajdanki;
-_jednostka addItemToUniform _kajdanki;
-_jednostka addItemToUniform _stroboskop;
-_jednostka addItemToUniform _stroboskop;
-_jednostka addItemToUniform _zatyczkiDoUszu;
-_jednostka addItemToUniform "ACE_MapTools";
-_jednostka addGoggles _gogleZolte;
-
 switch (_typJednostki) do {
 
 	case "kawaleriaPowietrznaPolska":{
@@ -1902,3 +1894,10 @@ switch (_typJednostki) do {
 (unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,5];
 (unitBackpack _jednostka) addItemCargoGlobal [_atropina,5];
 (unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
+_jednostka addItemToUniform _kajdanki;
+_jednostka addItemToUniform _kajdanki;
+_jednostka addItemToUniform _stroboskop;
+_jednostka addItemToUniform _stroboskop;
+_jednostka addItemToUniform _zatyczkiDoUszu;
+_jednostka addItemToUniform "ACE_MapTools";
+_jednostka addGoggles _gogleZolte;
