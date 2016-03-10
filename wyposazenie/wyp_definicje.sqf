@@ -43,7 +43,7 @@ _granatHukowy = "rhs_mag_mk84";
 _granatIR = "B_IR_Grenade";
 
 // MEDYCZNE
-_bandazUciskowy = "ACE_fieldDressing";
+_bandazUciskowy = "ACE_packingBandage";
 _bandazElastyczny = "ACE_elasticBandage";
 _morfina = "ACE_morphine";
 _adrenalina = "ACE_epinephrine";
