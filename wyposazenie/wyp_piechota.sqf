@@ -2,9 +2,9 @@ if (!local _unit) exitWith {};			//nie tykać
 if (!isServer) exitWith {};				//nie tykać
 private ["_type", "_unit"]; 			//nie tykać
 
-_typJednostki = _this select 0;			//nie tykać
+_typJednostki = _this select 2;			//nie tykać
 _jednostka = _this select 1;			//nie tykać
-_przydzial = _this select 2;			//nie tykać
+_przydzial = _this select 0;			//nie tykać
 
 // CZYSZCZENIE WYPOSAŻENIA
 removeAllWeapons _jednostka;
@@ -162,7 +162,7 @@ switch (_typJednostki) do {
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _km;
-				_jednostka addPrimaryWeaponItem _celownikDlaKm;
+				_jednostka addPrimaryWeaponItem _celownikKm;
 				_jednostka addWeapon _dalmierz;
 				[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 			};
@@ -183,7 +183,7 @@ switch (_typJednostki) do {
 				_jednostka addPrimaryWeaponItem _laser;
 				_jednostka addPrimaryWeaponItem _mrco;
 				_jednostka addWeapon _rpg7;
-				_jednostka addSecondaryWeaponItem _celownikDlaRpg;
+				_jednostka addSecondaryWeaponItem _celownikRpg;
 				_jednostka addWeapon _dalmierz;
 				[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 			};
@@ -549,7 +549,7 @@ switch (_typJednostki) do {
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _km;
-				_jednostka addPrimaryWeaponItem _celownikDlaKm;
+				_jednostka addPrimaryWeaponItem _celownikKm;
 				_jednostka addWeapon _dalmierz;
 				[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 			};
@@ -571,7 +571,7 @@ switch (_typJednostki) do {
 				_jednostka addPrimaryWeaponItem _mrco;
 				_jednostka addWeapon _dalmierz;
 				_jednostka addWeapon _rpg7;
-				_jednostka addSecondaryWeaponItem _celownikDlaRpg;
+				_jednostka addSecondaryWeaponItem _celownikRpg;
 				_jednostka addWeapon _dalmierz;
 				[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 			};
@@ -1062,7 +1062,7 @@ switch (_typJednostki) do {
 				(unitBackpack _jednostka) addItemCargoGlobal [_czerwonyDym,3];
 				(unitBackpack _jednostka) addItemCargoGlobal [_granatHukowy,2];
 				_jednostka addWeapon _km;
-				_jednostka addPrimaryWeaponItem _celownikDlaKm;
+				_jednostka addPrimaryWeaponItem _celownikKm;
 				_jednostka addWeapon _dalmierz;
 				[_jednostka,"PSZ_Insignia_ISAF"] call bis_fnc_setUnitInsignia;
 			};
@@ -1084,7 +1084,7 @@ switch (_typJednostki) do {
 				_jednostka addPrimaryWeaponItem _mrco;
 				_jednostka addWeapon _dalmierz;
 				_jednostka addWeapon _rpg7;
-				_jednostka addSecondaryWeaponItem _celownikDlaRpg;
+				_jednostka addSecondaryWeaponItem _celownikRpg;
 				_jednostka addWeapon _dalmierz;
 				[_jednostka,"PSZ_Insignia_ISAF"] call bis_fnc_setUnitInsignia;
 			};
@@ -1921,4 +1921,5 @@ switch (_typJednostki) do {
 (unitBackpack _jednostka) addItemCargoGlobal [_adrenalina,5];
 (unitBackpack _jednostka) addItemCargoGlobal [_atropina,5];
 (unitBackpack _jednostka) addItemCargoGlobal [_bialyDym,10];
+(unitBackpack _jednostka) addItemCargoGlobal [_saperka,1];
 
