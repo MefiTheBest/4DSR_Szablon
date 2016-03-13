@@ -73,6 +73,7 @@ _tabelaBalistyczna = "ACE_RangeCard";
 _kestrel = "ACE_Kestrel4500";
 _workiZPiaskiem = "ACE_Sandbag_empty";
 _dalmierz = "ACE_Vector";
+_saperka = "ACE_EntrenchingTool";
 
 // ŁADUNKI WYBUCHOWE
 _malyLadunekWybuchowy = "DemoCharge_Remote_Mag";
