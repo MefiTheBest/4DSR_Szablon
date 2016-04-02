@@ -93,6 +93,7 @@ _celownikKm = "rhs_acc_pkas";
 _celownikRpg = "rhs_acc_pgo7v";
 _celownikSOS = "optic_SOS";
 _celownikDMS = "optic_DMS";
+_celownikNokto = "optic_Nightstalker";
 _dwojnog = "rhsusf_acc_harris_bipod";
 _bipodBeryl = "bipod_01_F_blk";
 
@@ -110,7 +111,7 @@ _plecakPolskaLasStrzelec = "PSZ_B_wz93_WDL";
 
 // RADIA
 _dlugieRadio = "tf_rt1523g_black";
-_radio = "ItemRadio";
+_radio = "tf_anprc152";
 
 // BROŃ
 _km =  "PSZ_PKM";
