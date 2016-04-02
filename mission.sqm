@@ -88,7 +88,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=41;
+		items=33;
 		class Item0
 		{
 			side="LOGIC";
@@ -1590,7 +1590,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=10;
 				class Item0
 				{
 					position[]={14751.17,17.84,16325.666};
@@ -1600,6 +1600,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					init="[""dow"", this,""polskaPiechotaLas""] call compile preprocessFileLineNumbers ""wyposazenie\wyp_piechota.sqf""";
+					description="Dowódca";
 				};
 				class Item1
 				{
@@ -1607,154 +1608,91 @@ class Mission
 					id=33;
 					side="WEST";
 					vehicle="B_medic_F";
-					player="PLAYER COMMANDER";
 					skill=0.60000002;
 					fuel=0.52634811;
 					init="[""med"", this,""polskaPiechotaLas""] call compile preprocessFileLineNumbers ""wyposazenie\wyp_piechota.sqf""";
+					description="Medyk";
 				};
-			};
-		};
-		class Item33
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item2
 				{
-					position[]={14777.3,17.85,16326.974};
+					position[]={14776.931,17.85,16327.344};
 					id=34;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					leader=1;
 					skill=0.60000002;
 					init="[""celowniczykm"", this,""polskaPiechotaLas""] call compile preprocessFileLineNumbers ""wyposazenie\wyp_piechota.sqf""";
+					description="Celowniczy KM";
 				};
-			};
-		};
-		class Item34
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item3
 				{
 					position[]={14787.098,17.85,16328.064};
 					id=35;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					leader=1;
 					skill=0.60000002;
 					init="[""amunicyjnykm"", this,""polskaPiechotaLas""] call compile preprocessFileLineNumbers ""wyposazenie\wyp_piechota.sqf""";
+					description="Amunicyjny KM";
 				};
-			};
-		};
-		class Item35
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item4
 				{
 					position[]={14800.814,17.860001,16328.501};
 					id=36;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					leader=1;
 					skill=0.60000002;
 					init="[""celowniczyrpg"", this,""polskaPiechotaLas""] call compile preprocessFileLineNumbers ""wyposazenie\wyp_piechota.sqf""";
+					description="Celowniczy RPG";
 				};
-			};
-		};
-		class Item36
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item5
 				{
 					position[]={14811.048,17.860001,16329.372};
 					id=37;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					leader=1;
 					skill=0.60000002;
 					init="[""amunicyjnyrpg"", this,""polskaPiechotaLas""] call compile preprocessFileLineNumbers ""wyposazenie\wyp_piechota.sqf""";
+					description="Amunicyjny RPG";
 				};
-			};
-		};
-		class Item37
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item6
 				{
 					position[]={14825.636,17.866573,16330.896};
 					id=38;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					leader=1;
 					skill=0.60000002;
 					init="[""saper"", this,""polskaPiechotaLas""] call compile preprocessFileLineNumbers ""wyposazenie\wyp_piechota.sqf""";
+					description="Saper";
 				};
-			};
-		};
-		class Item38
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item7
 				{
 					position[]={14834.999,17.87978,16331.332};
 					id=39;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					leader=1;
 					skill=0.60000002;
 					init="[""grenadier"", this,""polskaPiechotaLas""] call compile preprocessFileLineNumbers ""wyposazenie\wyp_piechota.sqf""";
+					description="Grenadier";
 				};
-			};
-		};
-		class Item39
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item8
 				{
 					position[]={14852.2,17.91,16330.896};
 					id=40;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					leader=1;
+					player="PLAYER COMMANDER";
 					skill=0.60000002;
 					init="[""strzelecwyborowy"", this,""polskaPiechotaLas""] call compile preprocessFileLineNumbers ""wyposazenie\wyp_piechota.sqf""";
+					description="Strzelec wyborowy";
 				};
-			};
-		};
-		class Item40
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item9
 				{
 					position[]={14865.917,17.91,16332.203};
 					id=41;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					leader=1;
 					skill=0.60000002;
 					init="[""zwiadowca"", this,""polskaPiechotaLas""] call compile preprocessFileLineNumbers ""wyposazenie\wyp_piechota.sqf""";
+					description="Zwiadowca";
 				};
 			};
 		};
