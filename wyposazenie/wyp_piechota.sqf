@@ -250,6 +250,7 @@ switch (_typJednostki) do {
 				_jednostka addWeapon "PSZ_Tor";
 				_jednostka addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_2";
 				_jednostka addWeapon "PSZ_P99";
+				_jednostka addItem _celownikNokto;
 				_jednostka addHandgunItem "muzzle_snds_L";
 				_jednostka addWeapon "ACE_Vector";
 			};
@@ -337,6 +338,7 @@ switch (_typJednostki) do {
 			
 			//WYPOSAŻENIE STRZELCA WYBOROWEGO
 			case "strzelecwyborowy":{
+				_jednostka addItem _celownikNokto;
 				_jednostka addVest _kamizelkaPolskaLasStrzelec;
 				_jednostka addmagazines [_granatBojowy,2];
 				_jednostka addmagazines [_amunicjaAlex,10];
@@ -639,6 +641,7 @@ switch (_typJednostki) do {
 				_jednostka addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_2";
 				_jednostka addWeapon "PSZ_P99";
 				_jednostka addHandgunItem "muzzle_snds_L";
+				_jednostka addItem _celownikNokto;
 				_jednostka addWeapon "ACE_Vector";
 			};
 	
@@ -760,6 +763,7 @@ switch (_typJednostki) do {
 				_jednostka addPrimaryWeaponItem _celownikSOS;
 				_jednostka addWeapon _bocznaFlara;
 				_jednostka addWeapon _dalmierz;
+				_jednostka addItem _celownikNokto;
 				[_jednostka,"PSZ_Insignia_6BDSZ_W"] call bis_fnc_setUnitInsignia;
 			};
 	
@@ -1152,6 +1156,7 @@ switch (_typJednostki) do {
 				_jednostka addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_2";
 				_jednostka addWeapon "PSZ_P99";
 				_jednostka addHandgunItem "muzzle_snds_L";
+				_jednostka addItem _celownikNokto;
 				_jednostka addWeapon "ACE_Vector";
 			};
 	
@@ -1273,6 +1278,7 @@ switch (_typJednostki) do {
 				_jednostka addPrimaryWeaponItem _celownikSOS;
 				_jednostka addWeapon _bocznaFlara;
 				_jednostka addWeapon _dalmierz;
+				_jednostka addItem _celownikNokto;
 				[_jednostka,"PSZ_Insignia_ISAF"] call bis_fnc_setUnitInsignia;
 			};
 			
@@ -1643,6 +1649,7 @@ switch (_typJednostki) do {
 				_jednostka addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_2";
 				_jednostka addPrimaryWeaponItem "RH_HBLM_des";
 				_jednostka addWeapon "rhsusf_weap_m1911a1";
+				_jednostka addItem _celownikNokto;
 				_jednostka addWeapon "ACE_Vector";
 			};
 
@@ -1770,6 +1777,7 @@ switch (_typJednostki) do {
 				_jednostka addPrimaryWeaponItem _dwojnog;
 				_jednostka addWeapon _bocznaFlara;
 				_jednostka addWeapon _dalmierz;
+				_jednostka addItem _celownikNokto;
 			};
 	
 			// WYPOSAŻENIE AMUNICYJNEGO JAVELINA
