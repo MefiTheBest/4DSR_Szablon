@@ -72,7 +72,7 @@ _zapasowaLufa = "ACE_SpareBarrel";
 _tabelaBalistyczna = "ACE_RangeCard";
 _kestrel = "ACE_Kestrel4500";
 _workiZPiaskiem = "ACE_Sandbag_empty";
-_dalmierz = "ACE_Vector";
+_dalmierz = "Rangefinder";
 _saperka = "ACE_EntrenchingTool";
 
 // ŁADUNKI WYBUCHOWE
